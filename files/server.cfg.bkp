@@ -1,5 +1,5 @@
 ## TEBEX
-sv_tebexSecret ea2e36d4189bc7409754fc22b284be5c10ed06ab
+#sv_tebexSecret ea2e36d4189bc7409754fc22b284be5c10ed06ab
 ## GENEL ŞEYLER
 set es_enableCustomData 1 
 set mysql_connection_string "mysql://root@localhost/elused?charset=utf8mb4"
@@ -26,7 +26,7 @@ setr voice_enableRadioAnim 1
 setr voice_syncData 1
 setr qb_locale "en" ## TR OLARAK AYARLANDI DEĞİŞTİRİRSEN ÇALIŞMAYA BİLİR
 setr fivem-appearance:locale "en" ## TR OLARAK AYARLANDI DEĞİŞTİRİRSEN ÇALIŞMAYA BİLİR
-setr UseTarget false ## HER ŞEYİN TARGET İLE ÇALIŞMASINI İSTERSEN TRUE YAPABİLİRSİN BAZI YERLER DE TARGET ÇALIŞMAYA BİLİR CFGLERDEN AYARLAYABİLİRSİN
+setr UseTarget true ## HER ŞEYİN TARGET İLE ÇALIŞMASINI İSTERSEN TRUE YAPABİLİRSİN BAZI YERLER DE TARGET ÇALIŞMAYA BİLİR CFGLERDEN AYARLAYABİLİRSİN
 
 ## GENEL ŞEYLER
 set npwd:framework qbcore

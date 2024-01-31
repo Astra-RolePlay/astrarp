@@ -8356,181 +8356,70 @@
 {"level":"info","message":"Executed query (SELECT COUNT(*) as count\n                       FROM information_schema.tables\n                       WHERE table_schema = ?\n                         AND table_name = ? [\"elused\",\"players\"]) in 970.467297ms'","module":"DBInterface","timestamp":"2024-01-31T19:17:30.444Z"}
 {"level":"info","message":"Executed query (SHOW COLUMNS IN players []) in 7.557536ms'","module":"DBInterface","timestamp":"2024-01-31T19:17:30.451Z"}
 {"level":"debug","message":"Database schema successfully validated","module":"boot","timestamp":"2024-01-31T19:17:30.452Z"}
-{"level":"info","message":"New NPWD Player added through event (1) (JGI72397)","module":"player","timestamp":"2024-01-31T19:19:44.664Z"}
-{"level":"debug","message":{"_firstname":"Vidarr","_identifier":"JGI72397","_lastname":"Odinson","_phoneNumber":"354535","source":1,"username":"DRAGON"},"module":"player","timestamp":"2024-01-31T19:19:44.664Z"}
-{"level":"info","message":"New NPWD Player added through event (1) (JGI72397)","module":"player","timestamp":"2024-01-31T19:19:44.672Z"}
-{"level":"debug","message":{"_firstname":"Vidarr","_identifier":"JGI72397","_lastname":"Odinson","_phoneNumber":"354535","source":1,"username":"DRAGON"},"module":"player","timestamp":"2024-01-31T19:19:44.672Z"}
-{"level":"silly","message":"netPromise > npwd:fetchTweets > RequestObj","module":"events","timestamp":"2024-01-31T19:19:44.753Z"}
-{"level":"silly","message":{"data":{"pageId":0},"source":1},"module":"events","timestamp":"2024-01-31T19:19:44.753Z"}
-{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"JGI72397\"]) in 2.112467ms'","module":"DBInterface","timestamp":"2024-01-31T19:19:44.755Z"}
-{"level":"warn","message":"Aborted fetching tweets for user JGI72397 because they do not have a profile.","module":"twitter","timestamp":"2024-01-31T19:19:44.755Z"}
-{"level":"silly","message":"Response Promise Event npwd:fetchTweets:e53f6f32-14f9-41e3-a52d-b07c3fcd46de (3.107005ms), Data >>","module":"events","timestamp":"2024-01-31T19:19:44.756Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T19:19:44.756Z"}
-{"level":"silly","message":"netPromise > npwd:getOrCreateTwitterProfile > RequestObj","module":"events","timestamp":"2024-01-31T19:19:44.903Z"}
-{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T19:19:44.904Z"}
-{"level":"silly","message":"netPromise > phone:getMyProfile > RequestObj","module":"events","timestamp":"2024-01-31T19:19:44.904Z"}
-{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T19:19:44.904Z"}
-{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"JGI72397\"]) in 5.076822ms'","module":"DBInterface","timestamp":"2024-01-31T19:19:44.909Z"}
-{"level":"info","message":"Creating default Twitter profile Vidarr_Odinson for JGI72397","module":"twitter","timestamp":"2024-01-31T19:19:44.909Z"}
-{"level":"silly","message":"Response Promise Event npwd:getOrCreateTwitterProfile:a88a5586-580e-4b3c-89a1-2a09c73a3f0c (8.261765ms), Data >>","module":"events","timestamp":"2024-01-31T19:19:44.912Z"}
-{"level":"silly","message":{"errorMsg":"Duplicate entry 'Vidarr_Odinson' for key 'profile_name_UNIQUE'","status":"error"},"module":"events","timestamp":"2024-01-31T19:19:44.912Z"}
-{"level":"error","message":"Failed to get or create profile, Duplicate entry 'Vidarr_Odinson' for key 'profile_name_UNIQUE'","module":"twitter","source":1,"timestamp":"2024-01-31T19:19:44.912Z"}
-{"level":"info","message":"Executed query (\n        SELECT *,\n               UNIX_TIMESTAMP(updatedAt) AS lastActive\n        FROM npwd_match_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"JGI72397\"]) in 9.487839ms'","module":"DBInterface","timestamp":"2024-01-31T19:19:44.914Z"}
-{"level":"silly","message":"Response Promise Event phone:getMyProfile:aa1327fc-b867-48d8-90b8-70de3fbb5d3b (10.265707ms), Data >>","module":"events","timestamp":"2024-01-31T19:19:44.914Z"}
-{"level":"silly","message":{"data":{"bio":"","createdAt":"2024-01-31T18:56:39.000Z","id":12,"identifier":"JGI72397","image":"https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg","job":"","lastActive":1706727399,"lastActiveFormatted":"Wed, 31 Jan 2024 18:56:39 GMT","location":"","name":"Vidarr Odinson","tagList":[],"tags":"","updatedAt":"2024-01-31T18:56:39.000Z","viewed":false,"voiceMessage":null},"status":"ok"},"module":"events","timestamp":"2024-01-31T19:19:44.915Z"}
-{"level":"silly","message":"netPromise > npwd:fetchMessageGroups > RequestObj","module":"events","timestamp":"2024-01-31T19:19:44.953Z"}
-{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T19:19:44.953Z"}
-{"level":"silly","message":"netPromise > npwd-contact-getAll > RequestObj","module":"events","timestamp":"2024-01-31T19:19:44.954Z"}
-{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T19:19:44.954Z"}
-{"level":"info","message":"Executed query (SELECT npwd_messages_conversations.id,\n                          npwd_messages_conversations.conversation_list         as conversationList,\n                          npwd_messages_participants.unread_count               as unreadCount,\n                          npwd_messages_conversations.is_group_chat             as isGroupChat,\n                          npwd_messages_conversations.label,\n                          UNIX_TIMESTAMP(npwd_messages_conversations.updatedAt) as updatedAt,\n                          npwd_messages_participants.participant\n                   FROM npwd_messages_conversations\n                            INNER JOIN npwd_messages_participants\n                                       on npwd_messages_conversations.id = npwd_messages_participants.conversation_id\n                   WHERE npwd_messages_participants.participant = ? [\"354535\"]) in 2.459102ms'","module":"DBInterface","timestamp":"2024-01-31T19:19:44.956Z"}
-{"level":"silly","message":"Response Promise Event npwd:fetchMessageGroups:b6dd9474-65cd-4456-8dd5-0f9d0ea92a33 (3.012376ms), Data >>","module":"events","timestamp":"2024-01-31T19:19:44.956Z"}
-{"level":"info","message":"Executed query (SELECT * FROM npwd_phone_contacts WHERE identifier = ? ORDER BY display ASC [\"JGI72397\"]) in 2.690188ms'","module":"DBInterface","timestamp":"2024-01-31T19:19:44.957Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T19:19:44.956Z"}
-{"level":"silly","message":"Response Promise Event npwd-contact-getAll:483ea83a-b901-42b4-b037-1d02a8a7a8ad (3.027104ms), Data >>","module":"events","timestamp":"2024-01-31T19:19:44.957Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T19:19:44.957Z"}
-{"level":"info","message":"Executed query (SELECT id FROM npwd_marketplace_listings WHERE identifier = ? [\"JGI72397\"]) in 7.648529ms'","module":"DBInterface","timestamp":"2024-01-31T19:20:06.401Z"}
-{"level":"info","message":"Executed query (DELETE FROM npwd_marketplace_listings WHERE identifier = ? AND reported = 0 [\"JGI72397\"]) in 0.928653ms'","module":"DBInterface","timestamp":"2024-01-31T19:20:06.402Z"}
-{"level":"info","message":"Unloaded NPWD Player, source: (1)","module":"player","timestamp":"2024-01-31T19:20:06.402Z"}
-{"level":"debug","message":"Marketplace service started","module":"marketplace","timestamp":"2024-01-31T19:22:13.737Z"}
-{"level":"debug","message":"Call service started","module":"calls","timestamp":"2024-01-31T19:22:13.738Z"}
-{"level":"debug","message":"Player Service started","module":"player","timestamp":"2024-01-31T19:22:13.739Z"}
-{"level":"info","message":"Loading QBCore bridge....","timestamp":"2024-01-31T19:22:13.739Z"}
-{"level":"info","message":"QBCore bridge initialized","timestamp":"2024-01-31T19:22:13.739Z"}
-{"level":"debug","message":"Boot service started","module":"boot","timestamp":"2024-01-31T19:22:13.739Z"}
-{"level":"debug","message":"Messages service started","module":"messages","timestamp":"2024-01-31T19:22:13.740Z"}
-{"level":"debug","message":"Notes service started","module":"notes","timestamp":"2024-01-31T19:22:13.740Z"}
-{"level":"debug","message":"Contacts service started","module":"contact","timestamp":"2024-01-31T19:22:13.740Z"}
-{"level":"debug","message":"Photo service started","module":"photo","timestamp":"2024-01-31T19:22:13.744Z"}
-{"level":"debug","message":"Twitter service started","module":"twitter","timestamp":"2024-01-31T19:22:13.744Z"}
-{"level":"debug","message":"Match service started","module":"match","timestamp":"2024-01-31T19:22:13.745Z"}
-{"level":"debug","message":"Beginning database schema validation","module":"boot","timestamp":"2024-01-31T19:22:18.306Z"}
-{"level":"info","message":"Successfully started","timestamp":"2024-01-31T19:22:18.310Z"}
-{"level":"info","message":"Executed query (SELECT COUNT(*) as count\n                       FROM information_schema.tables\n                       WHERE table_schema = ?\n                         AND table_name = ? [\"elused\",\"players\"]) in 837.917167ms'","module":"DBInterface","timestamp":"2024-01-31T19:22:21.145Z"}
-{"level":"info","message":"Executed query (SHOW COLUMNS IN players []) in 11.418366ms'","module":"DBInterface","timestamp":"2024-01-31T19:22:21.156Z"}
-{"level":"debug","message":"Database schema successfully validated","module":"boot","timestamp":"2024-01-31T19:22:21.157Z"}
-{"level":"info","message":"New NPWD Player added through event (1) (JGI72397)","module":"player","timestamp":"2024-01-31T19:30:39.279Z"}
-{"level":"debug","message":{"_firstname":"Vidarr","_identifier":"JGI72397","_lastname":"Odinson","_phoneNumber":"354535","source":1,"username":"DRAGON"},"module":"player","timestamp":"2024-01-31T19:30:39.279Z"}
-{"level":"info","message":"New NPWD Player added through event (1) (JGI72397)","module":"player","timestamp":"2024-01-31T19:30:39.285Z"}
-{"level":"debug","message":{"_firstname":"Vidarr","_identifier":"JGI72397","_lastname":"Odinson","_phoneNumber":"354535","source":1,"username":"DRAGON"},"module":"player","timestamp":"2024-01-31T19:30:39.285Z"}
-{"level":"silly","message":"netPromise > npwd:fetchTweets > RequestObj","module":"events","timestamp":"2024-01-31T19:30:39.419Z"}
-{"level":"silly","message":{"data":{"pageId":0},"source":1},"module":"events","timestamp":"2024-01-31T19:30:39.419Z"}
-{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"JGI72397\"]) in 1.957836ms'","module":"DBInterface","timestamp":"2024-01-31T19:30:39.422Z"}
-{"level":"warn","message":"Aborted fetching tweets for user JGI72397 because they do not have a profile.","module":"twitter","timestamp":"2024-01-31T19:30:39.422Z"}
-{"level":"silly","message":"Response Promise Event npwd:fetchTweets:677412d8-4c20-4ed7-b53b-710143560d32 (2.819324ms), Data >>","module":"events","timestamp":"2024-01-31T19:30:39.422Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T19:30:39.422Z"}
-{"level":"silly","message":"netPromise > npwd:getOrCreateTwitterProfile > RequestObj","module":"events","timestamp":"2024-01-31T19:30:39.570Z"}
-{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T19:30:39.571Z"}
-{"level":"silly","message":"netPromise > phone:getMyProfile > RequestObj","module":"events","timestamp":"2024-01-31T19:30:39.571Z"}
-{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T19:30:39.571Z"}
-{"level":"silly","message":"netPromise > npwd:fetchMessageGroups > RequestObj","module":"events","timestamp":"2024-01-31T19:30:39.574Z"}
-{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T19:30:39.574Z"}
-{"level":"silly","message":"netPromise > npwd-contact-getAll > RequestObj","module":"events","timestamp":"2024-01-31T19:30:39.575Z"}
-{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T19:30:39.575Z"}
-{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"JGI72397\"]) in 6.724166ms'","module":"DBInterface","timestamp":"2024-01-31T19:30:39.578Z"}
-{"level":"info","message":"Creating default Twitter profile Vidarr_Odinson for JGI72397","module":"twitter","timestamp":"2024-01-31T19:30:39.578Z"}
-{"level":"info","message":"Executed query (\n        SELECT *,\n               UNIX_TIMESTAMP(updatedAt) AS lastActive\n        FROM npwd_match_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"JGI72397\"]) in 9.884029ms'","module":"DBInterface","timestamp":"2024-01-31T19:30:39.581Z"}
-{"level":"silly","message":"Response Promise Event phone:getMyProfile:37d339df-e4e5-4ebd-8035-9875ed79b313 (10.618187ms), Data >>","module":"events","timestamp":"2024-01-31T19:30:39.582Z"}
-{"level":"silly","message":{"data":{"bio":"","createdAt":"2024-01-31T18:56:39.000Z","id":12,"identifier":"JGI72397","image":"https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg","job":"","lastActive":1706727399,"lastActiveFormatted":"Wed, 31 Jan 2024 18:56:39 GMT","location":"","name":"Vidarr Odinson","tagList":[],"tags":"","updatedAt":"2024-01-31T18:56:39.000Z","viewed":false,"voiceMessage":null},"status":"ok"},"module":"events","timestamp":"2024-01-31T19:30:39.582Z"}
-{"level":"silly","message":"Response Promise Event npwd:getOrCreateTwitterProfile:878cd229-c29b-46b7-b3f5-40402c07c427 (11.784246ms), Data >>","module":"events","timestamp":"2024-01-31T19:30:39.582Z"}
-{"level":"silly","message":{"errorMsg":"Duplicate entry 'Vidarr_Odinson' for key 'profile_name_UNIQUE'","status":"error"},"module":"events","timestamp":"2024-01-31T19:30:39.582Z"}
-{"level":"error","message":"Failed to get or create profile, Duplicate entry 'Vidarr_Odinson' for key 'profile_name_UNIQUE'","module":"twitter","source":1,"timestamp":"2024-01-31T19:30:39.582Z"}
-{"level":"info","message":"Executed query (SELECT * FROM npwd_phone_contacts WHERE identifier = ? ORDER BY display ASC [\"JGI72397\"]) in 9.105156ms'","module":"DBInterface","timestamp":"2024-01-31T19:30:39.584Z"}
-{"level":"silly","message":"Response Promise Event npwd-contact-getAll:5f6b5980-3344-495d-8fa2-bfcd6e04e0b4 (9.435907ms), Data >>","module":"events","timestamp":"2024-01-31T19:30:39.585Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T19:30:39.585Z"}
-{"level":"info","message":"Executed query (SELECT npwd_messages_conversations.id,\n                          npwd_messages_conversations.conversation_list         as conversationList,\n                          npwd_messages_participants.unread_count               as unreadCount,\n                          npwd_messages_conversations.is_group_chat             as isGroupChat,\n                          npwd_messages_conversations.label,\n                          UNIX_TIMESTAMP(npwd_messages_conversations.updatedAt) as updatedAt,\n                          npwd_messages_participants.participant\n                   FROM npwd_messages_conversations\n                            INNER JOIN npwd_messages_participants\n                                       on npwd_messages_conversations.id = npwd_messages_participants.conversation_id\n                   WHERE npwd_messages_participants.participant = ? [\"354535\"]) in 11.106604ms'","module":"DBInterface","timestamp":"2024-01-31T19:30:39.585Z"}
-{"level":"silly","message":"Response Promise Event npwd:fetchMessageGroups:8101a521-7a25-4d0c-9c2e-bb6828131150 (11.437645ms), Data >>","module":"events","timestamp":"2024-01-31T19:30:39.585Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T19:30:39.585Z"}
-{"level":"info","message":"Executed query (SELECT id FROM npwd_marketplace_listings WHERE identifier = ? [\"JGI72397\"]) in 8.119743ms'","module":"DBInterface","timestamp":"2024-01-31T19:30:47.265Z"}
-{"level":"info","message":"Executed query (DELETE FROM npwd_marketplace_listings WHERE identifier = ? AND reported = 0 [\"JGI72397\"]) in 0.79334ms'","module":"DBInterface","timestamp":"2024-01-31T19:30:47.266Z"}
-{"level":"info","message":"Unloaded NPWD Player, source: (1)","module":"player","timestamp":"2024-01-31T19:30:47.266Z"}
-{"level":"info","message":"New NPWD Player added through event (2) (KLG51886)","module":"player","timestamp":"2024-01-31T19:39:12.671Z"}
-{"level":"debug","message":{"_firstname":"Vidarr","_identifier":"KLG51886","_lastname":"Odinson","_phoneNumber":"210988","source":2,"username":"DRAGON"},"module":"player","timestamp":"2024-01-31T19:39:12.671Z"}
-{"level":"info","message":"New NPWD Player added through event (2) (KLG51886)","module":"player","timestamp":"2024-01-31T19:39:12.679Z"}
-{"level":"debug","message":{"_firstname":"Vidarr","_identifier":"KLG51886","_lastname":"Odinson","_phoneNumber":"210988","source":2,"username":"DRAGON"},"module":"player","timestamp":"2024-01-31T19:39:12.679Z"}
-{"level":"silly","message":"netPromise > npwd:fetchTweets > RequestObj","module":"events","timestamp":"2024-01-31T19:39:12.765Z"}
-{"level":"silly","message":{"data":{"pageId":0},"source":2},"module":"events","timestamp":"2024-01-31T19:39:12.765Z"}
-{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"KLG51886\"]) in 1.410111ms'","module":"DBInterface","timestamp":"2024-01-31T19:39:12.767Z"}
-{"level":"warn","message":"Aborted fetching tweets for user KLG51886 because they do not have a profile.","module":"twitter","timestamp":"2024-01-31T19:39:12.767Z"}
-{"level":"silly","message":"Response Promise Event npwd:fetchTweets:fa22f2dd-6b4e-43ba-aabc-4cfe2789e65d (2.437857ms), Data >>","module":"events","timestamp":"2024-01-31T19:39:12.767Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T19:39:12.767Z"}
-{"level":"silly","message":"netPromise > npwd:getOrCreateTwitterProfile > RequestObj","module":"events","timestamp":"2024-01-31T19:39:13.069Z"}
-{"level":"silly","message":{"data":null,"source":2},"module":"events","timestamp":"2024-01-31T19:39:13.069Z"}
-{"level":"silly","message":"netPromise > phone:getMyProfile > RequestObj","module":"events","timestamp":"2024-01-31T19:39:13.069Z"}
-{"level":"silly","message":{"data":null,"source":2},"module":"events","timestamp":"2024-01-31T19:39:13.069Z"}
-{"level":"silly","message":"netPromise > npwd:fetchMessageGroups > RequestObj","module":"events","timestamp":"2024-01-31T19:39:13.070Z"}
-{"level":"silly","message":{"data":null,"source":2},"module":"events","timestamp":"2024-01-31T19:39:13.070Z"}
-{"level":"silly","message":"netPromise > npwd-contact-getAll > RequestObj","module":"events","timestamp":"2024-01-31T19:39:13.070Z"}
-{"level":"silly","message":{"data":null,"source":2},"module":"events","timestamp":"2024-01-31T19:39:13.070Z"}
-{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"KLG51886\"]) in 2.573941ms'","module":"DBInterface","timestamp":"2024-01-31T19:39:13.072Z"}
-{"level":"info","message":"Creating default Twitter profile Vidarr_Odinson for KLG51886","module":"twitter","timestamp":"2024-01-31T19:39:13.072Z"}
-{"level":"info","message":"Executed query (\n        SELECT *,\n               UNIX_TIMESTAMP(updatedAt) AS lastActive\n        FROM npwd_match_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"KLG51886\"]) in 3.992358ms'","module":"DBInterface","timestamp":"2024-01-31T19:39:13.074Z"}
-{"level":"info","message":"Creating default match profile Vidarr Odinson for KLG51886","module":"match","timestamp":"2024-01-31T19:39:13.074Z"}
-{"level":"silly","message":"Response Promise Event npwd:fetchMessageGroups:16299ca5-2c7c-4194-924b-ecd557ae42d7 (4.823816ms), Data >>","module":"events","timestamp":"2024-01-31T19:39:13.075Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T19:39:13.075Z"}
-{"level":"info","message":"Executed query (SELECT npwd_messages_conversations.id,\n                          npwd_messages_conversations.conversation_list         as conversationList,\n                          npwd_messages_participants.unread_count               as unreadCount,\n                          npwd_messages_conversations.is_group_chat             as isGroupChat,\n                          npwd_messages_conversations.label,\n                          UNIX_TIMESTAMP(npwd_messages_conversations.updatedAt) as updatedAt,\n                          npwd_messages_participants.participant\n                   FROM npwd_messages_conversations\n                            INNER JOIN npwd_messages_participants\n                                       on npwd_messages_conversations.id = npwd_messages_participants.conversation_id\n                   WHERE npwd_messages_participants.participant = ? [\"210988\"]) in 4.424428ms'","module":"DBInterface","timestamp":"2024-01-31T19:39:13.074Z"}
-{"level":"silly","message":"Response Promise Event npwd:getOrCreateTwitterProfile:fcfcea2e-13b9-4f1c-b3b7-5fea5f66a670 (6.075861ms), Data >>","module":"events","timestamp":"2024-01-31T19:39:13.075Z"}
-{"level":"silly","message":{"errorMsg":"Duplicate entry 'Vidarr_Odinson' for key 'profile_name_UNIQUE'","status":"error"},"module":"events","timestamp":"2024-01-31T19:39:13.075Z"}
-{"level":"error","message":"Failed to get or create profile, Duplicate entry 'Vidarr_Odinson' for key 'profile_name_UNIQUE'","module":"twitter","source":2,"timestamp":"2024-01-31T19:39:13.075Z"}
-{"level":"silly","message":"Response Promise Event npwd-contact-getAll:4a8610a7-a26c-484f-9f7e-74806f6f7157 (6.078897ms), Data >>","module":"events","timestamp":"2024-01-31T19:39:13.076Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T19:39:13.076Z"}
-{"level":"info","message":"Executed query (SELECT * FROM npwd_phone_contacts WHERE identifier = ? ORDER BY display ASC [\"KLG51886\"]) in 5.856251ms'","module":"DBInterface","timestamp":"2024-01-31T19:39:13.076Z"}
-{"level":"info","message":"Executed query (\n        SELECT *,\n               UNIX_TIMESTAMP(updatedAt) AS lastActive\n        FROM npwd_match_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"KLG51886\"]) in 0.536485ms'","module":"DBInterface","timestamp":"2024-01-31T19:39:13.077Z"}
-{"level":"silly","message":"Response Promise Event phone:getMyProfile:23f396b6-5b75-4485-8f21-c0c1410da9c6 (7.996039ms), Data >>","module":"events","timestamp":"2024-01-31T19:39:13.077Z"}
-{"level":"silly","message":{"data":{"bio":"","createdAt":"2024-01-31T19:39:13.000Z","id":13,"identifier":"KLG51886","image":"https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg","job":"","lastActive":1706729953,"lastActiveFormatted":"Wed, 31 Jan 2024 19:39:13 GMT","location":"","name":"Vidarr Odinson","tagList":[],"tags":"","updatedAt":"2024-01-31T19:39:13.000Z","viewed":false,"voiceMessage":null},"status":"ok"},"module":"events","timestamp":"2024-01-31T19:39:13.078Z"}
-{"level":"info","message":"Executed query (SELECT id FROM npwd_marketplace_listings WHERE identifier = ? [\"KLG51886\"]) in 7.049644ms'","module":"DBInterface","timestamp":"2024-01-31T19:39:31.580Z"}
-{"level":"info","message":"Executed query (DELETE FROM npwd_marketplace_listings WHERE identifier = ? AND reported = 0 [\"KLG51886\"]) in 0.725409ms'","module":"DBInterface","timestamp":"2024-01-31T19:39:31.581Z"}
-{"level":"info","message":"Unloaded NPWD Player, source: (2)","module":"player","timestamp":"2024-01-31T19:39:31.581Z"}
-{"level":"info","message":"New NPWD Player added through event (3) (CMW31394)","module":"player","timestamp":"2024-01-31T20:20:50.455Z"}
-{"level":"debug","message":{"_firstname":"Vidarr","_identifier":"CMW31394","_lastname":"Odinson","_phoneNumber":"397531","source":3,"username":"Vidarr"},"module":"player","timestamp":"2024-01-31T20:20:50.455Z"}
-{"level":"info","message":"New NPWD Player added through event (3) (CMW31394)","module":"player","timestamp":"2024-01-31T20:20:50.463Z"}
-{"level":"debug","message":{"_firstname":"Vidarr","_identifier":"CMW31394","_lastname":"Odinson","_phoneNumber":"397531","source":3,"username":"Vidarr"},"module":"player","timestamp":"2024-01-31T20:20:50.463Z"}
-{"level":"silly","message":"netPromise > npwd:fetchTweets > RequestObj","module":"events","timestamp":"2024-01-31T20:20:50.548Z"}
-{"level":"silly","message":{"data":{"pageId":0},"source":3},"module":"events","timestamp":"2024-01-31T20:20:50.548Z"}
-{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"CMW31394\"]) in 1.043796ms'","module":"DBInterface","timestamp":"2024-01-31T20:20:50.549Z"}
-{"level":"warn","message":"Aborted fetching tweets for user CMW31394 because they do not have a profile.","module":"twitter","timestamp":"2024-01-31T20:20:50.549Z"}
-{"level":"silly","message":"Response Promise Event npwd:fetchTweets:4c241ed7-f4d5-41f7-9610-95b4cd8f7c7f (1.424399ms), Data >>","module":"events","timestamp":"2024-01-31T20:20:50.550Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T20:20:50.550Z"}
-{"level":"silly","message":"netPromise > npwd:getOrCreateTwitterProfile > RequestObj","module":"events","timestamp":"2024-01-31T20:20:51.003Z"}
-{"level":"silly","message":{"data":null,"source":3},"module":"events","timestamp":"2024-01-31T20:20:51.003Z"}
-{"level":"silly","message":"netPromise > phone:getMyProfile > RequestObj","module":"events","timestamp":"2024-01-31T20:20:51.003Z"}
-{"level":"silly","message":{"data":null,"source":3},"module":"events","timestamp":"2024-01-31T20:20:51.003Z"}
-{"level":"silly","message":"netPromise > npwd:fetchMessageGroups > RequestObj","module":"events","timestamp":"2024-01-31T20:20:51.003Z"}
-{"level":"silly","message":{"data":null,"source":3},"module":"events","timestamp":"2024-01-31T20:20:51.003Z"}
-{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"CMW31394\"]) in 1.380807ms'","module":"DBInterface","timestamp":"2024-01-31T20:20:51.004Z"}
-{"level":"info","message":"Creating default Twitter profile Vidarr_Odinson for CMW31394","module":"twitter","timestamp":"2024-01-31T20:20:51.004Z"}
-{"level":"info","message":"Creating default match profile Vidarr Odinson for CMW31394","module":"match","timestamp":"2024-01-31T20:20:51.005Z"}
-{"level":"silly","message":"Response Promise Event npwd:fetchMessageGroups:59724d95-34b8-4c14-969b-f2f1c990cd8e (1.791998ms), Data >>","module":"events","timestamp":"2024-01-31T20:20:51.005Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T20:20:51.005Z"}
-{"level":"info","message":"Executed query (\n        SELECT *,\n               UNIX_TIMESTAMP(updatedAt) AS lastActive\n        FROM npwd_match_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"CMW31394\"]) in 1.460727ms'","module":"DBInterface","timestamp":"2024-01-31T20:20:51.005Z"}
-{"level":"info","message":"Executed query (SELECT npwd_messages_conversations.id,\n                          npwd_messages_conversations.conversation_list         as conversationList,\n                          npwd_messages_participants.unread_count               as unreadCount,\n                          npwd_messages_conversations.is_group_chat             as isGroupChat,\n                          npwd_messages_conversations.label,\n                          UNIX_TIMESTAMP(npwd_messages_conversations.updatedAt) as updatedAt,\n                          npwd_messages_participants.participant\n                   FROM npwd_messages_conversations\n                            INNER JOIN npwd_messages_participants\n                                       on npwd_messages_conversations.id = npwd_messages_participants.conversation_id\n                   WHERE npwd_messages_participants.participant = ? [\"397531\"]) in 1.631126ms'","module":"DBInterface","timestamp":"2024-01-31T20:20:51.005Z"}
-{"level":"silly","message":"Response Promise Event npwd:getOrCreateTwitterProfile:2c0ad6e4-0f7a-4d4c-8c82-515f7770f8cc (3.49066ms), Data >>","module":"events","timestamp":"2024-01-31T20:20:51.006Z"}
-{"level":"silly","message":{"errorMsg":"Duplicate entry 'Vidarr_Odinson' for key 'profile_name_UNIQUE'","status":"error"},"module":"events","timestamp":"2024-01-31T20:20:51.006Z"}
-{"level":"error","message":"Failed to get or create profile, Duplicate entry 'Vidarr_Odinson' for key 'profile_name_UNIQUE'","module":"twitter","source":3,"timestamp":"2024-01-31T20:20:51.006Z"}
-{"level":"info","message":"Executed query (\n        SELECT *,\n               UNIX_TIMESTAMP(updatedAt) AS lastActive\n        FROM npwd_match_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"CMW31394\"]) in 0.452187ms'","module":"DBInterface","timestamp":"2024-01-31T20:20:51.007Z"}
-{"level":"silly","message":"Response Promise Event phone:getMyProfile:9282a9e9-052b-4e44-8878-ccd263ea3936 (4.545096ms), Data >>","module":"events","timestamp":"2024-01-31T20:20:51.008Z"}
-{"level":"silly","message":{"data":{"bio":"","createdAt":"2024-01-31T20:20:51.000Z","id":14,"identifier":"CMW31394","image":"https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg","job":"","lastActive":1706732451,"lastActiveFormatted":"Wed, 31 Jan 2024 20:20:51 GMT","location":"","name":"Vidarr Odinson","tagList":[],"tags":"","updatedAt":"2024-01-31T20:20:51.000Z","viewed":false,"voiceMessage":null},"status":"ok"},"module":"events","timestamp":"2024-01-31T20:20:51.008Z"}
-{"level":"silly","message":"netPromise > npwd-contact-getAll > RequestObj","module":"events","timestamp":"2024-01-31T20:20:51.053Z"}
-{"level":"silly","message":{"data":null,"source":3},"module":"events","timestamp":"2024-01-31T20:20:51.053Z"}
-{"level":"info","message":"Executed query (SELECT * FROM npwd_phone_contacts WHERE identifier = ? ORDER BY display ASC [\"CMW31394\"]) in 0.727283ms'","module":"DBInterface","timestamp":"2024-01-31T20:20:51.054Z"}
-{"level":"silly","message":"Response Promise Event npwd-contact-getAll:9c2bce7e-bd04-47f0-8b6a-60a851a02d7c (0.99806ms), Data >>","module":"events","timestamp":"2024-01-31T20:20:51.054Z"}
-{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T20:20:51.054Z"}
-{"level":"info","message":"Executed query (SELECT id FROM npwd_marketplace_listings WHERE identifier = ? [\"CMW31394\"]) in 6.852558ms'","module":"DBInterface","timestamp":"2024-01-31T20:28:18.584Z"}
-{"level":"info","message":"Executed query (DELETE FROM npwd_marketplace_listings WHERE identifier = ? AND reported = 0 [\"CMW31394\"]) in 0.57127ms'","module":"DBInterface","timestamp":"2024-01-31T20:28:18.585Z"}
-{"level":"info","message":"Unloaded NPWD Player, source: (3)","module":"player","timestamp":"2024-01-31T20:28:18.585Z"}
-{"level":"debug","message":"Marketplace service started","module":"marketplace","timestamp":"2024-01-31T20:28:31.583Z"}
-{"level":"debug","message":"Call service started","module":"calls","timestamp":"2024-01-31T20:28:31.585Z"}
-{"level":"debug","message":"Player Service started","module":"player","timestamp":"2024-01-31T20:28:31.585Z"}
-{"level":"info","message":"Loading QBCore bridge....","timestamp":"2024-01-31T20:28:31.585Z"}
-{"level":"info","message":"QBCore bridge initialized","timestamp":"2024-01-31T20:28:31.586Z"}
-{"level":"debug","message":"Boot service started","module":"boot","timestamp":"2024-01-31T20:28:31.586Z"}
-{"level":"debug","message":"Messages service started","module":"messages","timestamp":"2024-01-31T20:28:31.587Z"}
-{"level":"debug","message":"Notes service started","module":"notes","timestamp":"2024-01-31T20:28:31.587Z"}
-{"level":"debug","message":"Contacts service started","module":"contact","timestamp":"2024-01-31T20:28:31.587Z"}
-{"level":"debug","message":"Photo service started","module":"photo","timestamp":"2024-01-31T20:28:31.591Z"}
-{"level":"debug","message":"Twitter service started","module":"twitter","timestamp":"2024-01-31T20:28:31.591Z"}
-{"level":"debug","message":"Match service started","module":"match","timestamp":"2024-01-31T20:28:31.592Z"}
-{"level":"debug","message":"Beginning database schema validation","module":"boot","timestamp":"2024-01-31T20:28:35.345Z"}
-{"level":"info","message":"Successfully started","timestamp":"2024-01-31T20:28:35.349Z"}
-{"level":"info","message":"Executed query (SELECT COUNT(*) as count\n                       FROM information_schema.tables\n                       WHERE table_schema = ?\n                         AND table_name = ? [\"elused\",\"players\"]) in 473.664191ms'","module":"DBInterface","timestamp":"2024-01-31T20:28:37.820Z"}
-{"level":"info","message":"Executed query (SHOW COLUMNS IN players []) in 6.745518ms'","module":"DBInterface","timestamp":"2024-01-31T20:28:37.826Z"}
-{"level":"debug","message":"Database schema successfully validated","module":"boot","timestamp":"2024-01-31T20:28:37.827Z"}
+{"level":"debug","message":"Marketplace service started","module":"marketplace","timestamp":"2024-01-31T20:34:47.357Z"}
+{"level":"debug","message":"Call service started","module":"calls","timestamp":"2024-01-31T20:34:47.359Z"}
+{"level":"debug","message":"Player Service started","module":"player","timestamp":"2024-01-31T20:34:47.359Z"}
+{"level":"info","message":"Loading QBCore bridge....","timestamp":"2024-01-31T20:34:47.359Z"}
+{"level":"info","message":"QBCore bridge initialized","timestamp":"2024-01-31T20:34:47.359Z"}
+{"level":"debug","message":"Boot service started","module":"boot","timestamp":"2024-01-31T20:34:47.360Z"}
+{"level":"debug","message":"Messages service started","module":"messages","timestamp":"2024-01-31T20:34:47.360Z"}
+{"level":"debug","message":"Notes service started","module":"notes","timestamp":"2024-01-31T20:34:47.360Z"}
+{"level":"debug","message":"Contacts service started","module":"contact","timestamp":"2024-01-31T20:34:47.361Z"}
+{"level":"debug","message":"Photo service started","module":"photo","timestamp":"2024-01-31T20:34:47.364Z"}
+{"level":"debug","message":"Twitter service started","module":"twitter","timestamp":"2024-01-31T20:34:47.365Z"}
+{"level":"debug","message":"Match service started","module":"match","timestamp":"2024-01-31T20:34:47.365Z"}
+{"level":"debug","message":"Beginning database schema validation","module":"boot","timestamp":"2024-01-31T20:34:50.909Z"}
+{"level":"info","message":"Successfully started","timestamp":"2024-01-31T20:34:50.913Z"}
+{"level":"info","message":"Executed query (SELECT COUNT(*) as count\n                       FROM information_schema.tables\n                       WHERE table_schema = ?\n                         AND table_name = ? [\"elused\",\"players\"]) in 600.28166ms'","module":"DBInterface","timestamp":"2024-01-31T20:34:53.510Z"}
+{"level":"info","message":"Executed query (SHOW COLUMNS IN players []) in 5.836335ms'","module":"DBInterface","timestamp":"2024-01-31T20:34:53.516Z"}
+{"level":"debug","message":"Database schema successfully validated","module":"boot","timestamp":"2024-01-31T20:34:53.516Z"}
+{"level":"debug","message":"1 failed to unload, likely was never loaded in the first place.","module":"player","timestamp":"2024-01-31T20:37:34.813Z"}
+{"level":"debug","message":"Marketplace service started","module":"marketplace","timestamp":"2024-01-31T20:37:45.875Z"}
+{"level":"debug","message":"Call service started","module":"calls","timestamp":"2024-01-31T20:37:45.877Z"}
+{"level":"debug","message":"Player Service started","module":"player","timestamp":"2024-01-31T20:37:45.877Z"}
+{"level":"info","message":"Loading QBCore bridge....","timestamp":"2024-01-31T20:37:45.877Z"}
+{"level":"info","message":"QBCore bridge initialized","timestamp":"2024-01-31T20:37:45.877Z"}
+{"level":"debug","message":"Boot service started","module":"boot","timestamp":"2024-01-31T20:37:45.878Z"}
+{"level":"debug","message":"Messages service started","module":"messages","timestamp":"2024-01-31T20:37:45.878Z"}
+{"level":"debug","message":"Notes service started","module":"notes","timestamp":"2024-01-31T20:37:45.878Z"}
+{"level":"debug","message":"Contacts service started","module":"contact","timestamp":"2024-01-31T20:37:45.878Z"}
+{"level":"debug","message":"Photo service started","module":"photo","timestamp":"2024-01-31T20:37:45.882Z"}
+{"level":"debug","message":"Twitter service started","module":"twitter","timestamp":"2024-01-31T20:37:45.882Z"}
+{"level":"debug","message":"Match service started","module":"match","timestamp":"2024-01-31T20:37:45.883Z"}
+{"level":"debug","message":"Beginning database schema validation","module":"boot","timestamp":"2024-01-31T20:37:49.429Z"}
+{"level":"info","message":"Successfully started","timestamp":"2024-01-31T20:37:49.433Z"}
+{"level":"info","message":"Executed query (SELECT COUNT(*) as count\n                       FROM information_schema.tables\n                       WHERE table_schema = ?\n                         AND table_name = ? [\"elused\",\"players\"]) in 708.91801ms'","module":"DBInterface","timestamp":"2024-01-31T20:37:52.139Z"}
+{"level":"info","message":"Executed query (SHOW COLUMNS IN players []) in 5.720378ms'","module":"DBInterface","timestamp":"2024-01-31T20:37:52.145Z"}
+{"level":"debug","message":"Database schema successfully validated","module":"boot","timestamp":"2024-01-31T20:37:52.145Z"}
+{"level":"info","message":"New NPWD Player added through event (1) (CMW31394)","module":"player","timestamp":"2024-01-31T20:39:35.566Z"}
+{"level":"debug","message":{"_firstname":"Vidarr","_identifier":"CMW31394","_lastname":"Odinson","_phoneNumber":"397531","source":1,"username":"Vidarr"},"module":"player","timestamp":"2024-01-31T20:39:35.566Z"}
+{"level":"info","message":"New NPWD Player added through event (1) (CMW31394)","module":"player","timestamp":"2024-01-31T20:39:35.581Z"}
+{"level":"debug","message":{"_firstname":"Vidarr","_identifier":"CMW31394","_lastname":"Odinson","_phoneNumber":"397531","source":1,"username":"Vidarr"},"module":"player","timestamp":"2024-01-31T20:39:35.581Z"}
+{"level":"silly","message":"netPromise > npwd:fetchTweets > RequestObj","module":"events","timestamp":"2024-01-31T20:39:35.650Z"}
+{"level":"silly","message":{"data":{"pageId":0},"source":1},"module":"events","timestamp":"2024-01-31T20:39:35.650Z"}
+{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"CMW31394\"]) in 2.004576ms'","module":"DBInterface","timestamp":"2024-01-31T20:39:35.652Z"}
+{"level":"warn","message":"Aborted fetching tweets for user CMW31394 because they do not have a profile.","module":"twitter","timestamp":"2024-01-31T20:39:35.652Z"}
+{"level":"silly","message":"Response Promise Event npwd:fetchTweets:f646619a-474b-4923-82fc-22bd20fb8d6f (2.853316ms), Data >>","module":"events","timestamp":"2024-01-31T20:39:35.653Z"}
+{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T20:39:35.653Z"}
+{"level":"silly","message":"netPromise > npwd:getOrCreateTwitterProfile > RequestObj","module":"events","timestamp":"2024-01-31T20:39:35.800Z"}
+{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T20:39:35.800Z"}
+{"level":"silly","message":"netPromise > phone:getMyProfile > RequestObj","module":"events","timestamp":"2024-01-31T20:39:35.800Z"}
+{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T20:39:35.800Z"}
+{"level":"info","message":"Executed query (\n        SELECT *\n        FROM npwd_twitter_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"CMW31394\"]) in 5.264664ms'","module":"DBInterface","timestamp":"2024-01-31T20:39:35.805Z"}
+{"level":"info","message":"Creating default Twitter profile Vidarr_Odinson for CMW31394","module":"twitter","timestamp":"2024-01-31T20:39:35.806Z"}
+{"level":"silly","message":"Response Promise Event npwd:getOrCreateTwitterProfile:800facb9-3a9a-4f66-aee4-5e1e989e40c3 (7.928284ms), Data >>","module":"events","timestamp":"2024-01-31T20:39:35.808Z"}
+{"level":"silly","message":{"errorMsg":"Duplicate entry 'Vidarr_Odinson' for key 'profile_name_UNIQUE'","status":"error"},"module":"events","timestamp":"2024-01-31T20:39:35.808Z"}
+{"level":"error","message":"Failed to get or create profile, Duplicate entry 'Vidarr_Odinson' for key 'profile_name_UNIQUE'","module":"twitter","source":1,"timestamp":"2024-01-31T20:39:35.808Z"}
+{"level":"info","message":"Executed query (\n        SELECT *,\n               UNIX_TIMESTAMP(updatedAt) AS lastActive\n        FROM npwd_match_profiles\n        WHERE identifier = ?\n        LIMIT 1\n\t\t [\"CMW31394\"]) in 9.191541ms'","module":"DBInterface","timestamp":"2024-01-31T20:39:35.810Z"}
+{"level":"silly","message":"Response Promise Event phone:getMyProfile:a3e746a9-83d0-456e-98a6-a601e203b7da (9.902683ms), Data >>","module":"events","timestamp":"2024-01-31T20:39:35.810Z"}
+{"level":"silly","message":{"data":{"bio":"","createdAt":"2024-01-31T20:20:51.000Z","id":14,"identifier":"CMW31394","image":"https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg","job":"","lastActive":1706732451,"lastActiveFormatted":"Wed, 31 Jan 2024 20:20:51 GMT","location":"","name":"Vidarr Odinson","tagList":[],"tags":"","updatedAt":"2024-01-31T20:20:51.000Z","viewed":false,"voiceMessage":null},"status":"ok"},"module":"events","timestamp":"2024-01-31T20:39:35.810Z"}
+{"level":"silly","message":"netPromise > npwd:fetchMessageGroups > RequestObj","module":"events","timestamp":"2024-01-31T20:39:35.850Z"}
+{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T20:39:35.850Z"}
+{"level":"silly","message":"netPromise > npwd-contact-getAll > RequestObj","module":"events","timestamp":"2024-01-31T20:39:35.850Z"}
+{"level":"silly","message":{"data":null,"source":1},"module":"events","timestamp":"2024-01-31T20:39:35.850Z"}
+{"level":"info","message":"Executed query (SELECT npwd_messages_conversations.id,\n                          npwd_messages_conversations.conversation_list         as conversationList,\n                          npwd_messages_participants.unread_count               as unreadCount,\n                          npwd_messages_conversations.is_group_chat             as isGroupChat,\n                          npwd_messages_conversations.label,\n                          UNIX_TIMESTAMP(npwd_messages_conversations.updatedAt) as updatedAt,\n                          npwd_messages_participants.participant\n                   FROM npwd_messages_conversations\n                            INNER JOIN npwd_messages_participants\n                                       on npwd_messages_conversations.id = npwd_messages_participants.conversation_id\n                   WHERE npwd_messages_participants.participant = ? [\"397531\"]) in 2.544127ms'","module":"DBInterface","timestamp":"2024-01-31T20:39:35.853Z"}
+{"level":"silly","message":"Response Promise Event npwd:fetchMessageGroups:a0022f1e-802e-41fd-b5f0-bdefa5433b6e (3.158128ms), Data >>","module":"events","timestamp":"2024-01-31T20:39:35.853Z"}
+{"level":"info","message":"Executed query (SELECT * FROM npwd_phone_contacts WHERE identifier = ? ORDER BY display ASC [\"CMW31394\"]) in 2.774689ms'","module":"DBInterface","timestamp":"2024-01-31T20:39:35.853Z"}
+{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T20:39:35.853Z"}
+{"level":"silly","message":"Response Promise Event npwd-contact-getAll:179b4f39-75cc-4572-bd7e-5e4f6ab61a00 (3.095159ms), Data >>","module":"events","timestamp":"2024-01-31T20:39:35.854Z"}
+{"level":"silly","message":{"data":[],"status":"ok"},"module":"events","timestamp":"2024-01-31T20:39:35.854Z"}

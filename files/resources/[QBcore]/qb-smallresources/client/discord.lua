@@ -2,16 +2,16 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 CreateThread(function()
     while true do
-    SetDiscordAppId(969373081183346720)
+    SetDiscordAppId(1202353532720918658)
 	SetDiscordRichPresenceAsset('mylogo')
-        SetDiscordRichPresenceAssetText('ELUSE DEV NEWQB V1')
+        SetDiscordRichPresenceAssetText('Astra RolePlay')
         SetDiscordRichPresenceAssetSmall('mylogo')
-        SetDiscordRichPresenceAssetSmallText('ELUSED DEV | XX.XX.2023')
+        SetDiscordRichPresenceAssetSmallText('Astra RolePlay | 02.02.2024')
 
         QBCore.Functions.TriggerCallback('smallresources:server:GetCurrentPlayers', function(result)
             SetRichPresence('Oyuncular: '..result..'/1024')
         end)
-        SetDiscordRichPresenceAction(0, "ELUSED DEV", "https://discord.gg/hBF2bPJb")
+        SetDiscordRichPresenceAction(0, "Astra RolePlay", "https://discord.gg/Z7d3zetDmz")
 	Wait(60000)
     end
 end)
