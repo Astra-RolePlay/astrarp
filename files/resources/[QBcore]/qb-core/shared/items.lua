@@ -996,4 +996,10 @@ QBShared.Items = {
 	['usb2']        = { ['name'] = 'usb2', ['label'] = 'Red USB', ['weight'] = 100, ['type'] = 'item', ['image'] = 'usbred.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'The Blank USB has downloaded a particular encryption marking it red.' },
 	['usb3']        = { ['name'] = 'usb3', ['label'] = 'Pink USB', ['weight'] = 100, ['type'] = 'item', ['image'] = 'usbpink.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'The Blank USB has downloaded a particular encryption marking it pink.' },
 	['usb4']        = { ['name'] = 'usb4', ['label'] = 'Green USB', ['weight'] = 100, ['type'] = 'item', ['image'] = 'usbgreen.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'The Blank USB has downloaded a particular encryption marking it green.' },
+
+
+
+	-- KARA PARA
+	 ["markedbills"]                  = { name = 'markedbills', label = 'Kara Para', weight = 0, type = 'item', image = 'markedbills.png', unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Seri numaraları takip altındadır, piyasaya girmeden önce aklanması gereklidir.' },
+   
 }

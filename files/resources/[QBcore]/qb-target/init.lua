@@ -146,7 +146,27 @@ Config.Peds = {
 			},
 			distance = 2.5
 		}
-	}
+    },
+    -- BlackMarket
+	{
+		model = 'a_m_y_soucent_02',
+		coords = vector4(-2167.66, 5195.59, 15.88, 19.77),
+		networked = true,
+		invincible = true,
+		blockevents = true,
+		freeze = true,
+		target = {
+			options = {
+				{
+                    type = 'client',
+                    event = 'qb-pawnshop:client:openMenu',
+					icon = 'fas fa-ring',
+                    label = 'Kaçak Mal Tüccarı',
+                },
+			},
+			distance = 2.5
+		}
+    },
 }
 
 -- Functions
