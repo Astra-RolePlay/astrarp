@@ -4,20 +4,20 @@ game 'gta5'
 author 'Glowie'
 description 'Crafting Benches'
 version '1.0'
-client_script 'client.lua'
+-- client_script 'client.lua'
 server_scripts {
-	'@oxmysql/lib/MySQL.lua',
-	'server.lua'
+	-- '@oxmysql/lib/MySQL.lua',
+	-- 'server.lua'
 }
 shared_scripts {
-    '@qb-core/shared/locale.lua',
-	'config.lua',
+    -- '@qb-core/shared/locale.lua',
+	-- 'config.lua',
 }
-ui_page 'html/index.html'
+-- ui_page 'html/index.html'
 files {
-	'html/index.html',
-	'html/script.js',
-	'html/style.css',
-	'html/images/*',
+	-- 'html/index.html',
+	-- 'html/script.js',
+	-- 'html/style.css',
+	-- 'html/images/*',
 }
 lua54 'yes'
