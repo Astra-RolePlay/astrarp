@@ -19,11 +19,12 @@ AddEventHandler("ed-atmrobbery:success",function()
 	local info = {
 		worth = math.random(cashA, cashB)
 	}
-	Player.Functions.AddItem('markedbills', bags, false, info)
-	--Player.Functions.AddItem("markedbills", tonumber(reward))
+	-- Player.Functions.AddItem('markedbills', bags, false, info)
+    --Player.Functions.AddItem("markedbills", tonumber(reward))
+	Player.Functions.AddItem("goldbar", 2)
     Player.Functions.RemoveItem("trojan_usb", 1)
 	--TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items["markedbills"], "add")
-    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['markedbills'], "add")
+    -- TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['markedbills'], "add")
 end)
 
 -- Cooldown

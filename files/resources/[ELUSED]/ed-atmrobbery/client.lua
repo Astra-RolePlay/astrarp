@@ -32,19 +32,29 @@ function RobAtm()
 	if LocalPlayer.state.isLoggedIn then
 		QBCore.Functions.TriggerCallback("ed-atmrobbery:Cooldown", function(cooldown)
 			if not cooldown then
-				if CurrentCops >= 0 then
+				if CurrentCops >= 5 then
                     if hasItem then
                         PoliceCall()
-                        exports['qb-ui']:Circle(function(success)  
+                        
+                        exports["glow_minigames"]:StartMinigame(function(success)
                             if success then
-                                ClearPedTasksImmediately(PlayerPedId())
-                                HackSuccess() 
+                                 ClearPedTasksImmediately(PlayerPedId())
+                                 HackSuccess() 
                             else
-                                Citizen.Wait(1000)
                                 ClearPedTasksImmediately(PlayerPedId())
                                 HackFailed()
                             end
-                        end, 2, 20)
+                        end, "path") 
+                        -- exports['qb-ui']:Circle(function(success)  
+                        --     if success then
+                        --         ClearPedTasksImmediately(PlayerPedId())
+                        --         HackSuccess() 
+                        --     else
+                        --         Citizen.Wait(1000)
+                        --         ClearPedTasksImmediately(PlayerPedId())
+                        --         HackFailed()
+                        --     end
+                        -- end, 2, 20)
                     else
                         QBCore.Functions.Notify("Bunun için Trojan USBye ihtiyacın var", "error")
                     end
