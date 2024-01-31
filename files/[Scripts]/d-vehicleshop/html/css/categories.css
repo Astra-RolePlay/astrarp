@@ -1,0 +1,104 @@
+
+.example {
+	background-color: var(--example);
+}
+
+.classic {
+	background-color: var(--classic);
+}
+
+.compacts {
+	background-color: var(--compacts);
+}
+
+.coupes {
+	background-color: var(--coupes);
+}
+
+.Coupés {
+	background-color: var(--coupes);
+}
+
+.motorcycles {
+	background-color: var(--motorcycle);
+}
+
+.motos {
+	background-color: var(--motorcycle);
+}
+
+.muscle {
+	background-color: var(--muscle);
+}
+
+.offroad {
+	background-color: var(--offroad);
+}
+
+.sedans {
+	background-color: var(--sedans);
+}
+
+.sport {
+	background-color: var(--sport);
+}
+
+.sports {
+	background-color: var(--sport);
+}
+
+.SUPERSPORT {
+	background-color: var(--supersport);
+}
+
+.sportsclassics {
+	background-color: var(--sportsclassics);
+}
+
+.super {
+	background-color: var(--supersport);
+}
+
+.suv {
+	background-color: var(--suv);
+}
+.suvs {
+	background-color: var(--suv);
+}
+
+.vans {
+	background-color: var(--vans);
+}
+
+.police {
+	background-color: var(--police);
+}
+
+.emergency {
+	background-color: var(--police);
+}
+
+
+.Industrial {
+	background-color: var(--Industrial);
+}
+
+.cycles {
+	background-color: var(--cycles);
+}
+
+.boats {
+	background-color: var(--boats);
+}
+
+.helicopters {
+	background-color: var(--helicopters);
+}
+
+.planes {
+	background-color: var(--planes);
+}
+
+.commercial {
+	background-color: var(--commercial);
+}

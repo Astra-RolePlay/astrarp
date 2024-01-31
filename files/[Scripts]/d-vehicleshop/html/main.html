@@ -1,0 +1,296 @@
+<html>
+
+<head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- CDN's -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- JQuery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!-- Color CDN -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/categories.css">
+    <link href="./css/main.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+    <script src="./js/setlocale.js" type="text/javascript"></script>
+    <script src="./js/locales.js" type="text/javascript"></script>
+    <script src="./js/locales/locale_de.js" type="text/javascript"></script>
+    <script src="./js/locales/locale_fr.js" type="text/javascript"></script>
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="main ns" id="vehicleshop">
+        <div class="headline locale" data-locale="vehicleshop" id="vehicle-headline">
+            GARAGE
+        </div>
+        <form id="searchbar">
+            <input type="text" class="searchbar plocale" data-locale="search" id="searchbar-input" placeholder="Search">
+        </form>
+
+        <div class="vehicle-container" id="vehicle-container">
+            <div class="element category-element" data-km="10.000" data-age="365 days" data-price="20000">
+                <div class="icon">
+                    <img class="SPORT" src="./images/icons/example.png" alt="">
+                </div>
+                <div class="vehicle category2"> SPORT </div>
+            </div>
+            <div class="element vehicle-element" data-price="20000">
+                <div class="icon">
+                    <img class="SPORT" src="./images/icons/example.png" alt="">
+                </div>
+                <div class="vehicle category2"> SPORT </div>
+            </div>
+            <!-- <div class="element vehicle-element selected" data-km="12.000" data-age="365 days" data-price="20.000$">
+                <div class="icon">
+                    <img class="SUPERSPORT" src="./images/icons/super.png" alt="">
+                </div>
+                <div class="vehicle category"> SUPERSPORT </div>
+                <div class="vehicle name"> Adder </div>
+                <div class="vehicle plate"> 12345678 </div>
+
+            </div>
+            <div class="element vehicle-element" data-km="120.000" data-age="10 days" data-price="5.000$">
+                <div class="icon">
+                    <img class="suv" src="./images/icons/suv.png" alt="">
+                </div>
+                <div class="vehicle category"> SUV </div>
+                <div class="vehicle name"> Rover </div>
+                <div class="vehicle plate"> 12345678 </div>
+            </div>
+            <div class="element vehicle-element" data-km="250.000" data-age="720 days" data-price="8.500$">
+                <div class="icon">
+                    <img class="motos" src="./images/icons/motos.png" alt="">
+                </div>
+                <div class="vehicle category"> MOTORCYCLE </div>
+                <div class="vehicle name"> Bati </div>
+                <div class="vehicle plate"> 12345678 </div>
+            </div> -->
+
+        </div>
+
+    </div>
+
+    <div class="main ns" id="customize">
+        <div class="headline" id="customize-back">
+            <i class="fa-solid fa-chevron-left back "></i>
+            <font class="locale" data-locale="BACK">BACK </font>
+        </div>
+
+        <div class="vehicle-container" id="customize-container">
+            <div class="element customize-element " data-id="primary-color">
+                <div class="icon">
+                    <img class="motorcycles" src="./images/icons/paint.png" alt="">
+                </div>
+                <div class="vehicle category2 locale" data-locale="primarycolor"> PRIMARY COLOR </div>
+            </div>
+            <div class="element customize-element " data-id="secondary-color">
+                <div class="icon">
+                    <img class="sport" src="./images/icons/paint.png" alt="">
+                </div>
+                <div class="vehicle category2 locale" data-locale="secondarycolor"> SECONDARY COLOR </div>
+            </div>
+            <div class="element customize-element " data-id="plate">
+                <div class="icon">
+                    <img class="sedans" src="./images/icons/plate.png" alt="">
+                </div>
+                <div class="vehicle category2 locale" data-locale="plate"> PLATE </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="customizecontainer">
+        <div class="cheadline locale" data-locale="selectancolor" id="customize-headline-color">
+            Please Select an color
+        </div>
+        <div class="cheadline locale" data-locale="enteranplate" id="customize-headline-plate">
+            Please enter the plate you want
+        </div>
+        <div id="customize-close" class="accent-color accent-colorh">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div id="customize-colors">
+            <!-- <div class="color-element red"> <i class="fa-solid fa-xmark"></i></div>
+            <div class="color-element dar"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div> -->
+        </div>
+        <input type="color" id="customize-color">
+
+        <div id="customize-name">
+            <!-- <div class="color-element red"> <i class="fa-solid fa-xmark"></i></div>
+            <div class="color-element dar"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div>
+            <div class="color-element"></div> -->
+            <input id="customize-name-input" minlength="1" maxlength="8">
+        </div>
+        <div class="pricearea">
+            <font class="locales" data-locale="ExtraPrice">Extra Price: </font>
+            <font id="customize-price"> 500€ </font>
+        </div>
+        <div class="buttonarea">
+            <button id="customize-accept" class="locale" data-locale="ACCEPT"> ACCEPT </button>
+        </div>
+    </div>
+
+    <div class="slidecontainer">
+        <input type="range" min="1" max="359" value="170" class="slider" id="slider" oninput="showVal(this.value)"
+            onchange="showVal(this.value)">
+    </div>
+
+    <div class="vehicleinformation">
+        <div class="header">
+            <div class="headline" id="vi-h-name">
+                Test
+            </div>
+            <div class="plate" id="vi-h-price">
+                123
+            </div>
+            <div class="iconbg">
+                <img src="" alt="" id="vi-h-image">
+            </div>
+        </div>
+        <div class="body" id="vi-b">
+            <div class="headline locale" data-locale="Speed">
+                Speed
+            </div>
+            <div class="toggle">
+                <div class="inner" id="vi-b-speed">
+
+                </div>
+            </div>
+            <div class="headline locale" data-locale="Acceleration">
+                Acceleration
+            </div>
+            <div class="toggle">
+                <div class="inner" id="vi-b-acceleration">
+
+                </div>
+            </div>
+            <div class="headline locale" data-locale="Handling">
+                Handling
+            </div>
+            <div class="toggle">
+                <div class="inner" id="vi-b-handling">
+
+                </div>
+            </div>
+            <div class="headline locale" data-locale="Braking">
+                Braking
+            </div>
+            <div class="toggle">
+                <div class="inner" id="vi-b-braking">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <button id="vi-button" class="unpark locale" data-locale="buy">
+                BUY
+            </button>
+            <div>
+                <button id="vi-test" class="customize locale" data-locale="TEST DRIVE">
+                    TEST DRIVE
+                </button>
+                <button id="customize-button" class="customize locale" data-locale="CUSTOMIZE">
+                    CUSTOMIZE
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="park ns">
+        <div class="headline locale" data-locale="selectthecar">
+            Carselling
+        </div>
+        <div id="park-elements">
+            <div class="element parkelement">
+                <div class="name2">
+                    Adder
+                </div>
+                <div class="plate2">
+                    12345678
+                </div>
+            </div>
+        </div>
+        <!-- <div class="loadmoreelement locale" data-locale="couldntfoundvehicle">
+            Couldnt found vehicle
+        </div> -->
+    </div>
+
+    <div class="unparkcon ns" id="conformation">
+        <div class="title" id="unpark-title">
+            <font class="locale" data-locale="sellvehicleconformation"> Are you sure you want to buy this vehicle for
+                <font id="unpark-price"> 30.000 </font>?
+            </font>
+        </div>
+        <div>
+            <button class="green locale unparkconbutton" data-locale="accept" id="unpark-accept"> Accept </button>
+            <button class="red locale unparkconbutton" data-locale="decline" id="unpark-decline"> Back </button>
+        </div>
+    </div>
+
+    <div class="unparkcon ns" id="payment">
+        <div class="title" id="unpark-title">
+            <font class="locale" data-locale="howdoyouwanttopay"> How do you want to pay?
+            </font>
+        </div>
+        <div>
+            <button class="green locale payment-accept unparkconbutton" data-locale="Cash" data-payment="cash"> Cash
+            </button>
+            <button class="green locale payment-accept unparkconbutton" data-locale="Card" data-payment="card"> Card
+            </button>
+        </div>
+
+        <button class="locale unparkconbutton" data-locale="decline" id="payment-back"> Back </button>
+    </div>
+
+    <div id="testdrive">
+        <div class="locale" data-locale="remainingtime" id="testdrive-remaining"> Remaining Time </div>
+        <div id="testdrive-stop" class="locale" data-locale="Presstostop">Press H to stop</div>
+    </div>
+</body>
+
+</html>

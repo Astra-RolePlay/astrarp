@@ -1,0 +1,235 @@
+:root {
+  --bg-color: rgba(244, 244, 244, 0.8);
+  --element-bg-color: #ffffff;
+
+  --element-bg-color2: #ffffff;
+  --element-bg-colorh: #fafafa;
+  --elementcoloropacity: rgba(255, 255, 255, 0.8);
+  --darkelement-bg-color: rgb(33, 33, 33);
+  --darkelement-bg-colorh: rgb(50, 50, 50);
+  --font-color: #000000;
+
+  --notification-bg: rgba(255, 255, 255, 0.8);
+
+  --accent-color: #4a4cf6;
+  --accent-colorh: #4042d8;
+  --me-color: #badaff;
+  --me-colorh: #a2bfe0;
+  --new-color: #fffadd;
+  --new-colorh: #f6eebd;
+
+  --quote-color: #1a1a1a;
+  --yellow-color: #efda3e;
+  --yellow-colorh: #dbc839;
+  --red-color: #bb3838;
+  --red-colorh: #a43030;
+  --beige-color: #bfae79;
+  --beige-colorh: #d1bd82;
+  --green-color: #3ca84e;
+  --green-colorh: #45ba59;
+
+  --box-shadow: rgba(99, 99, 99, 0.2);
+
+  --info: rgb(85, 113, 215);
+  --error: rgb(218, 65, 65);
+  --warning: rgb(255, 151, 40);
+  --success: rgb(98, 160, 103);
+  --radio: rgb(20, 58, 130);
+  --broker: rgb(29, 29, 29);
+  --groupchat: #e4da7c;
+
+  --policebgcolor: #ffcdcd;
+  --ambulancebgcolor: #e9f3ff;
+
+  /* vehicle */
+  --grey-color: rgb(195, 195, 195);
+  --grey-colorh: rgb(184, 184, 184);
+
+  --example: rgb(115, 91, 209);
+  --classic: rgb(255, 203, 131);
+  --compacts: rgb(255, 131, 131);
+  --coupes: rgb(221, 147, 124);
+  --motorcycle: rgb(131, 199, 255);
+  --muscle: rgb(218, 255, 131);
+  --offroad: rgb(157, 132, 103);
+  --sedans: rgb(148, 198, 150);
+  --sport: rgb(115, 91, 209);
+  --sportsclassics: rgb(129, 129, 129);
+  --supersport: rgb(156, 131, 255);
+  --suv: rgb(255, 183, 131);
+  --vans: rgb(225, 140, 170);
+  --police: rgb(15, 68, 111);
+
+  --Industrial: rgb(19, 41, 59);
+  --cycles: rgb(104, 157, 163);
+  --boats: rgb(33, 137, 223);
+  --helicopters: rgb(133, 208, 216);
+  --planes: rgb(107, 140, 168);
+  --commercial: rgb(58, 138, 109);
+
+  --unlock: #97dbaf;
+  --lock: #db6b67;
+  --waypoint: #81b0db;
+  --window: #dbb16b;
+  --door: #8cdbd6;
+}
+
+html[data-theme='white'] {
+  --bg-color: rgba(244, 244, 244, 0.8);
+  --element-bg-color: #ffffff;
+
+  --element-bg-color2: #ffffff;
+  --element-bg-colorh: #fafafa;
+  --elementcoloropacity: rgba(255, 255, 255, 0.8);
+  --darkelement-bg-color: rgb(33, 33, 33);
+  --darkelement-bg-colorh: rgb(50, 50, 50);
+  --font-color: #000000;
+
+  --notification-bg: rgba(255, 255, 255, 0.8);
+
+  --accent-color: #4a4cf6;
+  --accent-colorh: #4042d8;
+  --me-color: #badaff;
+  --me-colorh: #a2bfe0;
+  --new-color: #fffadd;
+  --new-colorh: #f6eebd;
+
+  --quote-color: #1a1a1a;
+  --yellow-color: #efda3e;
+  --yellow-colorh: #dbc839;
+  --red-color: #bb3838;
+  --red-colorh: #a43030;
+  --beige-color: #bfae79;
+  --beige-colorh: #d1bd82;
+  --green-color: #3ca84e;
+  --green-colorh: #45ba59;
+
+  --box-shadow: rgba(99, 99, 99, 0.2);
+
+  --info: rgb(85, 113, 215);
+  --error: rgb(218, 65, 65);
+  --warning: rgb(255, 151, 40);
+  --success: rgb(98, 160, 103);
+  --radio: rgb(20, 58, 130);
+  --broker: rgb(29, 29, 29);
+  --groupchat: #e4da7c;
+
+  --policebgcolor: #ffcdcd;
+  --ambulancebgcolor: #e9f3ff;
+  --darkchat-color: #2c4e2b;
+
+  /* vehicle */
+  --grey-color: rgb(195, 195, 195);
+  --grey-colorh: rgb(184, 184, 184);
+
+  --example: rgb(115, 91, 209);
+  --classic: rgb(255, 203, 131);
+  --compacts: rgb(255, 131, 131);
+  --coupes: rgb(221, 147, 124);
+  --motorcycle: rgb(131, 199, 255);
+  --muscle: rgb(218, 255, 131);
+  --offroad: rgb(157, 132, 103);
+  --sedans: rgb(148, 198, 150);
+  --sport: rgb(115, 91, 209);
+  --sportsclassics: rgb(129, 129, 129);
+  --supersport: rgb(156, 131, 255);
+  --suv: rgb(255, 183, 131);
+  --vans: rgb(225, 140, 170);
+  --police: rgb(15, 68, 111);
+  --Industrial: rgb(19, 41, 59);
+  --cycles: rgb(104, 157, 163);
+  --boats: rgb(33, 137, 223);
+  --helicopters: rgb(133, 208, 216);
+  --planes: rgb(107, 140, 168);
+  --commercial: rgb(58, 138, 109);
+
+  --unlock: #97dbaf;
+  --lock: #db6b67;
+  --waypoint: #81b0db;
+  --window: #dbb16b;
+  --door: #8cdbd6;
+}
+
+html[data-theme='dark'] {
+  --bg-color: rgba(0, 0, 0, 0.8);
+  --element-bg-color: #191919;
+  --element-bg-color2: #191919;
+  --element-bg-colorh: #242424;
+  --elementcoloropacity: rgba(25, 25, 25, 0.8);
+  --darkelement-bg-color: rgb(241, 241, 241);
+  --darkelement-bg-colorh: rgb(228, 228, 228);
+  --font-color: #f2f2f2;
+
+  --notification-bg: rgba(0, 0, 0, 0.8);
+
+  --accent-color: #9799f5;
+  --accent-colorh: #9596e7;
+  --me-color: #3f4576;
+  --me-colorh: #445b79;
+  --new-color: #dbcb6e;
+  --new-colorh: #c0b160;
+
+  --quote-color: #1a1a1a;
+  --yellow-color: #ede07b;
+  --yellow-colorh: #d9cd77;
+  --red-color: #d75959;
+  --red-colorh: #c15050;
+  --beige-color: #bfae79;
+  --beige-colorh: #d1bd82;
+  --green-color: #6add7d;
+  --green-colorh: #5cbd6c;
+
+  --box-shadow: rgba(0, 0, 0, 0.2);
+
+  --info: rgb(174, 190, 246);
+  --error: rgb(245, 120, 120);
+  --warning: rgb(250, 178, 100);
+  --success: rgb(131, 199, 163);
+  --radio: rgb(114, 160, 245);
+  --broker: rgb(236, 236, 236);
+  --groupchat: #fff597;
+
+  --policebgcolor: #060709;
+  --ambulancebgcolor: #e9f3ff;
+  --darkchat-color: #cae9ca;
+
+  /* vehicle */
+  --grey-color: rgb(233, 233, 233);
+  --grey-colorh: rgb(231, 231, 231);
+
+  --example: rgb(171, 160, 212);
+  --classic: rgb(255, 203, 131);
+  --compacts: rgb(255, 131, 131);
+  --coupes: rgb(221, 147, 124);
+  --motorcycle: rgb(148, 183, 211);
+  --muscle: rgb(186, 218, 113);
+  --offroad: rgb(143, 128, 111);
+  --sedans: rgb(177, 225, 179);
+  --sport: rgb(171, 160, 212);
+  --sportsclassics: rgb(129, 129, 129);
+  --supersport: rgb(129, 108, 212);
+  --suv: rgb(230, 183, 149);
+  --vans: rgb(225, 140, 170);
+  --police: rgb(15, 68, 111);
+  --Industrial: rgb(36, 57, 75);
+  --cycles: rgb(104, 157, 163);
+  --boats: rgb(91, 154, 206);
+  --helicopters: rgb(134, 189, 195);
+  --planes: rgb(128, 159, 187);
+  --commercial: rgb(96, 162, 138);
+
+  --unlock: #80b491;
+  --lock: #bb645e;
+  --waypoint: #759abc;
+  --window: #b39b73;
+  --door: #77b5af;
+}
+
+.red {
+  background-color: rgb(255, 0, 0);
+}
+
+.black {
+  background-color: black!important;
+  transition: 0.5s;
+}
