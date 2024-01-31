@@ -8,6 +8,5 @@ files/resources/.dcdignore
 files/resources/.vscode/
 files/resources/[Assets]/[malikane-ev]/malikane.zip
 files/resources/guntest/
-files/resources/[pefcl]/pefcl/sv_pefcl.log
-files/resources/[phone]/npwd/sv_npwd.log
-files/resources/[pefcl]/pefcl/sv_pefcl.log
+files/resources/[pefcl]/pefcl/*.log
+files/resources/[phone]/npwd/*.log
