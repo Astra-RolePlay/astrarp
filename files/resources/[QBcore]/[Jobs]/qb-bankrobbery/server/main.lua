@@ -245,53 +245,10 @@ RegisterNetEvent('qb-bankrobbery:server:recieveItem', function(type, bankId, loc
             return error(Lang:t("error.event_trigger_wrong",
                 { event = "qb-bankrobbery:server:receiveItem", extraInfo = " (pacific) ", source = source }))
         end
-        local itemType = math.random(#Config.RewardTypes)
-        local WeaponChance = math.random(1, 100)
-        local odd1 = math.random(1, 100)
-        local odd2 = math.random(1, 100)
-        local tierChance = math.random(1, 100)
-        local tier
-        if tierChance < 10 then tier = 1 elseif tierChance >= 25 and tierChance < 50 then tier = 2 elseif tierChance >= 50 and tierChance < 95 then tier = 3 else tier = 4 end
-        if WeaponChance ~= odd1 or WeaponChance ~= odd2 then
-            if tier ~= 4 then
-                if Config.RewardTypes[itemType].type == "item" then
-                    local item = Config.LockerRewardsPacific["tier" .. tier]
-                    [math.random(#Config.LockerRewardsPacific["tier" .. tier])]
-                    local maxAmount
-                    if tier == 3 then maxAmount = 7 elseif tier == 2 then maxAmount = 18 else maxAmount = 25 end
-                    local itemAmount = math.random(maxAmount)
-                    ply.Functions.AddItem(item.item, itemAmount)
-                    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[item.item], "add")
-                elseif Config.RewardTypes[itemType].type == "money" then
-                    local info = {
-                        worth = math.random(19000, 21000)
-                    }
-                    ply.Functions.AddItem('markedbills', math.random(1, 4), false, info)
-                    TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['markedbills'], "add")
-                end
-            else
-                local info = {
-                    worth = math.random(19000, 21000)
-                }
-                ply.Functions.AddItem('markedbills', math.random(1, 4), false, info)
-                TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['markedbills'], "add")
-                info = {
-                    crypto = math.random(1, 3)
-                }
-                ply.Functions.AddItem("cryptostick", 1, false, info)
-                TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['cryptostick'], "add")
-            end
-        else
-            local chance = math.random(1, 2)
-            local odd = math.random(1, 2)
-            if chance == odd then
-                ply.Functions.AddItem('weapon_microsmg', 1)
-                TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['weapon_microsmg'], "add")
-            else
-                ply.Functions.AddItem('weapon_minismg', 1)
-                TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['weapon_minismg'], "add")
-            end
-        end
+
+        local item = Config.LockerRewardsPacific["main_reward"]
+        ply.Functions.AddItem(item.item, item.amount)
+        TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items[item.item], "add")
     end
 end)
 

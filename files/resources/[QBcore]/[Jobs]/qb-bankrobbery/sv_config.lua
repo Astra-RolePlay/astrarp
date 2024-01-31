@@ -72,15 +72,10 @@ Config.LockerRewardsPaleto = {
 }
 
 Config.LockerRewardsPacific = {
-    ["tier1"] = {
-        [1] = {item = "goldbar", minAmount = 4, maxAmount = 8},
-    },
-    ["tier2"] = {
-        [1] = {item = "goldbar", minAmount = 4, maxAmount = 8},
-    },
-    ["tier3"] = {
-        [1] = {item = "goldbar", minAmount = 4, maxAmount = 8},
-    },
+    ["main_reward"] = {
+        item = "goldbar",
+        amount = 2,
+    }
 }
 
 Config.CameraHits = {
