@@ -34,7 +34,11 @@ RegisterNetEvent('um-hackerphone:server:targetinformation', function()
             TargetPlayer = QBCore.Functions.GetPlayer(v)
          end
      end
-  if found then 
+    if found then
+      for k, v in pairs(UMHackerPhone.BlacklistedCitizens) do
+         if v.citizenid == TargetPlayer.PlayerData.citizenid then
+            return end
+      end
          local targetinfo = {
             ['targetname'] = TargetPlayer.PlayerData.charinfo.firstname,
             ['targetlastname'] = TargetPlayer.PlayerData.charinfo.lastname,

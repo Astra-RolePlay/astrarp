@@ -2,7 +2,9 @@ UMHackerPhone = [];
 
 UMHackerPhone.CloseKey = "Escape"
 
-UMHackerPhone.BlackoutSeconds = 10
+UMHackerPhone.BlackoutSeconds = 900
+
+
 
 UMHackerPhone.Cams = {
     [1]  : "Pacific Bank CAM#1",
@@ -42,25 +44,24 @@ UMHackerPhone.Cams = {
 },
 
 UMHackerPhone.Lang = {
-    lastname: "Lastname:",
-    firstname: "Firstname:",
-    dob: "Birthday:",
-    bankmoney: "Bank Money:",
-    number: "P.Number:",
-    blackout: "Blackout",
-    userinfo: "User Information",
-    vehicle: "Vehicle",
-    vehicletrack: "Vehicle Tracking",
-    blackout: "Blackout",
-    plate: "Plate: ",
+    lastname: "Soyad:",
+    firstname: "Ad:",
+    dob: "Doğum Tarihi:",
+    bankmoney: "Banka Hesabı:",
+    number: "Telefon:",
+    blackout: "Elektirik Kes",
+    userinfo: "MERNIS Bilgisi",
+    vehicle: "Araç",
+    vehicletrack: "Araç Takip",
+    plate: "Plaka: ",
     model: "Model: ",
-    engine: "Engine: ",
-    securitycams: "Security Cams",
+    engine: "Motor: ",
+    securitycams: "Güvenlik Kamerası",
     botnet: "Terminal",
-    refresh: "Refresh",
-    delete: "Delete",
-    disabletracker: "Disable Tracker",
-    explosion: "Explosion",
-    hackpower: "Hack power station",
-    fixpower: "Fix power station Seconds: ",
+    refresh: "Yenile",
+    delete: "Sil",
+    disabletracker: "GPS İptal",
+    explosion: "PATLAT!",
+    hackpower: "İstasyonu Hackle",
+    fixpower: "Elektiriğin Aktif Olmasına: ",
 }

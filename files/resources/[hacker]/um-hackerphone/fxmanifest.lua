@@ -17,5 +17,5 @@ files {
 	
 client_scripts {'client/anim.lua','client/client.lua'}
 server_script 'server/server.lua'
-
+shared_scripts { 'blacklist.lua' }
 lua54 'yes'

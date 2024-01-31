@@ -2079,3 +2079,9 @@
 {"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-01-31T22:40:33.941Z"}
 {"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-01-31T22:40:33.946Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-01-31T22:40:34.416Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-01-31T22:51:39.859Z"}
+{"level":"debug","message":{"identifier":"BMS02698","name":"VADİM  CANTAS","source":2},"module":"user","timestamp":"2024-01-31T22:51:39.859Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-01-31T22:51:39.860Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-01-31T22:51:39.866Z"}
+{"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-01-31T22:51:39.870Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-01-31T22:51:40.254Z"}
