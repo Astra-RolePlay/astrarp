@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  font-size: 0.9vw;
+  transition: 0.5s;
+}
+
+.crosshair {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  right: 80%;
+  transform: translate(50%, -50%);
+  background-color: rgba(61, 61, 61, 0.768);
+  width: 30vw;
+  height: 35vw;
+  border-radius: 0.5vw;
+}
+
+.head {
+  position: absolute;
+  top: 0;
+  border-bottom: 0.2vw solid #0d4b91c1;
+  width: 100%;
+  height: 27%;
+}
+
+.head img {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 10vw;
+}
+
+.cuerpo {
+  position: absolute;
+  width: 100%;
+  height: 72.5%;
+  top: 27.5%;
+}
+
+.cuerpocontainer {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 90%;
+  height: 50%;
+  overflow-y: auto;
+}
+
+.itemscontainer {
+  box-shadow: .2vw .2vw .8vw .2vw rgba(0,0,0,0.35);
+  width: 10vw;
+  height: 11vw;
+  margin-left: .5vw;
+  margin-top: .5vw;
+  display: inline-table;
+}
+
+.itemscontainer img {
+    width: 30%;
+}
+
+.itemscontainer h1 {
+    color: white;
+    font-size: .9vw;
+    text-align: center;
+    font-family: 'Poppins';
+}
+
+
+.itemscontainer a {
+    padding: .4vw;
+    background: #0d4b91c1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: .2vw;
+    font-weight: 600;
+    border: 1px solid #0d4b91c1;
+    font-family: 'Poppins';
+    font-size: .7vw;
+}
+
+.itemscontainer a:hover {
+    padding: .5vw;
+    background: #0d4b91c1;
+    color: #fff;
+    text-decoration: none;
+    border-radius: .2vw;
+    border: 1px solid #ffffff;
+}
+  
+
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-track {
+  background: #262626;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb:focus {
+  background: #ffffff;
+}
+
+
+.alignItems {
+    margin-top: 3vw;
+    margin-left: 1.6vw;
+}
+
+.alignImg {
+    margin-left: 4vw;
+}
+
+.yarrak {
+  color: white;
+  font-size: 2vw;
+  position: absolute;
+  right: 1vw;
+  top: 1vw;
+}
+
+.yarrak:hover {
+  cursor: pointer;
+}
+
+.salir {
+    color: white;
+    font-size: 2vw;
+    position: absolute;
+    right: 1vw;
+    top: 7vw;
+}
+
+.salir:hover {
+    cursor: pointer;
+}
+
+.matar {
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    position: absolute;
+    right: 1vw;
+    top: 4vw;
+}
+
+.matar:hover {
+    cursor: pointer;
+}

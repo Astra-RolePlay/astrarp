@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roda_Lavado</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.staticaly.com/gh/hung1001/font-awesome-pro/4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container" style="display: none;">
+      <div class="head">
+        <button onclick="myFunction()">Cross sil</button>
+        <button onclick="myFunction2()">Özel Cross ayarla</button>
+        <img src="https://cdn.discordapp.com/attachments/1156617806842961920/1157619368440643594/PSX_20230930_130008photoAid-removed-background.png?ex=651d390c&is=651be78c&hm=d830f639c86ba08c07743655df1da441364772d916e6286c900214c5d3f44459&" alt="">
+      </div>
+      <div class="cuerpo">
+          <div class="cuerpocontainer">
+                <!-- <div class="itemscontainer">
+                  <h1>Crosshair 1</h1>
+                  <div class="alignImg">
+                  <img src="https://cdn.discordapp.com/attachments/933891151885381682/955023858723848202/Orange.png" alt="">
+                  </div>
+                  <div class="alignItems">
+                    <a href="#">Select Crosshair</a>
+                  </div>
+              </div> -->
+          </div> 
+      </div>
+    </div>
+    <div class="crosshair">
+        <img src="" alt="">
+    </div>
+    <script>
+      function myFunction() {
+        $('.crosshair img').attr('src', '')
+        localStorage.setItem('elused-crossImg', '')
+        CloseAll()
+      }
+    </script>
+     <script>
+       function myFunction2() {
+        $.post('https://elused-cross/sasa', JSON.stringify({}));
+        CloseAll()
+       }
+      </script>
+</body>
+</html>

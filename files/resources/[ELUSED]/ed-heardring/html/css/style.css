@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        transform: translateY(2000px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.question-menu{
+    display: none;
+    position: absolute;
+    width: 34%;
+    height: 27%;
+    border: 0.1vw solid #d3d3d3;
+    top: 37%;
+    left: 32.8%;
+    border-radius: 0.5vw;
+    background: linear-gradient(#e66465, #9198e5);
+    animation: fadeInUpBig;
+    animation-duration: 0.8s;
+}
+
+#question-header {
+    position: relative;
+    top: 1vw;
+    font-size: 1.5vw;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+#accept {
+    position: absolute;
+    float: left;
+    padding: 2.0vw 2.38vw 2.0vw 2.38vw;
+    text-align: center;
+    left: 3vw;
+    top: 7.5vw;
+    border-radius: 0.2vw;
+    font-size: 2.8vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(115, 146, 14);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#accept:hover {
+    background-color: rgb(90, 114, 10);
+}
+
+#denice {
+    position: absolute;
+    float: left;
+    padding: 2.0vw 2.8vw 2.0vw 2.8vw;
+    text-align: center;
+    left: 19.8vw;
+    top: 7.5vw;
+    border-radius: 0.2vw;
+    font-size: 2.8vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(172, 1, 63);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#denice:hover {
+    background-color: rgb(124, 0, 46);
+}

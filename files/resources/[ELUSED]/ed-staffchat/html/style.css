@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Oswald';
+}
+
+* {
+  font-family: 'Oswald';
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #40414f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #40414f;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+
+.chatbox {
+  position: fixed;
+  width: 100%;
+  right: 1vw;
+  bottom: 1vw;
+  max-width: 34vw;
+  border-radius: 0.8vw;
+  height: 27.8vw;
+  background-color: #18191C;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 200ms ease-in-out;
+  animation: entrance 150ms ease-in-out;
+}
+
+.chatlog {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.onlinestaff {
+  position: absolute;
+  font-size: 11px;
+  width: fit-content;
+  margin-top: -0.7%;
+  color: #ffffff00;
+}
+
+.exit {
+  position: absolute;
+  margin-left: 90%;
+  top: 0.8%;
+  right: 2%;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+}
+
+
+.exit:hover {
+  cursor: pointer;
+}
+
+.message {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  flex-direction: column;
+  animation: entrance 0.2s forwards;
+  width: fit-content;
+}
+
+.received {
+  width: fit-content;
+  background-color: #182B3D !important;
+  color: white;
+  flex-direction: column;
+}
+
+.sent {
+  width: auto;
+  flex-direction: column;
+  background-color: #2196F3;
+  align-self: flex-end;
+  color: white;
+}
+
+.chatbox.hidden {
+  transform: scale(0);
+}
+
+.header {
+  background-color: #182B3D;
+  text-align: left;
+  color: white;
+  font-size: 1.2vw;
+  padding: 0.2vw 1vw;
+  border-radius: 1px;
+  height: 7%;
+}
+
+.message {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 80%;
+}
+
+.message-input {
+  font-size: 0.7vw;
+  border-radius: 5px;
+  background-color: #182B3D;
+  border: none;
+  outline: none;
+  width: 26.5vw;
+  height: 30px;
+  transform: translate(5px, -3px);
+  color: white;
+  padding: 10px;
+  margin-left: 0.9vw;
+  font-weight: bold;
+  transform: scale(101%);
+}
+
+.send-btn {
+  padding: 0.7vw;
+  background-color: #182B3D;
+  color: #fff;
+  width: 12%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1%;
+  margin-bottom: 0%;
+  font-size: 0.77vw;
+  transition: all 200ms ease-in-out;
+}
+
+.send-btn:hover {
+  background-color: #182B3D;
+}
+
+input {
+  transition: all 200ms ease-in-out;
+}
+
+input:focus {
+  transform: scale(102%);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.chatlog .message {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  max-width: 75%;
+  width: fit-content;
+  flex-direction: column;
+}
+
+.chatlog .message.received {
+  background-color: #e0e0e0;
+  float: left;
+}
+
+.chatlog .message.sent {
+  background-color: #284866;
+  float: right;
+  color: #fff;
+}
+
+.chatlog .message.server {
+  background-color: red;
+  float: left;
+  color: white;
+}
+
+img {
+  border-radius: 0.5vh;
+  max-width: 100%;
+  max-height: 100%;
+  height: 50%;
+  width: 50%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  margin-left: 2%;
+}
+
+/* .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  overflow: auto;
+} */
+
+img:hover {
+  transform: scale(101%);
+}
+
+img.activeimg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  /* transition: all 0.3s ease-in-out; */
+  animation: entrance2 250ms forwards;
+  z-index: 9999;
+}
+
+@keyframes entrance2 {
+  from {
+    scale: 0;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+}
+
+button::before {}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: white;
+}
+
+
+@keyframes entrance {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+
+.notificationdiv {
+  background-color: #40414f;
+  width: fit-content;
+  color: white;
+  border-radius: 0.4vh;
+  align-content: center;
+  justify-content: center;
+  margin-left: 50%;
+  padding: 5px 5px;
+  margin-top: 1%;
+  animation: entrance 200ms forwards;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  white-space: pre-wrap;
+}

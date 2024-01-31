@@ -1,0 +1,14 @@
+{
+    "no_required_item": "sende yok %s",
+    "cant_carry": "Daha fazlasını taşıyamazsın %s",
+    "uprooting": "Kökünden sökme %s",
+    "washing": "Yıkama %s",
+    "item_broke": "%s Parasız",
+    "wash_crops": "Bitkileri Yıkama",
+    "no_crops_to_wash": "Yıkanması gereken herhangi bir ürününüz yok",
+    "press_wash_crops": "%s Bitkileri Yıkama",
+    "open_shop": "Açık dükkan",
+    "open_sell": "Satışı Aç",
+    "sell_crops": "Mahsul Sat",
+    "farmer_shop": "Tarım Mağazası"
+}

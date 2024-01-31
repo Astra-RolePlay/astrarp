@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel='stylesheet' href='css/fontawesome.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+            <p class="header-title">Truth or Dare</p>
+            <p class="header-title-2">Sorular:</p>
+            <div class="close">X</div>
+        </div>
+
+        <div class="bar-wrapper">
+            <div class="bar-main">
+                <div class="bar-header">⭐ Klasik</div>
+                <div class="bar-information">Isınmak için sıradan şeyler.</div>
+                <div class="bar-play" id="klasik">Seç</div>
+            </div>
+            <div class="bar-main">
+                <div class="bar-header">🔥 Çılgın Parti</div>
+                <div class="bar-information">Utandırıcı sorular. 🔞</div>
+                <div class="bar-play" id="cilginparti">Seç</div>
+            </div>
+            <div class="bar-main">
+                <div class="bar-header">💋 Ekstrem</div>
+                <div class="bar-information">Sansürsüz sorular. 🔞</div>
+                <div class="bar-play" id="ekstrem">Seç</div>
+            </div>
+            <div class="bar-main">
+                <div class="bar-header">💏 Yaramaz Çiftler</div>
+                <div class="bar-information">Çiftlere özel yaramazlık. 🔞</div>
+                <div class="bar-play" id="cift">Seç</div>
+            </div>
+            <div class="bar-main">
+                <div class="bar-header">🎉 Parti Öncesi</div>
+                <div class="bar-information">Parti başlasın.</div>
+                <div class="bar-play" id="parti">Seç</div>
+            </div>
+            <div class="bar-main">
+                <div class="bar-header">🤪 Çılgın</div>
+                <div class="bar-information">Çıldırdıysanız tam size göre.</div>
+                <div class="bar-play" id="cilgin">Seç</div>
+            </div>
+            <div class="bar-main">
+                <div class="bar-header">🔃 Karışık</div>
+                <div class="bar-information">Seçmekte zorlanana.</div>
+                <div class="bar-play" id="karisik">Seç</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-menu">
+        <p class="header-title">Birini Seç</p>
+        <div class="button" id="dogruluk">Doğruluk</div>
+        <div class="button" id="cesaret">Cesaretlik</div>
+    </div>
+
+    <div class="question-screen">
+        <p class="question-header">SORU</p>
+        <div class="question"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

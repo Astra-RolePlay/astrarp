@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        transform: translateY(2000px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.main-wrapper {
+    display: none;
+    position: absolute;
+    width: 25%;
+    border: 0.2vw solid #d3d3d3;
+    height: 84%;
+    top: 8%;
+    right: 2%;
+    border-radius: 0.5vw;
+    background: linear-gradient(#e66465, #9198e5);
+    animation: fadeInUpBig;
+    animation-duration: 0.8s;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    border-radius: 1.5vw;
+}
+
+.header-title {
+    position: relative;
+    top: -1.5vw;
+    font-size: 2.4vw;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header-title-2 {
+    position: relative;
+    top: -3.8vw;
+    font-size: 1vw;
+    left: 1.4vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.close {
+    position: absolute;
+    top: 0.8vw;
+    right: 0.8vw;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1vw;
+    line-height: 2.1vw;
+    width: 2.0vw;
+    height: 2.1vw;
+    background: #c92929;
+    border-radius: 0.2vw;
+    transition: 0.2s;
+}
+
+.close:hover {
+    background: #6d1f1f;
+}
+
+.bar-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 45vw;
+    top: 5vw;
+}
+
+.bar-main {
+    background: linear-gradient(#ffffff, #e5a191);
+    border-radius: 0.2vw;
+    float: left;
+    width: 90%;
+    padding-top: 0.5vw;
+    height: 10.5%;
+    margin-left: 5.2%;
+    margin-top: 2.5%;
+}
+
+.bar-header {
+    text-align: left;
+    font-size: 2.5vh;
+    background-color: transparent;
+    overflow: hidden;
+    height: 40%;
+    margin-left: 3%;
+    font-weight: 700;
+    margin-top: 2%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.bar-information {
+    text-align: left;
+    font-size: 1.8vh;
+    background-color: transparent;
+    overflow: hidden;
+    font-weight: 600;
+    opacity: .4;
+    height: 40%;
+    margin-top: 1%;
+    margin-left: 4.5%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.bar-play {
+    float: right;
+    text-align: center;
+    font-size: 1.7vh;
+    color: white;
+    background-color: #c92929;
+    width: 14%;
+    padding: 0.8vw;
+    border-radius: 0.2vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    margin-top: -16.5%;
+    transition: 0.2s;
+    margin-right: 4%;
+    cursor: pointer;
+}
+
+.bar-play:hover {
+    background-color: #6d1f1f;
+}
+
+#dogruluk {
+    position: absolute;
+    float: left;
+    padding: 6.5vw 2.38vw 6.5vw 2.38vw;
+    text-align: center;
+    left: 1vw;
+    top: 5.3vw;
+    border-radius: 0.2vw;
+    font-size: 3.8vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(115, 146, 14);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#dogruluk:hover {
+    background-color: rgb(90, 114, 10);
+
+}
+
+#cesaret {
+    position: absolute;
+    float: left;
+    padding: 6.5vw 2vw 6.5vw 2vw;
+    text-align: center;
+    left: 19.5vw;
+    top: 5.3vw;
+    border-radius: 0.2vw;
+    font-size: 3.8vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: white;
+    background-color: rgb(172, 1, 63);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#cesaret:hover {
+    background-color: rgb(124, 0, 46);
+
+}
+
+.question-menu{
+    display: none;
+    position: absolute;
+    width: 36%;
+    height: 40%;
+    border: 0.2vw solid #d3d3d3;
+    top: 29%;
+    left: 31.85%;
+    border-radius: 0.5vw;
+    background: linear-gradient(#e66465, #9198e5);
+    animation: fadeInUpBig;
+    animation-duration: 0.8s;
+}
+
+.question-screen {
+    display: none;
+    position: absolute;
+    background: linear-gradient(#e66465, #9198e5);
+    width: 14vw;
+    height: 20vw;
+    padding: 1.5vw;
+    top: 55%;
+    right: 2%;
+    border-radius: 0.5vw;
+    border: 0.3vw solid #6c6c6c;
+    animation: fadeInUpBig;
+    animation-duration: 0.8s;
+}
+
+.question-header {
+    position: relative;
+    top: -1.5vw;
+    font-size: 1.7vw;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.question {
+    font-size: 2vh;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+}
