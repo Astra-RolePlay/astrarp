@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+
+body {
+	position: relative;
+	font-family: 'Oswald';
+	overflow: hidden;
+}
+
+#radiolist {
+    display: none;
+    position: fixed;
+    top: 4%;
+    right: 0.3%;
+    text-align: right;
+    padding: 5px;
+    color: rgb(255 255 255);
+    font-size: 0.8vw;
+}
+
+#radio {
+    display: none;
+	cursor: move;
+    position: fixed;
+	width: 375px;
+	height: 795px;
+	right: -2%;
+	bottom: -15%;
+}
+
+#onoff {
+	position: absolute;
+	top: 19%;
+	left: 67%;
+	padding: 25px 25px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    outline: none;
+}
+
+#volup {
+	position: absolute;
+	top: 15%;
+	left: 43.5%;
+	padding: 35px 12px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    outline: none;
+}
+
+#voldown {
+	position: absolute;
+	top: 15%;
+	left: 50.5%;
+	padding: 35px 12px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    outline: none;
+}
+
+#togmode {
+	position: absolute;
+	top: 67.5%;
+	left: 43.5%;
+	padding: 13px 25px;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+    outline: none;
+}
+
+.hovertext {
+    position: absolute;
+    top: 1vw;
+    left: 50%;
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    font-family: 'Oswald';
+    text-align: center;
+    padding: 0.2vw 0.8vw;
+    border-radius: 0.5vw;
+    z-index: 1;
+}
+
+#onoff:hover .hovertext, #volup:hover .hovertext, #voldown:hover .hovertext, #togmode:hover .hovertext {
+    visibility: visible;
+}
+
+.screeninfo {
+    display: none;
+    position: absolute;
+    background-color: #1E1E1E;
+    top: 38.5%;
+    left: 34.5%;
+    color: white;
+    font-size: 0.70vw;
+}
+
+.screen-1 {
+    display: none;
+	position: absolute;
+	top: 45%;
+	left: 35.5%;
+}
+
+.screen-1 input {
+    text-align: center;
+    border: none;
+    background-color: #1E1E1E;
+    padding: 1.6vw 1vw;
+    font-size: 1.05vw;
+    color: white;
+    font-family: 'Oswald';
+    outline: none;
+}
+
+.screen-1 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.screen-2 {
+    display: none;
+	position: absolute;
+	top: 45%;
+	left: 35.5%;
+}
+
+.screen-2 input {
+    text-align: center;
+    border: none;
+    padding: 1.6vw 1vw;
+    color: white;
+    background-color: #1E1E1E;
+    width: 3.8vw;
+    font-size: 1.05vw;
+    font-family: 'Oswald';
+    outline: none;
+}
+
+.screen-3 {
+    display: none;
+	position: absolute;
+	top: 45%;
+	left: 35.5%;
+}
+
+.screen-3 input {
+    text-align: center;
+    background-color: #1E1E1E;
+    border: none;
+    color: white;
+    padding: 1.6vw 1vw;
+    width: 3.8vw;
+    font-size: 1.05vw;
+    font-family: 'Oswald';
+    outline: none;
+}
+
+.screenchange {
+	display: none;
+    position: absolute;
+    top: 60.4%;
+    left: 42%;
+}
+
+.screenchange button {
+    background-color: #1E1E1E;
+    outline: none;
+    border: none;
+    font-family: 'Oswald';
+    color: white;
+    font-size: 1.0vw;
+}
+
+.screenchange button:hover {
+    outline: none;
+    border: none;
+}

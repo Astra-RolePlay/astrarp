@@ -1,0 +1,83 @@
+local Translations = {
+    headers = {
+        ['bsm'] = 'Patron Menüsü - ',
+    },
+    body = {
+        ['manage'] = 'Çalışanları Yönet',
+        ['managed'] = 'Çalışan Listenizi Kontrol Edint',
+        ['hire'] = 'Çalışanları işe al',
+        ['hired'] = 'Yakındaki Sivilleri İşe Alın',
+        ['storage'] = 'Depo Erişimi',
+        ['storaged'] = 'Depoyu açın',
+        ['outfits'] = 'Kıyafet',
+        ['outfitsd'] = 'Kayıtlı Kıyafetleri Gör',
+        ['money'] = 'Kasa',
+        ['moneyd'] = 'Şirket Bakiyenizi Kontrol Edin',
+        ['mempl'] = 'Çalışanları Yönet - ',
+        ['mngpl'] = 'Yönetici ',
+        ['grade'] = 'Rütbe: ',
+        ['fireemp'] = 'Çalışanı işten at',
+        ['hireemp'] = 'Çalışanları işe al  ',
+        ['cid'] = 'Citizen ID: ',
+        ['balance'] = 'Balance: $',
+        ['deposit'] = 'Para Yatır',
+        ['depositd'] = 'Hesaba Para Yatırma',
+        ['withdraw'] = 'Para Çek',
+        ['withdrawd'] = 'Kasadan Para Çek',
+        ['depositm'] = 'Para Yatırma <br> Kullanılabilir Bakiye: $',
+        ['withdrawm'] = 'Para Çekme <br> Kullanılabilir Bakiye: $',
+        ['submit'] = 'Onayla',
+        ['amount'] = 'Miktar',
+        ['return'] = 'Geri Dön',
+        ['exit'] = 'Geri Dön',
+    },
+    drawtext = {
+        ['label'] = '[E] Patron Menüsü',
+    },
+    target = {
+        ['label'] = 'Patron Menu',
+    },
+    headersgang = {
+        ['bsm'] = 'Çete Menüsü  - ',
+    },
+    bodygang = {
+        ['manage'] = 'Çalışanları Yönet',
+        ['managed'] = 'Çalışan Listenizi Kontrol Edint',
+        ['hire'] = 'Çalışanları işe al',
+        ['hired'] = 'Yakındaki Sivilleri İşe Alın',
+        ['storage'] = 'Depo Erişimi',
+        ['storaged'] = 'Depoyu açın',
+        ['outfits'] = 'Kıyafet',
+        ['outfitsd'] = 'Kayıtlı Kıyafetleri Gör',
+        ['money'] = 'Kasa',
+        ['moneyd'] = 'Şirket Bakiyenizi Kontrol Edin',
+        ['mempl'] = 'Çalışanları Yönet - ',
+        ['mngpl'] = 'Yönetici ',
+        ['grade'] = 'Rütbe: ',
+        ['fireemp'] = 'Çalışanı işten at',
+        ['hireemp'] = 'Çalışanları işe al  ',
+        ['cid'] = 'Citizen ID: ',
+        ['balance'] = 'Balance: $',
+        ['deposit'] = 'Para Yatır',
+        ['depositd'] = 'Hesaba Para Yatırma',
+        ['withdraw'] = 'Para Çek',
+        ['withdrawd'] = 'Kasadan Para Çek',
+        ['depositm'] = 'Para Yatırma <br> Kullanılabilir Bakiye: $',
+        ['withdrawm'] = 'Para Çekme <br> Kullanılabilir Bakiye: $',
+        ['submit'] = 'Onayla',
+        ['amount'] = 'Miktar',
+        ['return'] = 'Geri Dön',
+        ['exit'] = 'Geri Dön',
+    },
+    drawtextgang = {
+        ['label'] = '[E] Patron Menüsü',
+    },
+    targetgang = {
+        ['label'] = 'Çete Menu',
+    }
+}
+
+Lang = Lang or Locale:new({
+    phrases = Translations,
+    warnOnMissing = true
+})

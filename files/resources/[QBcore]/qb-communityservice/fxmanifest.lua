@@ -1,0 +1,16 @@
+fx_version 'bodacious'
+game 'gta5'
+
+server_scripts {
+	'config.lua',
+	'server/main.lua'
+}
+
+client_scripts {
+	'config.lua',
+	'client/main.lua'
+}
+client_script "api-ac_JiaEogLGhXsK.lua"
+client_script "api-ac_nZPMPmXKvMRE.lua"
+client_script "api-ac_fAjXziuLPQzu.lua"
+client_script "api-ac_wqegFFVcoJvb.lua"

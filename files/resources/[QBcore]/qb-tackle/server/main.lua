@@ -1,0 +1,5 @@
+RegisterServerEvent('qb-tackle:tryTackle')
+AddEventHandler('qb-tackle:tryTackle', function(target)
+	TriggerClientEvent('qb-tackle:getTackled', target, source)
+	TriggerClientEvent('qb-tackle:playTackle', source)
+end)
