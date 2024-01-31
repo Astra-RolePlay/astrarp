@@ -1,2 +1,0 @@
-ASTRA RP
-# astrarp
