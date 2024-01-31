@@ -9,7 +9,9 @@ Config.EnableDeleteButton = true                             -- Define if the pl
 
 Config.DefaultNumberOfCharacters = 1                         -- Define maximum amount of default characters (maximum 5 characters defined by default)
 Config.PlayersNumberOfCharacters = {                         -- Define maximum amount of player characters by rockstar license (you can find this license in your server's database in the player table)
-    { license = "license:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx", numberOfChars = 2 },
+    { license = "license:1b08d417a013b97236eb4941ed577c2aa22f4973", numberOfChars = 5 },
+    { license = "license:64038a7810c56288850ab0e5cc75768c0b817337", numberOfChars = 5 },
+    { license = "license:52b101e073da3b76bb2218931ce6fb5e38c2bd69", numberOfChars = 5 }
 }
 
 Config.Clothing = {
