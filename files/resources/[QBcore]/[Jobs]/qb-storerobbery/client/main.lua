@@ -181,17 +181,17 @@ end)
 function IsWearingGloves()
     local armIndex = GetPedDrawableVariation(PlayerPedId(), 3)
     local model = GetEntityModel(PlayerPedId())
-    local retval = true
+    local retval = false
 
-    if model == `mp_m_freemode_01` then
-        if Config.MaleNoGloves[armIndex] ~= nil and Config.MaleNoGloves[armIndex] then
-            retval = false
-        end
-    else
-        if Config.FemaleNoGloves[armIndex] ~= nil and Config.FemaleNoGloves[armIndex] then
-            retval = false
-        end
-    end
+    -- if model == `mp_m_freemode_01` then
+    --     if Config.MaleNoGloves[armIndex] ~= nil and Config.MaleNoGloves[armIndex] then
+    --         retval = false
+    --     end
+    -- else
+    --     if Config.FemaleNoGloves[armIndex] ~= nil and Config.FemaleNoGloves[armIndex] then
+    --         retval = false
+    --     end
+    -- end
     return retval
 end
 
@@ -259,7 +259,7 @@ RegisterNUICallback('success', function(_, cb)
     if currentRegister ~= 0 then
         lockpick(false)
         TriggerServerEvent('qb-storerobbery:server:setRegisterStatus', currentRegister)
-        local lockpickTime = 25000
+        local lockpickTime = 60000
         LockpickDoorAnim(lockpickTime)
         QBCore.Functions.Progressbar("search_register", Lang:t("text.emptying_the_register"), lockpickTime, false, true, {
             disableMovement = true,
@@ -368,10 +368,12 @@ end)
 
 RegisterNUICallback('fail', function(_ ,cb)
     if usingAdvanced then
-        if math.random(1, 100) < 20 then
+        if math.random(1, 100) < 75 then
+            TriggerServerEvent("qb-storerobbery:server:removeAdvancedLockpick")
         end
     else
-        if math.random(1, 100) < 40 then
+        if math.random(1, 100) < 100 then
+            TriggerServerEvent("qb-storerobbery:server:removeLockpick")
         end
     end
     if (IsWearingGloves() and math.random(1, 100) <= 25) then
