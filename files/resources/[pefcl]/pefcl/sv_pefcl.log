@@ -2368,3 +2368,9 @@
 {"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T19:10:37.801Z"}
 {"level":"debug","message":{"identifier":"PAE72962","name":"V A","source":2},"module":"user","timestamp":"2024-02-01T19:10:37.801Z"}
 {"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T19:10:37.801Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T19:12:53.367Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T19:12:53.463Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T19:16:24.451Z"}
+{"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-01T19:16:24.456Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T19:17:03.051Z"}
+{"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-01T19:17:03.055Z"}
