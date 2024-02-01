@@ -411,11 +411,19 @@ addXP = function(xp)
 end
 
 local fishing, isDead, pressKey, pressKeyNow, catching, busy = false, false, false, false, false, false
-local keySelect, key, bait = "Aşağı Ok", "", "none"
+local keySelect
+local key
+local bait = nil
 
 RegisterNetEvent('ak4y-advancedFishing:start')
 AddEventHandler('ak4y-advancedFishing:start', function(rodLevel)
-    if not fishing then
+    local BalikYemi = QBCore.Functions.HasItem('fishbait')
+    local illegalBalikYemi = QBCore.Functions.HasItem('illegalfishbait')
+    print("Balık Yemi:".. tostring(BalikYemi))
+    print("İllegal Balık Yemi:" .. tostring(illegalBalikYemi))
+    print("Aktif Balık Yemi:" .. tostring(bait))
+    
+    if not fishing and bait ~= nil and (BalikYemi or illegalBalikYemi)then
 
         local playerPed = PlayerPedId()
             if not IsPedInAnyVehicle(playerPed) and not IsPedSwimming(playerPed) then
@@ -448,8 +456,8 @@ AddEventHandler('ak4y-advancedFishing:start', function(rodLevel)
                     -- TaskStartScenarioInPlace(playerPed, "WORLD_HUMAN_STAND_FISHING", 0, true)
                     TaskPlayAnim(PlayerPedId(), 'amb@world_human_stand_fishing@idle_a', 'idle_b', 8.0, 8.0, -1, 1, 1, 0, 0, 0)
                     FreezeEntityPosition(playerPed, true)
-                    bait = "none"
-                    SendNUIMessage({type = "setBait", bait = "none"})
+                    bait = nil
+                    SendNUIMessage({type = "setBait", bait = nil})
                     -- SendNUIMessage({action = "open", bait = bait})
                 else
                     QBCore.Functions.Notify(Config.Language.youCantFishHere)
@@ -457,6 +465,8 @@ AddEventHandler('ak4y-advancedFishing:start', function(rodLevel)
             else
                 QBCore.Functions.Notify(Config.Language.somethingStoppingFish)
             end
+    else
+        QBCore.Functions.Notify(Config.Language.noLeftBait)
     end
 end)
 
@@ -515,9 +525,9 @@ function fishingStop(bool)
         pressKeyNow = false
         if bool then
             QBCore.Functions.Notify(Config.Language.missedFish, "error")
-            if math.random(1,2) == 1 and bait ~= "none" then
-                bait = "none"
-                SendNUIMessage({type = "setBait", bait = "none"})
+            if bait ~= nil then
+                bait = nil
+                SendNUIMessage({type = "setBait", bait = nil})
                 QBCore.Functions.Notify(Config.Language.noLeftBait, "error")
             end
         else
@@ -563,7 +573,7 @@ RegisterNUICallback('successGame', function(data, cb)
         local randomItem = nil
         local tolerance = 20
 
-        if bait == "none" then 
+        if bait == nil then 
             trashChange = trashChange + Config.Settings.addTrashWithoutBait
         end
 
@@ -629,10 +639,10 @@ RegisterNUICallback('successGame', function(data, cb)
         end
 
 
-        if bait ~= "none" and myChance < Config.Settings.eatBaitChance then 
-            bait = "none"
+        if bait ~= nil and myChance < Config.Settings.eatBaitChance then 
+            bait = nil
             QBCore.Functions.Notify(Config.Language.eatBaitText)
-            SendNUIMessage({type = "setBait", bait = "none"})
+            SendNUIMessage({type = "setBait", bait = nil})
         end
 
         if randomItem ~= nil then
@@ -644,6 +654,8 @@ RegisterNUICallback('successGame', function(data, cb)
                 end
             end
             TriggerServerEvent("ak4y-advancedFishing:addItem", randomItem)
+            TriggerServerEvent('ak4y-advancedFishing:removeBait', bait)
+            fishingStop(false)
         end
     end
 end)
@@ -653,7 +665,8 @@ RegisterNUICallback('failGame', function(data, cb)
     if failGameSpam < GetGameTimer() then 
         failGameSpam = failGameSpam + 1000
         SetNuiFocus(false, false)
-        fishingStop(true)
+        fishingStop(false)
+        TriggerServerEvent('ak4y-advancedFishing:removeBait', bait)
     end
 end)
 
@@ -674,7 +687,7 @@ end
 
 RegisterNetEvent('ak4y-advancedFishing:setBait')
 AddEventHandler('ak4y-advancedFishing:setBait', function(baitType, baitName, label)
-    if fishing then 
+    if not fishing then 
         if baitType == "fish" then -- Köepek Balığı
             bait = baitType
             SendNUIMessage({type = "setBait", bait = label})
