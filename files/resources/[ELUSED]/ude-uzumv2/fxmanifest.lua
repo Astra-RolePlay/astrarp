@@ -1,6 +1,5 @@
------ DISCORD: Jew#1881 -----
 
-fx_version 'adamant'
+fx_version 'cerulean'
 
 game 'gta5'
 
@@ -14,3 +13,8 @@ server_scripts {
     "server.lua",
     "config.lua"
 }
+shared_scripts {
+    '@qb-core/shared/locale.lua',
+    'config.lua',
+}
+lua54 'yes'

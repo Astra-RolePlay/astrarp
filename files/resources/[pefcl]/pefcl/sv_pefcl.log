@@ -2316,3 +2316,33 @@
 {"level":"debug","message":"Creating initial account .. ","module":"accounts","timestamp":"2024-02-01T15:35:06.420Z"}
 {"level":"debug","message":"Successfully created initial account.","module":"accounts","timestamp":"2024-02-01T15:35:06.425Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T15:35:06.766Z"}
+{"level":"debug","message":"Initializing...","module":"base","timestamp":"2024-02-01T18:29:54.221Z"}
+{"level":"debug","message":"Initialized Boot controller","module":"base","timestamp":"2024-02-01T18:29:54.223Z"}
+{"level":"debug","message":"Initialized User controller","module":"base","timestamp":"2024-02-01T18:29:54.224Z"}
+{"level":"debug","message":"Initialized Cash controller","module":"base","timestamp":"2024-02-01T18:29:54.224Z"}
+{"level":"debug","message":"Initialized Invoice controller","module":"base","timestamp":"2024-02-01T18:29:54.224Z"}
+{"level":"debug","message":"Initialized Account controller","module":"base","timestamp":"2024-02-01T18:29:54.224Z"}
+{"level":"debug","message":"Initialized Transaction controller","module":"base","timestamp":"2024-02-01T18:29:54.225Z"}
+{"level":"debug","message":"Initialized Broadcast controller","module":"base","timestamp":"2024-02-01T18:29:54.225Z"}
+{"level":"debug","message":"Loading language from config: en","module":"i18n","timestamp":"2024-02-01T18:29:54.225Z"}
+{"level":"debug","message":"Checking database connection ..","module":"boot","timestamp":"2024-02-01T18:29:57.833Z"}
+{"level":"debug","message":"Connected to database.","module":"boot","timestamp":"2024-02-01T18:30:00.340Z"}
+{"level":"info","message":"Framework integration is enabled.","module":"boot","timestamp":"2024-02-01T18:30:00.340Z"}
+{"level":"debug","message":"Verifying exports ..","module":"boot","timestamp":"2024-02-01T18:30:00.341Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-01T18:30:00.341Z"}
+{"level":"info","message":"Starting pefcl.","module":"boot","timestamp":"2024-02-01T18:30:00.342Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T18:32:30.382Z"}
+{"level":"debug","message":{"identifier":"XRK76375","name":"Daryl Crannell","source":1},"module":"user","timestamp":"2024-02-01T18:32:30.382Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T18:32:30.384Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T18:32:30.432Z"}
+{"level":"debug","message":{"identifier":"XRK76375","name":"Daryl Crannell","source":1},"module":"user","timestamp":"2024-02-01T18:32:30.432Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T18:32:30.433Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T18:32:30.775Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T18:33:16.790Z"}
+{"level":"debug","message":{"identifier":"PAE72962","name":"V A","source":2},"module":"user","timestamp":"2024-02-01T18:33:16.790Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T18:33:16.790Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T18:33:17.186Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T18:36:54.427Z"}
+{"level":"debug","message":{"identifier":"DXH34648","name":"Walter Black","source":3},"module":"user","timestamp":"2024-02-01T18:36:54.428Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T18:36:54.428Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T18:36:55.023Z"}

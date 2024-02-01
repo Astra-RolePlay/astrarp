@@ -15,6 +15,8 @@ Config.drugProcessedName = "wine_illegal"
 Config.drugPerPrice = 20
 Config.process = vector3(-1517.54, 1502.54, 111.62) -- KENEVIRIN ISLENECEGI YER
 
+Config.SellPedLocation = vector3(-2189.29, -398.77, 12.3)
+
 Config.Blips = { -- BLIPLER
 {
     title = "Şarap Taciri",
