@@ -2415,3 +2415,85 @@
 {"level":"debug","message":{"identifier":"WZB65598","name":"Sabri soyan","source":11},"module":"user","timestamp":"2024-02-01T20:49:56.292Z"}
 {"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T20:49:56.292Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T20:49:56.838Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T20:50:23.682Z"}
+{"level":"debug","message":{"identifier":"XRK76375","name":"Daryl Crannell","source":10},"module":"user","timestamp":"2024-02-01T20:50:23.682Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T20:50:23.683Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T20:50:23.691Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T20:50:24.231Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T20:50:53.698Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T21:13:10.827Z"}
+{"level":"debug","message":{"identifier":"XRK76375","name":"Daryl Crannell","source":12},"module":"user","timestamp":"2024-02-01T21:13:10.827Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T21:13:10.828Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:13:10.834Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T21:13:11.276Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:13:40.854Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:15:46.680Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:16:16.695Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:18:31.050Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:19:01.085Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:19:01.087Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:19:01.088Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:19:31.130Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:19:31.133Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:19:31.134Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T21:19:46.091Z"}
+{"level":"debug","message":{"identifier":"DFK22197","name":"Luis Miller","source":13},"module":"user","timestamp":"2024-02-01T21:19:46.091Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T21:19:46.091Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T21:19:46.586Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:20:01.175Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:20:05.922Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:20:35.940Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:20:35.944Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:20:35.946Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:21:05.955Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:21:05.960Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:21:35.963Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:21:35.965Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:21:35.966Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:22:05.968Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:22:05.970Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:22:05.972Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:22:05.973Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:22:35.977Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:22:35.979Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:23:05.997Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:23:05.999Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:23:06.001Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:23:36.036Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:23:36.039Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:23:36.040Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:24:06.082Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:24:06.085Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:24:36.084Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:24:36.088Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:24:36.089Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:25:06.094Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:25:06.096Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:25:06.098Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T21:25:27.735Z"}
+{"level":"debug","message":{"identifier":"DFK22197","name":"Luis Miller","source":14},"module":"user","timestamp":"2024-02-01T21:25:27.735Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T21:25:27.735Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T21:25:28.230Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:25:36.119Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:25:36.121Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:25:36.124Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:25:36.125Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:26:06.121Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:26:06.123Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:26:36.123Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:26:45.495Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:27:15.510Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:27:37.043Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:28:07.069Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:28:34.092Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:29:04.115Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:29:33.635Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:30:03.659Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:30:33.690Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:31:03.712Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T21:37:55.037Z"}
+{"level":"debug","message":{"identifier":"DXH34648","name":"Walter Black","source":15},"module":"user","timestamp":"2024-02-01T21:37:55.037Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T21:37:55.038Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T21:37:55.045Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T21:37:55.435Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-01T21:38:25.037Z"}
