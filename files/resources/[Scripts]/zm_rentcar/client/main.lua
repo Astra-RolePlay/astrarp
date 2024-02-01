@@ -37,15 +37,25 @@ end)
 
 
 RegisterNetEvent('zm-rentacar:rentcar', function(carname)
+	QBCore.Functions.SpawnVehicle(carname, function(veh)
+		SetVehicleNumberPlateText(veh, "KIRALIK1")
+		SetEntityAsMissionEntity(veh, true, true)
+		SetEntityHeading(veh, config.CarSpawnLocation.airport.w)
+		TriggerEvent("vehiclekeys:client:SetOwner", GetVehicleNumberPlateText(veh))
 
-    QBCore.Functions.SpawnVehicle(carname, function(car)
-        SetVehicleNumberPlateText(car, "Rent-a-car")
-        exports['ed-fuel']:SetFuel(car, 100.0)
-        SetEntityHeading(car, config.CarSpawnLocation.airport.w)
-        TaskWarpPedIntoVehicle(PlayerPedId(), car, -1)
-        TriggerEvent("vehiclekeys:client:SetOwner", GetVehicleNumberPlateText(car))
-        SetVehicleEngineOn(car, true, true)
-    end, config.CarSpawnLocation.airport, true) 
+		SetVehicleEngineOn(veh, true, true, false)
+	end, config.CarSpawnLocation.airport, true)
+
+
+
+    -- QBCore.Functions.SpawnVehicle(carname, function(car)
+    --     SetVehicleNumberPlateText(car, "Rent-a-car")
+    --     exports['ed-fuel']:SetFuel(car, 100.0)
+    --     SetEntityHeading(car, config.CarSpawnLocation.airport.w)
+    --     TaskWarpPedIntoVehicle(PlayerPedId(), car, -1)
+    --     TriggerEvent("vehiclekeys:client:SetOwner", GetVehicleNumberPlateText(car))
+    --     SetVehicleEngineOn(car, true, true)
+    -- end, config.CarSpawnLocation.airport, true) 
 
     SetDisplay(display)
 end)
