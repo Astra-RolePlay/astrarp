@@ -130,7 +130,7 @@ Config.Peds = {
 	},
 	{ -- ÜZÜM İŞLEME
 		model = 'a_m_y_beach_01',
-		coords = vector4(2016.95, 4987.87, 42.1, 133.61),
+		coords = vector4(2016.95, 4987.87, 41.1, 133.61),
 		networked = false,
 		invincible = true,
 		blockevents = true,
