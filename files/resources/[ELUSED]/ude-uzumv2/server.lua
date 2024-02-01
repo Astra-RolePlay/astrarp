@@ -55,8 +55,8 @@ AddEventHandler(
     "ude-uzum:gatherWeed",
     function()
         local xPlayer = QBCore.Functions.GetPlayer(source)
-        xPlayer.Functions.AddItem(drugBaseName, 1)
-        TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[drugBaseName], "add", 1)
+        xPlayer.Functions.AddItem(Config.drugBaseName, 1)
+        TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[Config.drugBaseName], "add", 1)
     end
 )
 
