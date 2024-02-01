@@ -2374,3 +2374,23 @@
 {"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-01T19:16:24.456Z"}
 {"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T19:17:03.051Z"}
 {"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-01T19:17:03.055Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T19:18:38.004Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T19:18:38.159Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T19:25:45.511Z"}
+{"level":"debug","message":{"identifier":"CDR37384","name":"Swex  Toe","source":6},"module":"user","timestamp":"2024-02-01T19:25:45.512Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T19:25:45.512Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T19:25:45.519Z"}
+{"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-01T19:25:45.523Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T19:25:46.308Z"}
+{"level":"debug","message":"Unloading player for pefcl with export","module":"user","timestamp":"2024-02-01T19:31:46.160Z"}
+{"level":"debug","message":4,"module":"user","timestamp":"2024-02-01T19:31:46.160Z"}
+{"level":"debug","message":"Player unloaded, emitting: pefcl:userUnloaded","module":"user","timestamp":"2024-02-01T19:31:46.160Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T19:31:56.201Z"}
+{"level":"debug","message":{"identifier":"XRK76375","name":"Daryl Crannell","source":4},"module":"user","timestamp":"2024-02-01T19:31:56.201Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T19:31:56.202Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-01T19:31:56.207Z"}
+{"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-01T19:31:56.210Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T19:56:08.962Z"}
+{"level":"debug","message":{"identifier":"SRK03290","name":"Lucifer henderson","source":7},"module":"user","timestamp":"2024-02-01T19:56:08.962Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T19:56:08.963Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-01T19:56:09.409Z"}

@@ -51,7 +51,7 @@ to your wishes.
 Config.BypassVehicles = { "rumpo3", "sadler", "clrgtahoe", "polvic", "npolexp" }
 
 -- The list of possible vehicle classes can be found here: https://docs.fivem.net/natives/?_0x29439776AAA00A62
-Config.BypassVehicleClasses = { 9, 2, 13, 18, 19, 20 }
+Config.BypassVehicleClasses = { 9, 2, 13, 18, 19, 20, 10 }
 
 -- These wheel types are completely immune to the effects of the script.
 -- The list of possible wheel types can be found here: https://docs.fivem.net/natives/?_0xB3ED1BFB4BE636DC
