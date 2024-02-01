@@ -79,33 +79,33 @@ CreateThread(function() -- Set target for pumps and blips
         job = {"all"},
         distance = Config.MaxDistance
     })
-    for _, gasStationCoords in pairs(Config.GasStations) do
-        local blip = AddBlipForCoord(gasStationCoords.x, gasStationCoords.y, gasStationCoords.z)
+    -- for _, gasStationCoords in pairs(Config.GasStations) do
+    --     local blip = AddBlipForCoord(gasStationCoords.x, gasStationCoords.y, gasStationCoords.z)
 
-        SetBlipSprite(blip, 361)
-        SetBlipScale(blip, 0.6)
-        SetBlipColour(blip, 4)
-        SetBlipDisplay(blip, 4)
-        SetBlipAsShortRange(blip, true)
+    --     SetBlipSprite(blip, 361)
+    --     SetBlipScale(blip, 0.6)
+    --     SetBlipColour(blip, 4)
+    --     SetBlipDisplay(blip, 4)
+    --     SetBlipAsShortRange(blip, true)
 
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString(Lang:t("info.blip_fuel"))
-        EndTextCommandSetBlipName(blip)
-    end
-    for _, elecStationCoords in pairs(Config.SuperchargerStations) do
-        local blip = AddBlipForCoord(elecStationCoords.x, elecStationCoords.y, elecStationCoords.z)
+    --     BeginTextCommandSetBlipName("STRING")
+    --     AddTextComponentString(Lang:t("info.blip_fuel"))
+    --     EndTextCommandSetBlipName(blip)
+    -- end
+--     for _, elecStationCoords in pairs(Config.SuperchargerStations) do
+--         local blip = AddBlipForCoord(elecStationCoords.x, elecStationCoords.y, elecStationCoords.z)
 
-        SetBlipSprite(blip, 354)
-        SetBlipScale(blip, 0.8)
-        SetBlipColour(blip, 4)
-        SetBlipDisplay(blip, 4)
-        SetBlipAsShortRange(blip, true)
+--         SetBlipSprite(blip, 354)
+--         SetBlipScale(blip, 0.8)
+--         SetBlipColour(blip, 4)
+--         SetBlipDisplay(blip, 4)
+--         SetBlipAsShortRange(blip, true)
 
-        BeginTextCommandSetBlipName("STRING")
-        AddTextComponentString(Lang:t("info.blip_electric"))
-        EndTextCommandSetBlipName(blip)
-    end
-end)
+--         BeginTextCommandSetBlipName("STRING")
+--         AddTextComponentString(Lang:t("info.blip_electric"))
+--         EndTextCommandSetBlipName(blip)
+--     end
+-- end)
 
 local function Round(num, numDecimalPlaces)
     local mult = 10 ^ (numDecimalPlaces or 0)

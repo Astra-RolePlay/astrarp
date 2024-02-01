@@ -14,7 +14,7 @@ Config.HandCuffItem = 'pkelepce'
 
 Config.LicenseRank = 2
 
-Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
+Config.UseTarget = false
 Config.Locations = {
     ["duty"] = {
         [1] = vector3(442.8, -981.94, 30.69),

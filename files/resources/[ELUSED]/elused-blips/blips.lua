@@ -36,7 +36,9 @@ local blips = {
   { title = "Senora Rd. | Malikane [BTC]",            colour = 29, id = 492, x = 1391.2,   y = 1153.67,  z = 114.44, ymap = "rizeli" },
 
   --
-  { title = "Şantiye Alanı",                          colour = 47, id = 643, x = -97.12,   y = -1015.13, z = 27.28 }
+    { title = "Şantiye Alanı",                        colour = 47, id = 643, x = -97.12,   y = -1015.13, z = 27.28 },
+    { title = "Galeri",                               colour = 74, id = 227, x = -46.55,   y = -1097.26, z = 26.42 },
+  
 }
 
 local blipsArea = {

@@ -119,7 +119,7 @@ Config.Locations = {
 		-- the blip / marker on the map
 		Blip = {
 			-- if you dont want an blip, set sprite = false
-			sprite = 225,
+			sprite = false,
 			display = 4,
 			scale = 0.7,
 			color = 3,
@@ -149,126 +149,126 @@ Config.Locations = {
 			enabled = true
 		},
 	},
-	{
-		-- where the npc spawns, where the player can press e to view enter the vehicle
-		npcspot = {
-			ped = 0xC306D6F5,
-			x = -247.06,
-			y = 6213.17,
-			z = 31.93,
-			h = 138.5
-		},
-		npcanimation = "WORLD_HUMAN_SMOKING",
-		-- Where the car spawns in the "camera" view
-		carpreviewspawn = {
-			x = -261.38,
-			y = 6214.05,
-			z = 31.48,
-			h = 138.5,
-			-- These settings are relevant for the camera
-			plusx = -7,
-			plusy = -6
-		},
-		-- Multiple spawns, if you parking out his vehicle
-		carSpawns = {
-			{ x = -254.59, y = 6204.94, z = 31.48, h = 230.5 },
-			{ x = -247.36, y = 6197.51, z = 31.48, h = 224.5 },
-			{ x = -239.25, y = 6196.09, z = 31.48, h = 131.5 },
-		},
-		-- the blip / marker on the map
-		Blip = {
-			-- if you dont want an blip, set sprite = false
-			sprite = 225,
-			display = 4,
-			scale = 0.7,
-			color = 3,
-			label = _U("vehicle")
-		},
-		-- All cars of your database owned_vehicles will be selected where the job column  is `nil`. unemployed = nil in db
-		job = {
-			"unemployed",
-			"civ",
-		},
-		-- This value will be inserted in the your database > ownedvehicles > job column
-		databasejob = "civ",
-		-- All cars of your database owned_vehicles will be selected where the type column  is `car` or `nil`
-		vehicles = "car",
-		categorys = {
-			"muscle",
-			"offroad",
-			"suv",
-			"vans",
-		},
-		-- only_vehicles = {
-		-- 	"alpha",
-		-- 	"banshee",
-		-- },
-		ignore_vehicles = {
-			-- "banshee",
-		},
-		testdrive = {
-			enabled = true
-		},
-	},
+	-- {
+	-- 	-- where the npc spawns, where the player can press e to view enter the vehicle
+	-- 	npcspot = {
+	-- 		ped = 0xC306D6F5,
+	-- 		x = -247.06,
+	-- 		y = 6213.17,
+	-- 		z = 31.93,
+	-- 		h = 138.5
+	-- 	},
+	-- 	npcanimation = "WORLD_HUMAN_SMOKING",
+	-- 	-- Where the car spawns in the "camera" view
+	-- 	carpreviewspawn = {
+	-- 		x = -261.38,
+	-- 		y = 6214.05,
+	-- 		z = 31.48,
+	-- 		h = 138.5,
+	-- 		-- These settings are relevant for the camera
+	-- 		plusx = -7,
+	-- 		plusy = -6
+	-- 	},
+	-- 	-- Multiple spawns, if you parking out his vehicle
+	-- 	carSpawns = {
+	-- 		{ x = -254.59, y = 6204.94, z = 31.48, h = 230.5 },
+	-- 		{ x = -247.36, y = 6197.51, z = 31.48, h = 224.5 },
+	-- 		{ x = -239.25, y = 6196.09, z = 31.48, h = 131.5 },
+	-- 	},
+	-- 	-- the blip / marker on the map
+	-- 	Blip = {
+	-- 		-- if you dont want an blip, set sprite = false
+	-- 		sprite = 225,
+	-- 		display = 4,
+	-- 		scale = 0.7,
+	-- 		color = 3,
+	-- 		label = _U("vehicle")
+	-- 	},
+	-- 	-- All cars of your database owned_vehicles will be selected where the job column  is `nil`. unemployed = nil in db
+	-- 	job = {
+	-- 		"unemployed",
+	-- 		"civ",
+	-- 	},
+	-- 	-- This value will be inserted in the your database > ownedvehicles > job column
+	-- 	databasejob = "civ",
+	-- 	-- All cars of your database owned_vehicles will be selected where the type column  is `car` or `nil`
+	-- 	vehicles = "car",
+	-- 	categorys = {
+	-- 		"muscle",
+	-- 		"offroad",
+	-- 		"suv",
+	-- 		"vans",
+	-- 	},
+	-- 	-- only_vehicles = {
+	-- 	-- 	"alpha",
+	-- 	-- 	"banshee",
+	-- 	-- },
+	-- 	ignore_vehicles = {
+	-- 		-- "banshee",
+	-- 	},
+	-- 	testdrive = {
+	-- 		enabled = true
+	-- 	},
+	-- },
 
-	{
-		-- where the npc spawns, where the player can press e to view enter the vehicle
-		npcspot = {
-			ped = 0xC306D6F5,
-			x = -247.06,
-			y = 6213.17,
-			z = 31.93,
-			h = 138.5
-		},
-		npcanimation = "WORLD_HUMAN_SMOKING",
-		-- Where the car spawns in the "camera" view
-		carpreviewspawn = {
-			x = -261.38,
-			y = 6214.05,
-			z = 31.48,
-			h = 138.5,
-			-- These settings are relevant for the camera
-			plusx = -7,
-			plusy = -6
-		},
-		-- Multiple spawns, if you parking out his vehicle
-		carSpawns = {
-			{ x = -254.59, y = 6204.94, z = 31.48, h = 230.5 },
-			{ x = -247.36, y = 6197.51, z = 31.48, h = 224.5 },
-			{ x = -239.25, y = 6196.09, z = 31.48, h = 131.5 },
-		},
-		-- the blip / marker on the map
-		Blip = {
-			-- if you dont want an blip, set sprite = false
-			sprite = 225,
-			display = 4,
-			scale = 0.7,
-			color = 3,
-			label = _U("vehicle")
-		},
-		-- All cars of your database owned_vehicles will be selected where the job column  is `nil`. unemployed = nil in db
-		job = {
-			"unemployed",
-			"civ",
-		},
-		-- This value will be inserted in the your database > ownedvehicles > job column
-		databasejob = "boat",
-		-- All cars of your database owned_vehicles will be selected where the type column  is `car` or `nil`
-		vehicles = "boat",
-		categorys = {
-			"boat",
-		},
-		-- only_vehicles = {
-		-- 	"alpha",
-		-- 	"banshee",
-		-- },
-		ignore_vehicles = {
-			-- "banshee",
-		},
-		testdrive = {
-			enabled = false
-		},
-	},
+	-- {
+	-- 	-- where the npc spawns, where the player can press e to view enter the vehicle
+	-- 	npcspot = {
+	-- 		ped = 0xC306D6F5,
+	-- 		x = -247.06,
+	-- 		y = 6213.17,
+	-- 		z = 31.93,
+	-- 		h = 138.5
+	-- 	},
+	-- 	npcanimation = "WORLD_HUMAN_SMOKING",
+	-- 	-- Where the car spawns in the "camera" view
+	-- 	carpreviewspawn = {
+	-- 		x = -261.38,
+	-- 		y = 6214.05,
+	-- 		z = 31.48,
+	-- 		h = 138.5,
+	-- 		-- These settings are relevant for the camera
+	-- 		plusx = -7,
+	-- 		plusy = -6
+	-- 	},
+	-- 	-- Multiple spawns, if you parking out his vehicle
+	-- 	carSpawns = {
+	-- 		{ x = -254.59, y = 6204.94, z = 31.48, h = 230.5 },
+	-- 		{ x = -247.36, y = 6197.51, z = 31.48, h = 224.5 },
+	-- 		{ x = -239.25, y = 6196.09, z = 31.48, h = 131.5 },
+	-- 	},
+	-- 	-- the blip / marker on the map
+	-- 	Blip = {
+	-- 		-- if you dont want an blip, set sprite = false
+	-- 		sprite = 225,
+	-- 		display = 4,
+	-- 		scale = 0.7,
+	-- 		color = 3,
+	-- 		label = _U("vehicle")
+	-- 	},
+	-- 	-- All cars of your database owned_vehicles will be selected where the job column  is `nil`. unemployed = nil in db
+	-- 	job = {
+	-- 		"unemployed",
+	-- 		"civ",
+	-- 	},
+	-- 	-- This value will be inserted in the your database > ownedvehicles > job column
+	-- 	databasejob = "boat",
+	-- 	-- All cars of your database owned_vehicles will be selected where the type column  is `car` or `nil`
+	-- 	vehicles = "boat",
+	-- 	categorys = {
+	-- 		"boat",
+	-- 	},
+	-- 	-- only_vehicles = {
+	-- 	-- 	"alpha",
+	-- 	-- 	"banshee",
+	-- 	-- },
+	-- 	ignore_vehicles = {
+	-- 		-- "banshee",
+	-- 	},
+	-- 	testdrive = {
+	-- 		enabled = false
+	-- 	},
+	-- },
 }
 
 

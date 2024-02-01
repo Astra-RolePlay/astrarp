@@ -19,7 +19,7 @@ Vehicleshop.giveVehicle = function(source, data, props, job)
     else
         local player = QBCore.Functions.GetPlayer(source)
         MySQL.Async.execute(
-            'INSERT INTO player_vehicles (license, citizenid, vehicle, hash, mods, plate, fakeplate, garage, fuel, engine, body, state, depotprice, drivingdistance, status, balance, paymentamount, paymentsleft, financetime) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+            'INSERT INTO player_vehicles (license, citizenid, vehicle, hash, mods, plate, fakeplate, garage, fuel, engine, body, state, depotprice, drivingdistance, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
             { player.PlayerData.license,
                 player.PlayerData.citizenid,
                 data.name,
@@ -34,11 +34,7 @@ Vehicleshop.giveVehicle = function(source, data, props, job)
                 1,
                 0,
                 0,
-                "",
-                0,
-                0,
-                0,
-                0,
+                ""
             }
         )
     end
