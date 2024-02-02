@@ -182,7 +182,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false, -- false => uses the size + rotation to create the zone | true => uses points to create the zone
-        showBlip = true, -- overrides the blip visibilty configured above for the group
+        showBlip = false, -- overrides the blip visibilty configured above for the group
         --targetModel = "s_m_m_doctor_01", -- overrides the target ped configured for the group
         --targetScenario = "" -- overrides the target scenario configure for the group
         points = {
@@ -198,6 +198,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
         points = {
             vector3(-719.86212158203, -147.83151245117, 37.42),
             vector3(-709.10491943359, -141.53076171875, 37.42),
@@ -211,6 +212,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
         points = {
             vector3(-1206.9552001953, -775.06304931641, 17.32),
             vector3(-1190.6080322266, -764.03198242188, 17.32),
@@ -224,6 +226,8 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
+
         points = {
             vector3(419.55020141602, -798.36547851562, 29.49),
             vector3(431.61773681641, -798.31909179688, 29.49),
@@ -237,6 +241,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
         points = {
             vector3(-160.82145690918, -313.85919189453, 39.73),
             vector3(-172.56513977051, -309.82858276367, 39.73),
@@ -250,6 +255,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
         points = {
             vector3(81.406135559082, -1400.7791748047, 29.38),
             vector3(69.335029602051, -1400.8251953125, 29.38),
@@ -263,6 +269,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
         points = {
             vector3(-826.26251220703, -1082.6293945312, 11.33),
             vector3(-832.27856445312, -1072.2819824219, 11.33),
@@ -276,6 +283,8 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
+
         points = {
             vector3(-1448.4829101562, -226.39401245117, 49.82),
             vector3(-1439.2475585938, -234.70428466797, 49.82),
@@ -289,6 +298,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
         points = {
             vector3(6.4955291748047, 6522.205078125, 31.88),
             vector3(14.737417221069, 6513.3872070312, 31.88),
@@ -302,6 +312,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
         points = {
             vector3(612.58312988281, 2747.2814941406, 42.09),
             vector3(612.26214599609, 2767.0520019531, 42.09),
@@ -315,6 +326,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
         points = {
             vector3(1188.7923583984, 2704.2021484375, 38.22),
             vector3(1188.7498779297, 2716.2661132812, 38.22),
@@ -328,6 +340,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
         points = {
             vector3(-3162.0075683594, 1056.7303466797, 20.86),
             vector3(-3170.8247070312, 1039.0412597656, 20.86),
@@ -341,6 +354,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
         points = {
             vector3(-1103.3004150391, 2700.8195800781, 19.11),
             vector3(-1111.3771972656, 2709.884765625, 19.11),
@@ -355,6 +369,7 @@ Config.Stores = {
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
+        showBlip = false,
         points = {
             vector3(133.60948181152, -210.31390380859, 54.56),
             vector3(125.8349609375, -228.48097229004, 54.56),

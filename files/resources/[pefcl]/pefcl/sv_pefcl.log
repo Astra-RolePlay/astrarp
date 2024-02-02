@@ -2879,3 +2879,28 @@
 {"level":"debug","message":{"identifier":"BMS02698","name":"VADİM  CANTAS","source":5},"module":"user","timestamp":"2024-02-02T10:18:45.513Z"}
 {"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T10:18:45.515Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T10:18:45.909Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-02T11:34:29.213Z"}
+{"level":"debug","message":{"identifier":"BMS02698","name":"VADİM  CANTAS","source":6},"module":"user","timestamp":"2024-02-02T11:34:29.214Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T11:34:29.216Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T11:34:29.659Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-02T12:06:53.463Z"}
+{"level":"debug","message":{"identifier":"CDR37384","name":"Swex  Toe","source":7},"module":"user","timestamp":"2024-02-02T12:06:53.464Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T12:06:53.464Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-02T12:06:53.487Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T12:06:54.110Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-02T12:07:23.495Z"}
+{"level":"debug","message":"Creating unique account ..","module":"accounts","timestamp":"2024-02-02T12:07:35.362Z"}
+{"level":"debug","message":"Created unique account!","module":"accounts","timestamp":"2024-02-02T12:07:35.368Z"}
+{"level":"debug","message":{"accountName":"Los Santos EMS","balance":500,"createdAt":1706875655364,"id":26,"isDefault":true,"number":"920,1272-3080-3503","ownerIdentifier":"ambulance","role":"owner","type":"shared","updatedAt":"2024-02-02T12:07:35.364Z"},"module":"accounts","timestamp":"2024-02-02T12:07:35.369Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-02T12:07:35.369Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-02T12:08:05.379Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-02T12:17:13.079Z"}
+{"level":"debug","message":{"identifier":"BMS02698","name":"VADİM  CANTAS","source":9},"module":"user","timestamp":"2024-02-02T12:17:13.080Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T12:17:13.080Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T12:17:13.574Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-02T12:20:41.223Z"}
+{"level":"debug","message":{"identifier":"XRK76375","name":"Daryl Crannell","source":10},"module":"user","timestamp":"2024-02-02T12:20:41.223Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T12:20:41.223Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-02T12:20:41.229Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T12:20:41.677Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-02T12:21:11.232Z"}
