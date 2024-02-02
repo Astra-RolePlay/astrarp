@@ -34,12 +34,54 @@ Config.BossMenus = {
     ['cardealer'] = {
         vector3(-27.47, -1107.13, 27.27),
     },
-    ['mechanic'] = {
-        vector3(-339.53, -156.44, 44.59),
+    
+    
+    
+    
+    ['mechanic1'] = {
+        vector3(547.2, -181.99, 54.49),
     },
+
+    ['mechanic2'] = {
+        vector3(124.77, -3014.17, 7.04)
+    },
+
+    ['mechanic3'] = {
+        vector3(1186.72, 2637.31, 38.4)
+    },
+
+    ['mechanic4'] = {
+        vector3(-227.83, -1327.84, 30.89)
+    },
+    
+    ['mechanic5'] = {
+        vector3(-339.99, -157.35, 44.59)
+    },
+
+    
 }
 
 Config.BossMenuZones = {
+    ['mechanic1'] = {
+        { coords = vector3(547.2, -181.99, 54.49), length = 1.15, width = 2.6, heading = 353.0, minZ = 49.59, maxZ = 58.99 },
+    },
+    ['mechanic2'] = {
+        { coords = vector3(124.77, -3014.17, 7.04), length = 1.15, width = 2.6, heading = 353.0, minZ = 3.0, maxZ = 12.0 },
+    },
+    ['mechanic3'] = {
+        { coords = vector3(1186.72, 2637.31, 38.4), length = 1.15, width = 2.6, heading = 353.0, minZ = 33.0, maxZ = 47.0 },
+    },
+    ['mechanic4'] = {
+        { coords = vector3(-227.83, -1327.84, 30.89), length = 1.15, width = 2.6, heading = 353.0, minZ = 25.0, maxZ = 27.0 },
+    },
+    ['mechanic5'] = {
+        { coords = vector3(-339.99, -157.35, 44.59), length = 1.15, width = 2.6, heading = 353.0, minZ = 38.0, maxZ = 50.0 },
+    },
+    
+    
+    
+    
+    
     ['police'] = {
         { coords = vector3(463.29, -988.71, 30.69), length = 0.35, width = 0.45, heading = 351.0, minZ = 28.58, maxZ = 32.68 } ,
     },
@@ -55,9 +97,7 @@ Config.BossMenuZones = {
     ['cardealer'] = {
         { coords = vector3(-27.47, -1107.13, 27.27), length = 2.4, width = 1.05, heading = 340.0, minZ = 27.07, maxZ = 27.67 },
     },
-    ['mechanic'] = {
-        { coords = vector3(-339.53, -156.44, 44.59), length = 1.15, width = 2.6, heading = 353.0, minZ = 43.59, maxZ = 44.99 },
-    },
+    
 }
 
 Config.GangMenus = {

@@ -1,21 +1,27 @@
 local blips = {
-  { title = "BOŞ MEKANİK",                            colour = 27, id = 446, x = -373.41,  y = -123.34,  z = 38.68 },
+  
+  { title = "BOŞ MEKANİK #1",                            colour = 8,  id = 446, x = 532.35,   y = -180.85,  z = 54.32 },
+  { title = "BOŞ MEKANİK #2",                            colour = 1,  id = 446, x = 135.76,   y = -3032.85, z = 7.04 },
+  { title = "BOŞ MEKANİK #3",                         colour = 1,  id = 446, x = 1174.82,  y = 2646.45,  z = 37.77 },
+  { title = "BOŞ MEKANİK #4",                         colour = 1,  id = 446, x = -211.55,  y = -1322.65,  z = 30.89 },
+  { title = "BOŞ MEKANİK #5",                            colour = 27, id = 446, x = -373.41,  y = -123.34,  z = 38.68 },
+  
+  -- { title = "BOŞ MEKANİK #2",                            colour = 29, id = 446, x = 489.21,   y = -1313.27, z = 29.26 },
+  -- { title = "BOŞ MEKANİK #3",                            colour = 1,  id = 446, x = 942.36,   y = -972.94,  z = 39.5 },
+  -- { title = "BOŞ MEKANİK #4",                            colour = 1,  id = 446, x = 1148.33,  y = -771.61,  z = 57.57 },
+  -- { title = "BOŞ MEKANİK #7",                         colour = 1,  id = 446, x = 730.95,  y = -1089.03,  z = 22.17 },
+  -- { title = "BOŞ MEKANİK #10",                            colour = 27, id = 446, x = -35.01,  y = -1054.15,  z = 28.4 },
+
+
+
+
+  { title = "BOŞ HOOD",                               colour = 4,  id = 429, x = 356.46,   y = -1691.12, z = 32.53 },
   { title = "South Side Ballas",                      colour = 27, id = 429, x = 101.75,   y = -1937.75, z = 20.8 },
   { title = "BOŞ HOOD",                               colour = 3,  id = 429, x = -178.97,  y = -1546.43, z = 35.14 },
   { title = "BOŞ HOOD",                               colour = 3,  id = 429, x = 288.86,   y = -1740.2,  z = 28.95 },
-  -- { title = "Conta ST",                  colour = 5,  id = 429, x = -104.04,  y = -1593.1,  z = 31.52 },
-  -- { title = "909 ST",                    colour = 8,  id = 429, x = 444.5,    y = -1501.19, z = 29.31 },
   { title = "Black Piru Stones Nations",              colour = 1,  id = 429, x = -66.18,   y = -1520.44, z = 34.33 },
   { title = "Black Market",                           colour = 8,  id = 566, x = -663.86,  y = -937.07,  z = 21.83 },
   { title = "BOŞ HOOD",                               colour = 29, id = 429, x = 1297.215, y = -1724.93, z = 53.966 },
-  -- { title = "Blancos Family",            colour = 29, id = 492, x = -106.23,  y = 827.78,   z = 235.72 },
-  { title = "BOŞ MEKANİK #1",                            colour = 8,  id = 446, x = 532.35,   y = -180.85,  z = 54.32 },
-  { title = "BOŞ MEKANİK #2",                            colour = 29, id = 446, x = 489.21,   y = -1313.27, z = 29.26 },
-  { title = "BOŞ MEKANİK #3",                            colour = 1,  id = 446, x = 942.36,   y = -972.94,  z = 39.5 },
-  { title = "BOŞ MEKANİK #4",                            colour = 1,  id = 446, x = 1148.33,  y = -771.61,  z = 57.57 },
-  { title = "BOŞ MEKANİK #5",                            colour = 1,  id = 446, x = 135.76,   y = -3032.85, z = 7.04 },
-  { title = "BOŞ MEKANİK #6",                            colour = 1,  id = 446, x = 1174.82,  y = 2646.45,  z = 37.77 },
-  { title = "BOŞ HOOD",                               colour = 4,  id = 429, x = 356.46,   y = -1691.12, z = 32.53 },
 
 
   -- Malikaneler
@@ -42,7 +48,7 @@ local blips = {
 }
 
 local blipsArea = {
-  { title = "Deneme Hood", colour = 27, x = 107.04, y = -1902.0, z = 20.8, width = 300.0, height = 250.0, rotation = -45 }
+  { title = "Ballas", colour = 27, x = 107.04, y = -1902.0, z = 20.8, width = 300.0, height = 250.0, rotation = -45 }
 }
 
 

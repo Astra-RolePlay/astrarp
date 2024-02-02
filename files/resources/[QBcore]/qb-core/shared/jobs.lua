@@ -693,79 +693,7 @@ QBShared.Jobs = {
     },
 
     -- Mekanik Meslekleri
-    ['bennys'] = {
-        label = 'Bennys Mekanik',
-        type = "mechanic",
-        defaultDuty = true,
-        offDutyPay = false,
-        grades = {
-            ['0'] = {
-                name = 'Çalışan',
-                payment = 25
-            },
-            ['1'] = {
-                name = 'Patron',
-                isboss = true,
-                payment = 50
-            },
-        },
-    },
-
-    ['tunnershop'] = {
-        label = 'Tunner Shop Mekanik',
-        type = "mechanic",
-        defaultDuty = true,
-        offDutyPay = false,
-        grades = {
-            ['0'] = {
-                name = 'Çalışan',
-                payment = 25
-            },
-            ['1'] = {
-                name = 'Patron',
-                isboss = true,
-                payment = 50
-            },
-        },
-    },
-
-    ['autocare'] = {
-        label = 'Auto Care Mekanik',
-        type = "mechanic",
-        defaultDuty = true,
-        offDutyPay = false,
-        grades = {
-            ['0'] = {
-                name = 'Çalışan',
-                payment = 25
-            },
-            ['1'] = {
-                name = 'Patron',
-                isboss = true,
-                payment = 50
-            },
-        },
-    },
-
-    ['lscustom2'] = {
-        label = 'LSCustom Mekanik 1',
-        type = "mechanic",
-        defaultDuty = true,
-        offDutyPay = false,
-        grades = {
-            ['0'] = {
-                name = 'Çalışan',
-                payment = 25
-            },
-            ['1'] = {
-                name = 'Patron',
-                isboss = true,
-                payment = 50
-            },
-        },
-    },
-
-    ['mechanic'] = {
+    ['mechanic1'] = {
         label = 'Mekanik',
         type = "mechanic",
         defaultDuty = true,
@@ -776,15 +704,20 @@ QBShared.Jobs = {
                 payment = 25
             },
             ['1'] = {
-                name = 'Patron',
+                name = 'Müdür Yrd.',
+                isboss = true,
+                payment = 50
+            },
+            ['2'] = {
+                name = 'Müdür',
                 isboss = true,
                 payment = 50
             },
         },
     },
 
-    ['hayesauto'] = {
-        label = 'Hayes Auto Mekanik',
+ ['mechanic2'] = {
+        label = 'Mekanik',
         type = "mechanic",
         defaultDuty = true,
         offDutyPay = false,
@@ -794,15 +727,20 @@ QBShared.Jobs = {
                 payment = 25
             },
             ['1'] = {
-                name = 'Patron',
+                name = 'Müdür Yrd.',
+                isboss = true,
+                payment = 50
+            },
+            ['2'] = {
+                name = 'Müdür',
                 isboss = true,
                 payment = 50
             },
         },
     },
 
-    ['lscustom'] = {
-        label = 'LSCustom Mekanik 2',
+     ['mechanic3'] = {
+        label = 'Mekanik',
         type = "mechanic",
         defaultDuty = true,
         offDutyPay = false,
@@ -812,14 +750,20 @@ QBShared.Jobs = {
                 payment = 25
             },
             ['1'] = {
-                name = 'Patron',
+                name = 'Müdür Yrd.',
+                isboss = true,
+                payment = 50
+            },
+            ['2'] = {
+                name = 'Müdür',
                 isboss = true,
                 payment = 50
             },
         },
     },
-    ['lscustom3'] = {
-        label = 'LSCustom Mekanik 3',
+
+     ['mechanic4'] = {
+        label = 'Mekanik',
         type = "mechanic",
         defaultDuty = true,
         offDutyPay = false,
@@ -829,14 +773,20 @@ QBShared.Jobs = {
                 payment = 25
             },
             ['1'] = {
-                name = 'Patron',
+                name = 'Müdür Yrd.',
+                isboss = true,
+                payment = 50
+            },
+            ['2'] = {
+                name = 'Müdür',
                 isboss = true,
                 payment = 50
             },
         },
     },
-    ['eastcustom'] = {
-        label = 'East Custom Mekanik',
+
+ ['mechanic5'] = {
+        label = 'Mekanik',
         type = "mechanic",
         defaultDuty = true,
         offDutyPay = false,
@@ -846,58 +796,12 @@ QBShared.Jobs = {
                 payment = 25
             },
             ['1'] = {
-                name = 'Patron',
+                name = 'Müdür Yrd.',
                 isboss = true,
                 payment = 50
             },
-        },
-    },
-    ['domestic'] = {
-        label = 'Domestic Mekanik',
-        type = "mechanic",
-        defaultDuty = true,
-        offDutyPay = false,
-        grades = {
-            ['0'] = {
-                name = 'Çalışan',
-                payment = 25
-            },
-            ['1'] = {
-                name = 'Patron',
-                isboss = true,
-                payment = 50
-            },
-        },
-    },
-    ['mechanic11'] = {
-        label = 'LSCustom Mekanik 4',
-        type = "mechanic",
-        defaultDuty = true,
-        offDutyPay = false,
-        grades = {
-            ['0'] = {
-                name = 'Çalışan',
-                payment = 25
-            },
-            ['1'] = {
-                name = 'Patron',
-                isboss = true,
-                payment = 50
-            },
-        },
-    },
-    ['mechanic12'] = {
-        label = 'Auto Exotics Mekanik',
-        type = "mechanic",
-        defaultDuty = true,
-        offDutyPay = false,
-        grades = {
-            ['0'] = {
-                name = 'Çalışan',
-                payment = 25
-            },
-            ['1'] = {
-                name = 'Patron',
+            ['2'] = {
+                name = 'Müdür',
                 isboss = true,
                 payment = 50
             },
