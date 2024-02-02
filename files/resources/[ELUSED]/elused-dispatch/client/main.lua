@@ -591,29 +591,29 @@ Citizen.CreateThread(function()
                             else
                                 Config.Timer['Shooting'] = Config.Shooting.Fail
                             end
-                        elseif Config.Timer['Speeding'] == 0 and playerPed == driver and speedlimit then
-                            sleep = 100
-                            if (GetEntitySpeed(vehicle) * 30.6) >= (speedlimit + (math.random(30, 60))) then
-                                if zoneChance('Speeding', 4, currentStreetName) then
-                                    Citizen.Wait(400)
-                                    if IsPedInAnyVehicle(playerPed, true) and
-                                        ((GetEntitySpeed(vehicle) * 3.6) >= (speedlimit + (math.random(30, 60)))) then
-                                        local veh = vehicleData(vehicle)
-                                        data = {
-                                            dispatchCode = 'speeding',
-                                            caller = _U('caller_local'),
-                                            coords = playerCoords,
-                                            netId = veh.id,
-                                            info = ('[%s] %s%s'):format(veh.plate, veh.doors, veh.class),
-                                            info2 = veh.colour
-                                        }
-                                        TriggerServerEvent('wf-alerts:svNotify', data)
-                                        Config.Timer['Speeding'] = Config.Speeding.Success
-                                    end
-                                else
-                                    Config.Timer['Speeding'] = Config.Speeding.Fail
-                                end
-                            end
+                        -- elseif Config.Timer['Speeding'] == 0 and playerPed == driver and speedlimit then
+                        --     sleep = 100
+                        --     if (GetEntitySpeed(vehicle) * 30.6) >= (speedlimit + (math.random(30, 60))) then
+                        --         if zoneChance('Speeding', 4, currentStreetName) then
+                        --             Citizen.Wait(400)
+                        --             if IsPedInAnyVehicle(playerPed, true) and
+                        --                 ((GetEntitySpeed(vehicle) * 3.6) >= (speedlimit + (math.random(30, 60)))) then
+                        --                 local veh = vehicleData(vehicle)
+                        --                 data = {
+                        --                     dispatchCode = 'speeding',
+                        --                     caller = _U('caller_local'),
+                        --                     coords = playerCoords,
+                        --                     netId = veh.id,
+                        --                     info = ('[%s] %s%s'):format(veh.plate, veh.doors, veh.class),
+                        --                     info2 = veh.colour
+                        --                 }
+                        --                 TriggerServerEvent('wf-alerts:svNotify', data)
+                        --                 Config.Timer['Speeding'] = Config.Speeding.Success
+                        --             end
+                        --         else
+                        --             Config.Timer['Speeding'] = Config.Speeding.Fail
+                        --         end
+                        --     end
                         elseif Config.Timer['Autotheft'] == 0 and
                             (IsPedGettingIntoAVehicle(playerPed) and GetSeatPedIsTryingToEnter(playerPed) == -1) and
                             ((driver > 0 and not IsPedAPlayer(driver)) or IsVehicleAlarmActivated(vehicle)) then
@@ -653,16 +653,16 @@ Citizen.CreateThread(function()
 						else
 							Config.Timer['Shooting'] = Config.Shooting.Fail
 						end
-					elseif Config.Timer['Melee'] == 0 and IsPedInMeleeCombat(playerPed) and HasPedBeenDamagedByWeapon(GetMeleeTargetForPed(playerPed), 0, 1) then
-						sleep = 10
-						if zoneChance('Melee', 3, currentStreetName) then
-							data = {dispatchCode = 'melee', caller = "İhbar", coords = playerCoords, netId = NetworkGetNetworkIdFromEntity(playerPed), length = 10000}
-							TriggerServerEvent('wf-alerts:svNotify', data)
-							Config.Timer['Melee'] = Config.Melee.Success
-						else
-							Config.Timer['Melee'] = Config.Melee.Fail
-						end
-					else sleep = 100 end
+					-- elseif Config.Timer['Melee'] == 0 and IsPedInMeleeCombat(playerPed) and HasPedBeenDamagedByWeapon(GetMeleeTargetForPed(playerPed), 0, 1) then
+					-- 	sleep = 10
+					-- 	if zoneChance('Melee', 3, currentStreetName) then
+					-- 		data = {dispatchCode = 'melee', caller = "İhbar", coords = playerCoords, netId = NetworkGetNetworkIdFromEntity(playerPed), length = 10000}
+					-- 		TriggerServerEvent('wf-alerts:svNotify', data)
+					-- 		Config.Timer['Melee'] = Config.Melee.Success
+					-- 	else
+					-- 		Config.Timer['Melee'] = Config.Melee.Fail
+					-- 	end
+					-- else sleep = 100 end
 				end
 			end
 		end
