@@ -2859,3 +2859,13 @@
 {"level":"debug","message":{"identifier":"FYH40953","name":"Charles Roda","source":2},"module":"user","timestamp":"2024-02-02T05:35:52.537Z"}
 {"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T05:35:52.537Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T05:35:52.981Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-02T09:28:46.529Z"}
+{"level":"debug","message":{"identifier":"HGO75866","name":"Tommy Edison","source":3},"module":"user","timestamp":"2024-02-02T09:28:46.530Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T09:28:46.531Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-02T09:28:46.539Z"}
+{"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-02T09:28:46.544Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T09:28:47.371Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-02T09:42:57.300Z"}
+{"level":"debug","message":{"identifier":"PAE72962","name":"V A","source":4},"module":"user","timestamp":"2024-02-02T09:42:57.300Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T09:42:57.300Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T09:42:57.696Z"}
