@@ -169,6 +169,7 @@ local function DetectPetrolCap(electric)
 end
 
 RegisterNetEvent("ed-fuel:PickupPump", function(data)
+    print("pompa aldı")
     if CurrentPump then
         TriggerServerEvent('ed-fuel:server:DetachRope', PlayerPedId())
         exports['qb-core']:KeyPressed()
