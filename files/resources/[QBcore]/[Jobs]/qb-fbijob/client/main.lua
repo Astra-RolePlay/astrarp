@@ -223,27 +223,27 @@ end)
 Citizen.CreateThread(function()
     -- Clothes
 	exports['qb-target']:AddBoxZone("PD_1C", vector3(461.52, -997.74, 30.69), 5.2, 5.4, { name="PD_1C", heading = 0, debugPoly=false, minZ=26.29, maxZ = 30.29, }, 
-	{ options = { { event = "fivem-appearance:client:openClothingShopMenu", icon = "fas fa-tshirt", label = "Kıyafet Dükkanı", job = "fbi" }, },
+	{ options = { { event = "illenium-appearance:client:openClothingShopMenu", icon = "fas fa-tshirt", label = "Kıyafet Dükkanı", job = "fbi" }, },
 	  distance = 2.0
 	})
 
 	exports['qb-target']:AddBoxZone("PD_2C", vector3(362.31, -1593.37, 25.45), 4.4, 3.8, { name="PD_2C", heading = 320, debugPoly=false, minZ=21.05, maxZ = 25.05, }, 
-	{ options = { { event = "fivem-appearance:client:openClothingShopMenu", icon = "fas fa-tshirt", label = "Kıyafet Dükkanı", job = "fbi" }, },
+	{ options = { { event = "illenium-appearance:client:openClothingShopMenu", icon = "fas fa-tshirt", label = "Kıyafet Dükkanı", job = "fbi" }, },
 	  distance = 2.0
 	})
 
     exports['qb-target']:AddBoxZone("PD_3C", vector3(853.79, -1312.56, 28.24), 4.6, 3.4, { name="PD_3C", heading = 0, debugPoly=false, minZ=27.24, maxZ = 27.84, }, 
-	{ options = { { event = "fivem-appearance:client:openClothingShopMenu", icon = "fas fa-tshirt", label = "Kıyafet Dükkanı", job = "fbi" }, },
+	{ options = { { event = "illenium-appearance:client:openClothingShopMenu", icon = "fas fa-tshirt", label = "Kıyafet Dükkanı", job = "fbi" }, },
 	  distance = 2.0
 	})
 
     exports['qb-target']:AddBoxZone("PD_4C", vector3(1840.41, 3679.91, 34.19), 5.0, 4.6, { name="PD_4C", heading = 30, debugPoly=false, minZ=33.09, maxZ = 33.79, }, 
-	{ options = { { event = "fivem-appearance:client:openClothingShopMenu", icon = "fas fa-tshirt", label = "Kıyafet Dükkanı", job = "fbi" }, },
+	{ options = { { event = "illenium-appearance:client:openClothingShopMenu", icon = "fas fa-tshirt", label = "Kıyafet Dükkanı", job = "fbi" }, },
 	  distance = 2.0
 	})
 
     exports['qb-target']:AddBoxZone("PD_5C", vector3(-438.46, 6010.28, 37.0), 4.2, 4.8, { name="PD_5C", heading = 45, debugPoly=false, minZ=35.90, maxZ = 36.50, }, 
-	{ options = { { event = "fivem-appearance:client:openClothingShopMenu", icon = "fas fa-tshirt", label = "Kıyafet Dükkanı", job = "fbi" }, },
+	{ options = { { event = "illenium-appearance:client:openClothingShopMenu", icon = "fas fa-tshirt", label = "Kıyafet Dükkanı", job = "fbi" }, },
 	  distance = 2.0
 	})
 

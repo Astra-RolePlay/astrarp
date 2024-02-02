@@ -12,7 +12,7 @@ Config.Settings = {
     ["addTrashWithoutBait"] = 1,        -- HOW MANY MORE TRASH ITEMS WILL APPEAR WITHOUT FISH Bait
     ["rodBrokeChanceWhenUpgrade"] = 40, -- WHAT IS THE CHANCE OF BREAKING THE FISHING ROD DURING LEVEL UPGRADING?
     ["eatBaitChance"] = 50,             -- WHAT PERCENTAGE CHANCE THAT THE BAIT WILL DISAPPEAR AFTER FISHING
-    ["illegalBaitName"] = "illegal",    -- TYPE OF BAIT REQUIRED TO CATCH ILLEGAL FISH
+    ["illegalBaitName"] = "illegalfishbait",    -- TYPE OF BAIT REQUIRED TO CATCH ILLEGAL FISH
     ["tasksResetDay"] = 3,              -- HOW MANY DAYS AFTER THE TASK IS RECEIVED WILL IT BE RESET (EVEN IF 1 TASK IS RECEIVED, ALL TASKS WILL BE DELETED AFTER THE WRITTEN DAY)
 }
 
