@@ -17,5 +17,5 @@ Config.PlayersNumberOfCharacters = {                         -- Define maximum a
 
 Config.Clothing = {
     ['qb-clothing'] = false,
-    ['fivem-appearance'] = true,
+    ['illenium-appearance'] = true,
 }
