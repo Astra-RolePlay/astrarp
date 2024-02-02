@@ -115,7 +115,7 @@ Config.Blips = {
         Name = "Kuaför",
     },
     ["tattoo"] = {
-        Show = true,
+        Show = false,
         Sprite = 75,
         Color = 4,
         Scale = 0.7,
