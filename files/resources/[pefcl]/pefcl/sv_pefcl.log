@@ -2610,3 +2610,7 @@
 {"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-01T23:58:20.060Z"}
 {"level":"debug","message":{"identifier":"XRK76375","name":"Daryl Crannell","source":1},"module":"user","timestamp":"2024-02-01T23:58:20.061Z"}
 {"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-01T23:58:20.061Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-02T00:13:08.990Z"}
+{"level":"debug","message":{"identifier":"XRK76375","name":"Daryl Crannell","source":4},"module":"user","timestamp":"2024-02-02T00:13:08.991Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T00:13:08.991Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T00:13:09.435Z"}
