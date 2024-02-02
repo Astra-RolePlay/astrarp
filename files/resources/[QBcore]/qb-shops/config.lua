@@ -82,7 +82,7 @@ Config.Products = {
             type = "item",
             slot = 9,
         },
-        [17] = {
+        [10] = {
             name = "phone",
             price = 1000,
             amount = 1,
