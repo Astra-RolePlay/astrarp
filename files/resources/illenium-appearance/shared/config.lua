@@ -14,7 +14,7 @@ Config.RCoreTattoosCompatibility = false
 
 Config.AsynchronousLoading = true -- Change this to false if you want the NUI data to load before displaying the appearance UI
 
-Config.UseTarget = false
+Config.UseTarget = true
 
 Config.TextUIOptions = {
     position = "left-center"
@@ -105,21 +105,21 @@ Config.Blips = {
         Sprite = 366,
         Color = 47,
         Scale = 0.7,
-        Name = "Clothing Store",
+        Name = "Kıyafet Mağazası",
     },
     ["barber"] = {
         Show = true,
         Sprite = 71,
         Color = 0,
         Scale = 0.7,
-        Name = "Barber",
+        Name = "Kuaför",
     },
     ["tattoo"] = {
         Show = true,
         Sprite = 75,
         Color = 4,
         Scale = 0.7,
-        Name = "Tattoo Shop",
+        Name = "Dövmeci",
     },
     ["surgeon"] = {
         Show = true,
@@ -135,42 +135,42 @@ Config.TargetConfig = {
         model = "s_f_m_shop_high",
         scenario = "WORLD_HUMAN_STAND_MOBILE",
         icon = "fas fa-tshirt",
-        label = "Open Clothing Store",
+        label = "Kıyafet Mağazası",
         distance = 3
     },
     ["barber"] = {
         model = "s_m_m_hairdress_01",
         scenario = "WORLD_HUMAN_STAND_MOBILE",
         icon = "fas fa-scissors",
-        label = "Open Barber Shop",
+        label = "Kuaför",
         distance = 3
     },
     ["tattoo"] = {
         model = "u_m_y_tattoo_01",
         scenario = "WORLD_HUMAN_STAND_MOBILE",
         icon = "fas fa-pen",
-        label = "Open Tattoo Shop",
+        label = "Dövmeci",
         distance = 3
     },
     ["surgeon"] = {
         model = "s_m_m_doctor_01",
         scenario = "WORLD_HUMAN_STAND_MOBILE",
         icon = "fas fa-scalpel",
-        label = "Open Surgeon",
-        distance = 3
+        label = "Ameliyat",
+        distance = 0
     },
     ["clothingroom"] = {
         model = "mp_g_m_pros_01",
         scenario = "WORLD_HUMAN_STAND_MOBILE",
         icon = "fas fa-sign-in-alt",
-        label = "Open Job / Gang Clothes Menu",
+        label = "Meslek / Gang Kıyafet Menu",
         distance = 3
     },
     ["playeroutfitroom"] = {
         model = "mp_g_m_pros_01",
         scenario = "WORLD_HUMAN_STAND_MOBILE",
         icon = "fas fa-sign-in-alt",
-        label = "Open Outfits Menu",
+        label = "Kayıtlı Kıyafetler",
         distance = 3
     },
 }
@@ -194,7 +194,7 @@ Config.Stores = {
     },
     {
         type = "clothing",
-        coords = vector4(-705.5, -149.22, 37.42, 122),
+        coords = vector4(-716.83, -146.65, 37.42, 206.9),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -233,7 +233,7 @@ Config.Stores = {
     },
     {
         type = "clothing",
-        coords = vector4(-168.73, -301.41, 39.73, 238.67),
+        coords = vector4(-163.38, -302.56, 39.73, 251.11),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -272,7 +272,7 @@ Config.Stores = {
     },
     {
         type = "clothing",
-        coords = vector4(-1445.86, -240.78, 49.82, 36.17),
+        coords = vector4(-1450.49, -237.75, 49.81, 46.87),
         size = vector3(4, 4, 4),
         rotation = 45,
         usePoly = false,
@@ -348,19 +348,7 @@ Config.Stores = {
             vector3(-1093.1976318359, 2709.7365722656, 19.11)
         }
     },
-    {
-        type = "clothing",
-        coords = vector4(-1119.24, -1440.6, 5.23, 300.5),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(-1124.5535888672, -1444.5367431641, 5.23),
-            vector3(-1118.7023925781, -1441.0450439453, 5.23),
-            vector3(-1121.2891845703, -1434.8474121094, 5.23),
-            vector3(-1128.4727783203, -1439.8254394531, 5.23)
-        }
-    },
+    
     {
         type = "clothing",
         coords = vector4(124.82, -224.36, 54.56, 335.41),
@@ -543,19 +531,19 @@ Config.Stores = {
             vector3(-294.1501159668, 6203.2700195312, 31.49)
         }
     },
-    {
-        type = "surgeon",
-        coords = vector4(298.78, -572.81, 43.26, 114.27),
-        size = vector3(4, 4, 4),
-        rotation = 45,
-        usePoly = false,
-        points = {
-            vector3(298.84417724609, -572.92205810547, 43.26),
-            vector3(296.39556884766, -575.65942382812, 43.26),
-            vector3(293.56317138672, -572.60675048828, 43.26),
-            vector3(296.28656005859, -570.330078125, 43.26)
-        }
-    }
+    -- {
+    --     type = "surgeon",
+    --     coords = vector4(298.78, -572.81, 43.26, 114.27),
+    --     size = vector3(4, 4, 4),
+    --     rotation = 45,
+    --     usePoly = false,
+    --     points = {
+    --         vector3(298.84417724609, -572.92205810547, 43.26),
+    --         vector3(296.39556884766, -575.65942382812, 43.26),
+    --         vector3(293.56317138672, -572.60675048828, 43.26),
+    --         vector3(296.28656005859, -570.330078125, 43.26)
+    --     }
+    -- }
 }
 
 

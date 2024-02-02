@@ -14,7 +14,7 @@ KloudDev.Locations = {
         },
         max = 25,
         target = {
-            label = "Uproot",
+            label = "Kökü Sök",
             icon = "fas fa-trowel"
         },
         anim = {
@@ -44,7 +44,7 @@ KloudDev.Locations = {
         },
         blip = {
             enabled = true,
-            label = "Potato Field",
+            label = "Patates Tarlası",
             sprite = 285,
             scale = 0.9,
             colour = 21,
@@ -65,7 +65,7 @@ KloudDev.Locations = {
         },
         max = 25,
         target = {
-            label = "Uproot",
+            label = "Kökü Sök",
             icon = "fas fa-hands-holding"
         },
         anim = {
@@ -95,7 +95,7 @@ KloudDev.Locations = {
         },
         blip = {
             enabled = true,
-            label = "Cabbage Field",
+            label = "Lahana Tarlası",
             sprite = 285,
             scale = 0.9,
             colour = 2,
@@ -116,7 +116,7 @@ KloudDev.Locations = {
         },
         max = 25,
         target = {
-            label = "Uproot",
+            label = "Kökü Sök",
             icon = "fas fa-hands-holding"
         },
         anim = {
@@ -146,7 +146,7 @@ KloudDev.Locations = {
         },
         blip = {
             enabled = true,
-            label = "Tomato Field",
+            label = "Domates Tarlası",
             
             sprite = 285,
             scale = 0.9,
@@ -168,7 +168,7 @@ KloudDev.Locations = {
         },
         max = 25,
         target = {
-            label = "Uproot",
+            label = "Kökü Sök",
             icon = "fas fa-hands-holding"
         },
         anim = {
@@ -198,7 +198,7 @@ KloudDev.Locations = {
         },
         blip = {
             enabled = true,
-            label = "Coffee Bean Field",
+            label = "Kahve Tarlası",
             
             sprite = 285,
             scale = 0.9,
@@ -244,7 +244,7 @@ KloudDev.Trees = {
             skillCheckInputs = {"1", "2", "3", "4"}
         },
         target = {
-            label = "Pick Orange",
+            label = "Portakal Topla",
             icon = "fas fa-cannabis"
         },
         anim = {
@@ -274,7 +274,7 @@ KloudDev.Trees = {
         },
         blip = {
             enabled = true,
-            label = "Orange Field",
+            label = "Portakal Tarlası",
             
             sprite = 285,
             scale = 0.9,
@@ -286,7 +286,7 @@ KloudDev.Trees = {
 KloudDev.WashLocations = {
     blip = {
         enabled = true,
-        label = "Wash Crops",
+        label = "Bitkileri Yıka",
         sprite = 728,
         scale = 0.9,
         colour = 4,
@@ -319,7 +319,7 @@ KloudDev.Shops = {
     ["sell"] = {
         blip = {
             enabled = true,
-            label = "Crops Buyer",
+            label = "Ekin Satış",
             sprite = 59,
             scale = 0.9,
             colour = 2,
@@ -347,7 +347,7 @@ KloudDev.Shops = {
     ["shop"] = {
         blip = {
             enabled = true,
-            label = "Farmer's Shop",
+            label = "Tarım Mağazası",
             sprite = 59,
             scale = 0.9,
             colour = 2,

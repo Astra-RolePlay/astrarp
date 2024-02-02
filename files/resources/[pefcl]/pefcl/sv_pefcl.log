@@ -2869,3 +2869,13 @@
 {"level":"debug","message":{"identifier":"PAE72962","name":"V A","source":4},"module":"user","timestamp":"2024-02-02T09:42:57.300Z"}
 {"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T09:42:57.300Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T09:42:57.696Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-02T09:53:10.733Z"}
+{"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-02T09:53:10.739Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-02T10:12:55.041Z"}
+{"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-02T10:12:55.045Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-02T10:13:07.021Z"}
+{"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-02T10:13:07.024Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-02T10:18:45.513Z"}
+{"level":"debug","message":{"identifier":"BMS02698","name":"VADİM  CANTAS","source":5},"module":"user","timestamp":"2024-02-02T10:18:45.513Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T10:18:45.515Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T10:18:45.909Z"}

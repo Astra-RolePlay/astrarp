@@ -874,22 +874,6 @@ Config.Locations = {
 
     ["247supermarket20"] = {
         ["label"] = "24/7 Supermarket",
-        ["coords"] = vector4(812.88, -782.04, 26.17, 271.36),
-        ["ped"] = 'mp_m_shopkeep_01',
-        ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
-        ["radius"] = 1.5,
-        ["targetIcon"] = "fas fa-shopping-basket",
-        ["targetLabel"] = "Market",
-        ["products"] = Config.Products["normal"],
-        ["showblip"] = false,
-        ["blipsprite"] = 52,
-        ["blipscale"] = 0.6,
-        ["blipcolor"] = 2,
-        ["delivery"] = vector4(812.88, -782.04, 26.17, 271.36)
-    },
-
-    ["247supermarket21"] = {
-        ["label"] = "24/7 Supermarket",
         ["coords"] = vector4(-548.99, -583.05, 34.68, 180.23),
         ["ped"] = 'mp_m_shopkeep_01',
         ["scenario"] = "WORLD_HUMAN_STAND_MOBILE",
