@@ -2959,3 +2959,9 @@
 {"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-02T13:35:16.689Z"}
 {"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-02T13:37:45.884Z"}
 {"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-02T13:38:15.883Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-02T13:51:21.541Z"}
+{"level":"debug","message":{"identifier":"XRK76375","name":"Daryl Crannell","source":7},"module":"user","timestamp":"2024-02-02T13:51:21.541Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-02T13:51:21.542Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-02T13:51:21.549Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-02T13:51:21.937Z"}
+{"level":"error","message":"Failed to add user to unique account","module":"accounts","timestamp":"2024-02-02T13:51:51.587Z"}
