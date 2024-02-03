@@ -590,6 +590,14 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 3,
+        },
+        [4] = {
+            name = "radio",
+            price = 1000,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 4,
         }
     },
 }

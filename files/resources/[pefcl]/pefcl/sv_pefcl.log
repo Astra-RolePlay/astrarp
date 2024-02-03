@@ -3994,3 +3994,7 @@
 {"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-03T14:06:05.998Z"}
 {"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-03T14:06:06.003Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T14:06:06.382Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T14:29:24.219Z"}
+{"level":"debug","message":{"identifier":"PAE72962","name":"V A","source":8},"module":"user","timestamp":"2024-02-03T14:29:24.220Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T14:29:24.221Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T14:29:25.021Z"}
