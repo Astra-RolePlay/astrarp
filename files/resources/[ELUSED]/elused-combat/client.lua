@@ -28,7 +28,7 @@ function Display(id, crds, identifier, reason)
         while displaying do
             Wait(5)
             local pcoords = GetEntityCoords(PlayerPedId())
-            if GetDistanceBetweenCoords(crds, pcoords.x, pcoords.y, pcoords.z, true) < 15.0 and show3DText then
+            if GetDistanceBetweenCoords(crds.x,crds.y,crds.z, pcoords.x, pcoords.y, pcoords.z, true) < 15.0 then
                 DrawText3DSecond(crds.x, crds.y, crds.z+0.15, "Player Left Game")
                 DrawText3D(crds.x, crds.y, crds.z, "ID: " .. id .. " (" .. identifier .. ")\nReason: " .. reason)
                 UdeMarker3D(crds.x,crds.y,crds.z+0.50)

@@ -4820,3 +4820,10 @@
 {"level":"debug","message":{"identifier":"VPK54164","name":"John Doe","source":12},"module":"user","timestamp":"2024-02-03T22:42:30.503Z"}
 {"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T22:42:30.507Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T22:42:30.874Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T23:35:54.300Z"}
+{"level":"debug","message":{"identifier":"CID21351","name":"Daryl Crannell","source":13},"module":"user","timestamp":"2024-02-03T23:35:54.301Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T23:35:54.302Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T23:35:54.310Z"}
+{"level":"debug","message":{"identifier":"CID21351","name":"Daryl Crannell","source":13},"module":"user","timestamp":"2024-02-03T23:35:54.310Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T23:35:54.311Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T23:35:57.177Z"}
