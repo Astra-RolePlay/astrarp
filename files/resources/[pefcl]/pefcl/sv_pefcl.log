@@ -4786,3 +4786,37 @@
 {"level":"debug","message":"Creating initial account .. ","module":"accounts","timestamp":"2024-02-03T22:16:14.908Z"}
 {"level":"debug","message":"Successfully created initial account.","module":"accounts","timestamp":"2024-02-03T22:16:14.913Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T22:16:19.720Z"}
+{"level":"debug","message":"Unloading player for pefcl with export","module":"user","timestamp":"2024-02-03T22:28:26.110Z"}
+{"level":"debug","message":6,"module":"user","timestamp":"2024-02-03T22:28:26.111Z"}
+{"level":"debug","message":"Player unloaded, emitting: pefcl:userUnloaded","module":"user","timestamp":"2024-02-03T22:28:26.112Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T22:28:36.614Z"}
+{"level":"debug","message":{"identifier":"CID21351","name":"Daryl Crannell","source":6},"module":"user","timestamp":"2024-02-03T22:28:36.615Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T22:28:36.616Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T22:28:44.830Z"}
+{"level":"debug","message":{"identifier":"VEG08630","name":"ahmet yılamz","source":9},"module":"user","timestamp":"2024-02-03T22:28:44.831Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T22:28:44.831Z"}
+{"level":"info","message":"Syncing initial bank balance from framework.","module":"accounts","timestamp":"2024-02-03T22:28:44.876Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-03T22:28:44.876Z"}
+{"level":"info","message":"Moving bank balance from export to initial account.","module":"accounts","timestamp":"2024-02-03T22:28:44.877Z"}
+{"level":"info","message":{"balance":5000,"identifier":"VEG08630"},"module":"accounts","timestamp":"2024-02-03T22:28:44.877Z"}
+{"level":"debug","message":"Creating initial account .. ","module":"accounts","timestamp":"2024-02-03T22:28:44.877Z"}
+{"level":"debug","message":"Successfully created initial account.","module":"accounts","timestamp":"2024-02-03T22:28:44.884Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T22:28:45.225Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T22:35:54.089Z"}
+{"level":"debug","message":{"identifier":"VPK54164","name":"John Doe","source":10},"module":"user","timestamp":"2024-02-03T22:35:54.090Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T22:35:54.090Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T22:35:54.888Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T22:38:22.342Z"}
+{"level":"debug","message":{"identifier":"BAF37283","name":"walone dalot","source":11},"module":"user","timestamp":"2024-02-03T22:38:22.343Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T22:38:22.343Z"}
+{"level":"info","message":"Syncing initial bank balance from framework.","module":"accounts","timestamp":"2024-02-03T22:38:22.388Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-03T22:38:22.388Z"}
+{"level":"info","message":"Moving bank balance from export to initial account.","module":"accounts","timestamp":"2024-02-03T22:38:22.389Z"}
+{"level":"info","message":{"balance":5000,"identifier":"BAF37283"},"module":"accounts","timestamp":"2024-02-03T22:38:22.389Z"}
+{"level":"debug","message":"Creating initial account .. ","module":"accounts","timestamp":"2024-02-03T22:38:22.390Z"}
+{"level":"debug","message":"Successfully created initial account.","module":"accounts","timestamp":"2024-02-03T22:38:22.396Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T22:38:22.986Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T22:42:30.502Z"}
+{"level":"debug","message":{"identifier":"VPK54164","name":"John Doe","source":12},"module":"user","timestamp":"2024-02-03T22:42:30.503Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T22:42:30.507Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T22:42:30.874Z"}
