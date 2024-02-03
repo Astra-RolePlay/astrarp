@@ -1,12 +1,11 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 fx_version 'adamant'
 games { 'gta5' }
-
 author 'FlavyV'
 description 'Vehicle Door/Window/Seat/Engine/Dome Light NUI script'
 version '1.1.5'
-
 ui_page "html/vehui.html"
-
 files {
   "html/vehui.html",
   "html/style.css",
@@ -25,12 +24,10 @@ files {
   "html/img/windowRearRight.png",
   "html/img/interiorLight.png"
 }
-
 client_script {
   'config.lua',
   'client.lua'
 }
-
 export {
   'openExternal'
 }

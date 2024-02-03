@@ -1,3 +1,6 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.js'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 fx_version("cerulean")
 game("gta5")
 description("js runtime monkaW")
@@ -8,22 +11,18 @@ client_scripts({
 	"dist/game/client/*.lua",
 	"apps/game/client/*.lua",
 })
-
 server_script({
 	-- This is a file that lives purely in source code and isn't compiled alongside
 	-- rest of the release. It's used to detect whether a user can read or not.
 	"build-detector.js",
 	"dist/game/server/server.js",
 })
-
 ui_page("dist/html/index.html")
-
 files({
 	"config.json",
 	"dist/html/index.html",
 	"dist/html/**/*",
 })
-
 dependency({
 	"screenshot-basic",
 	"pma-voice",

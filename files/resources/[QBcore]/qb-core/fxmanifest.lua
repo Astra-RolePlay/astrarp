@@ -1,9 +1,9 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 fx_version 'cerulean'
 game 'gta5'
-
 description 'QB-Core'
 version '1.2.6'
-
 shared_scripts {
     'config.lua',
     'shared/locale.lua',
@@ -17,7 +17,6 @@ shared_scripts {
     'shared/weapons.lua',
     'shared/locations.lua'
 }
-
 client_scripts {
     'client/main.lua',
     'client/functions.lua',
@@ -25,7 +24,6 @@ client_scripts {
     'client/events.lua',
     'client/drawtext.lua'
 }
-
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
     'server/main.lua',
@@ -36,20 +34,15 @@ server_scripts {
     'server/exports.lua',
     'server/debug.lua'
 }
-
 ui_page 'html/index.html'
-
 files {
     'html/index.html',
     'html/css/style.css',
     'html/css/drawtext.css',
     'html/js/*.js'
 }
-
 dependency 'oxmysql'
-
 lua54 'yes'
-
 escrow_ignore {
     'config.lua',
     'shared/locale.lua',

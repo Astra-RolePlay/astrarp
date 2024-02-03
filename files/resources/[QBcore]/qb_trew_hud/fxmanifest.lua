@@ -1,27 +1,20 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 fx_version 'adamant'
-
 game 'gta5'
-
 description 'Trew HUD UI'
-
 version '2.0.1'
 lua54 'yes'
-
 ui_page 'html/ui.html'
-
-
 files {
 	'html/ui.html',
 	'html/main.css',
 	'html/app.js',
-
 	'html/img/vehicle-gear.png',
 	'html/img/vehicle-lights.png',
 	'html/img/vehicle-lights-high.png',
 	'html/img/vehicle-seatbelt.png',
-
 	'html/img/weapon-bullets.png',
-
 	'html/img/weapons/appistol.png',
 	'html/img/weapons/assaultrifle.png',
 	'html/img/weapons/assaultrifle_mk2.png',
@@ -111,25 +104,19 @@ files {
 	'html/img/weapons/unarmed.png',
 	'html/img/weapons/vintagepistol.png',
 	'html/img/weapons/wrench.png',
-
-
 	
 	'html/sounds/seatbelt-buckle.ogg',
 	'html/sounds/seatbelt-unbuckle.ogg',
-
 	'html/sounds/car-indicators.ogg',
 }
-
 shared_scripts {
 	'translation.lua',
 	'locales/*.lua',
 	'config.lua',
 }
-
 client_scripts {
 	'client/client.lua',
 }
-
 dependencies {
 	'qb-core',
 	'qb-management'

@@ -1,3 +1,6 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.js'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 
 
 -- This resource is part of the default Cfx.re asset pack (cfx-server-data)

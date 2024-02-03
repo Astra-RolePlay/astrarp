@@ -1,11 +1,11 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 fx_version 'cerulean'
 game 'gta5' 
-
 author 'uyuyorum'
 description 'UM - Hacker Phone'
 version '2.0.0'
 ui_page 'nui/ui.html'
-
 files { 
 		'config.js',
 		'nui/ui.html',

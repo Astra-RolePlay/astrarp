@@ -1,3 +1,5 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 
 fx_version 'adamant'
 description 'Casino and Cayo Perico IPL loader by Kromstar Gaming#8228'

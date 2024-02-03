@@ -1,19 +1,16 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 fx_version 'adamant'
 author 'ELUSED'
 description 'ED-POLICEBADGE'
-
 game 'gta5'
-
 client_scripts {
     'cl_badge.lua'
 }
-
 server_scripts {
     'sv_badge.lua'
 }
-
 ui_page 'html/index.html'
-
 files {
 	'html/index.html',
 	'html/assets/css/*.css',
@@ -23,9 +20,7 @@ files {
 	'html/assets/fonts/justsignature/JustSignature.woff',
 	'html/assets/images/*.png'
 }
-
 lua54 'yes'
-
 escrow_ignore {
     'config.lua'
   }

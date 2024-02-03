@@ -1,3 +1,5 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 ----------------------- [ MenuV ] -----------------------
 -- GitHub: https://github.com/ThymonA/menuv/
 -- License: GNU General Public License v3.0

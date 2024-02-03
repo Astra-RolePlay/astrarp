@@ -1,3 +1,5 @@
+shared_script '@ulasdmrc/shared_fg-obfuscated.lua'
+shared_script '@ulasdmrc/ai_module_fg-obfuscated.lua'
 
 --- Maintained by TayMcKenzieNZ ---
 --- Check for updates at https://github.com/TayMcKenzieNZ/rpemotes ---
