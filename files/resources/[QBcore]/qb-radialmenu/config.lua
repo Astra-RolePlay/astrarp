@@ -194,6 +194,14 @@ Config.MenuItems = {
                 event = 'kd-kelepce:client:ybindir',
                 shouldClose = true
             },
+            {
+                id = 'oyuncusoysivil',
+                title = 'Soy',
+                icon = 'search',
+                type = 'client',
+                event = 'police:client:RobPlayer',
+                shouldClose = true
+            },
             -- {
             --     id = 'cornerselling',
             --     title = 'Köşe Tut',
