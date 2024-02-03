@@ -732,7 +732,8 @@ RegisterNetEvent("elused-policegarage:SpawnRentedVehicle", function(vehicle, veh
         SetVehicleNumberPlateText(veh, FormatString(station)..tostring(math.random(1000, 9999)))
         exports[Config.FuelSystem]:SetFuel(veh, 100.0)
         TaskWarpPedIntoVehicle(player, veh, -1)
-        TriggerServerEvent('qb-vehiclekeys:server:BuyVehicle', QBCore.Functions.GetPlate(veh), GetLabelText(GetDisplayNameFromVehicleModel(GetEntityModel(veh))))   --Change Add
+        TriggerServerEvent('vehiclekeys:server:SetVehicleOwner', QBCore.Functions.GetPlate(veh), GetLabelText(GetDisplayNameFromVehicleModel(GetEntityModel(veh))))
+        -- TriggerServerEvent('qb-vehiclekeys:server:BuyVehicle', QBCore.Functions.GetPlate(veh), GetLabelText(GetDisplayNameFromVehicleModel(GetEntityModel(veh))))   --Change Add
         SetVehicleEngineOn(veh, true, true)
         StartLoop(veh, vehiclename, time, player, station)
     end, spawncoords, true)
@@ -745,7 +746,7 @@ RegisterNetEvent("elused-policegarage:SpawnPurchasedVehicle", function(vehicle, 
         TaskWarpPedIntoVehicle(PlayerPedId(), veh, -1)
         SetVehicleModKit(veh, 0)
         SetVehicleDirtLevel(veh, 0.0)
-        TriggerServerEvent('qb-vehiclekeys:server:BuyVehicle', QBCore.Functions.GetPlate(veh), GetLabelText(GetDisplayNameFromVehicleModel(GetEntityModel(veh))))   --Change Add
+         TriggerServerEvent('vehiclekeys:server:SetVehicleOwner', QBCore.Functions.GetPlate(veh), GetLabelText(GetDisplayNameFromVehicleModel(GetEntityModel(veh))))
         SetVehicleEngineOn(veh, true, true)
         if trunkitems then
             TriggerServerEvent("inventory:server:addTrunkItems", QBCore.Functions.GetPlate(veh), SetTrunkItemsInfo(trunkitems))

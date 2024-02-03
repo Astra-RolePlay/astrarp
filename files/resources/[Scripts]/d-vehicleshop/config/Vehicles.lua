@@ -2746,4 +2746,173 @@ VehicleConfig = {
         }
     },
 
+    {
+        name = "#1 Officer I",
+        label = "Polis Garajı",
+        vehicles = {
+            {
+                name = "polvic",
+                label = "PD Cruiser",
+                brand = "Officer I",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+            {
+                name = "clrgtaurus",
+                label = "PD Taurus",
+                brand = "Officer I+",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            }
+        }
+    },
+
+
+    
+    {
+        name = "#2 Officer II+",
+        label = "Polis Garajı",
+        vehicles = {
+             {
+                name = "clrgtahoe",
+                label = "PD Tahot",
+                brand = "Officer II+",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+        }
+    },
+
+    {
+        name = "#3 Officer III+",
+        label = "Polis Garajı",
+        vehicles = {
+             {
+                name = "polraptor",
+                label = "PD Raptor",
+                brand = "Officer III+",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+        }
+    },
+
+    {
+        name = "#4 Corporal+",
+        label = "Polis Garajı",
+        vehicles = {
+             {
+                name = "npolexp",
+                label = "PD Kekxplorer",
+                brand = "Corporal+",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+        }
+    },
+
+
+
+{
+        name = "#PD Şef Garajı",
+        label = "Polis Garajı",
+        vehicles = {
+            {
+                name = "polvic",
+                label = "PD Cruiser",
+                brand = "Officer I",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+            {
+                name = "clrgtaurus",
+                label = "PD Taurus",
+                brand = "Officer I+",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+            {
+                name = "clrgtahoe",
+                label = "PD Tahot",
+                brand = "Officer II+",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+            {
+                name = "npolexp",
+                label = "PD Kekxplorer",
+                brand = "Corporal+",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+            {
+                name = "polraptor",
+                label = "PD Raptor",
+                brand = "Officer III+",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+            {
+                name = "npolchal",
+                label = "PD Challgargent",
+                brand = "Deputy Cheif+",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+            {
+                name = "npolvette",
+                label = "PD Curvi",
+                brand = "Deputy Cheif+",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+            {
+                name = "npolstang",
+                label = "PD Stgang",
+                brand = "Deputy Cheif+",
+                price = 0,
+                max_speed = "180 km/h",
+                braking = "1.0/5",
+                acceleration = "2.5/5",
+                handling = "2.0/5"
+            },
+            
+        }
+    },
 }
