@@ -8,13 +8,13 @@ endpoint_add_udp "0.0.0.0:30120"
 sv_maxclients 64
 sv_licenseKey "cfxk_oYk6wJxUgE4VLKTgK0mh_2DiSnK"
 set steam_webApiKey "672DD2571BDBA23CE1E7A6F3789D3514"
-sv_hostname "[TR] Astra Roleplay | ..."
-sets sv_projectName "[TR] Astra Roleplay | ..."
-sets sv_projectDesc "02.02.2024 AÇILIŞ"
+sv_hostname "[TR] Astra Roleplay | Non-Whitelist | Ağırlıklı Sosyal RP ve Özel GunRP Sistemi & Görüşmemiş Rol Kalitesi!"
+sets sv_projectName "^9[TR] Astra Roleplay | Non-Whitelist | Ağırlıklı Sosyal RP ve Özel GunRP Sistemi & Görüşmemiş Rol Kalitesi!"
+sets sv_projectDesc "Non-Whitelist | Ağırlıklı Sosyal RP ve Özel GunRP Sistemi & Görüşmemiş Rol Kalitesi!"
 sets VoiceChat "Voice Chat"
 sets Founder "Vidarr#6199"
 sets Host "HOSTUDE.NET"
-sets tags "[tr],turkce,non,whitelist,nonwhitelist,whitelist,roleplay,whitelist,rp,car,police,hacker,ambulance,discord,lsmd,lspd,ems,turkiye,turk,jobs,tr,TR,[TR]"                                 # SERVER TAG AYARLAMA KISMI
+sets tags "[tr],turkce,non,whitelist,nonwhitelist,whitelist,roleplay,whitelist,rp,car,police,hacker,ambulance,discord,lsmd,lspd,ems,turkiye,turk,jobs,tr,TR,[TR],astrarp, astraroleplay,astra"                                 # SERVER TAG AYARLAMA KISMI
 sets locale "tr-TR"
 load_server_icon myLogo.png
 set sv_enforceGameBuild 2802 ## ÖNERİLEN SÜRÜM 2802 & 2699
@@ -77,27 +77,27 @@ add_principal identifier.fivem:708192 group.admin # Vidarr (Ulaş D)
 add_principal identifier.fivem:13022180 group.admin # Arda Alan
 add_principal identifier.discord:242389623790108683 group.admin # Kyrieen - Emre
 ## BU KISIM FGMSI OLANLARI ILGILENDIRIYOR FG YOKSA SILIN
-add_principal identifier.fivem:708192 group.fgm # Vidarr
+#add_principal identifier.fivem:708192 group.fgm # Vidarr
 ## ADMIN
-add_principal identifier.discord:242389623790108683 group.fgmod # Kyrieen - Emre
-add_principal identifier.fivem:13022180 group.fgmod # Arda - redviper
+#add_principal identifier.discord:242389623790108683 group.fgmod # Kyrieen - Emre
+#add_principal identifier.fivem:13022180 group.fgmod # Arda - redviper
 ## MOD
-add_principal identifier.fivem:12556374 group.fgmod # Zeki - slaugh
+#add_principal identifier.fivem:12556374 group.fgmod # Zeki - slaugh
 ## FGM FULL PERM
-add_ace group.fgm AdminMenu allow
-add_ace group.fgm Client allow
-add_ace group.fgm Weapon allow
-add_ace group.fgm Vehicle allow
-add_ace group.fgm Blacklist allow
-add_ace group.fgm Misc allow
+#add_ace group.fgm AdminMenu allow
+#add_ace group.fgm Client allow
+#add_ace group.fgm Weapon allow
+#add_ace group.fgm Vehicle allow
+#add_ace group.fgm Blacklist allow
+#add_ace group.fgm Misc allow
 ## FGM MOD ADMIN
-add_ace group.fgadmin BypassSpectate allow
-add_ace group.fgadmin Weapon allow
-add_ace group.fgadmin Vehicle allow
-add_ace group.fgadmin Client allow
+#add_ace group.fgadmin BypassSpectate allow
+#add_ace group.fgadmin Weapon allow
+#add_ace group.fgadmin Vehicle allow
+#add_ace group.fgadmin Client allow
 ## FGM MOD PERM
-add_ace group.fgmod BypassSpectate allow
-add_ace group.fgmod BypassVPN allow
-add_ace group.fgmod BlipsBypass allow
+#add_ace group.fgmod BypassSpectate allow
+#add_ace group.fgmod BypassVPN allow
+#add_ace group.fgmod BlipsBypass allow
 
 ## BU KISIM FGMSI OLANLARI ILGILENDIRIYOR FG YOKSA SILIN
