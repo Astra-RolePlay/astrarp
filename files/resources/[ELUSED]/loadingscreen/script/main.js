@@ -91,14 +91,14 @@ if (audio) {
     var x = document.getElementById("text").innerText;
     var y = document.getElementById("text");
 
-    if (key === 32 && x == "MUTE") {
+    if (key === 32 && x == "Müziği Sustur") {
       // spacebar
 
       event.preventDefault();
 
       audio.paused ? audio.play() : audio.pause();
       y.innerHTML = "Müziği Aç";
-    } else if (key === 32 && x == "UNMUTE") {
+    } else if (key === 32 && x == "Müziği Aç") {
       event.preventDefault();
 
       audio.paused ? audio.play() : audio.pause();
