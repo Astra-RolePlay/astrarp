@@ -1002,4 +1002,9 @@ QBShared.Items = {
 	-- KARA PARA
 	 ["markedbills"]                  = { name = 'markedbills', label = 'Kara Para', weight = 0, type = 'item', image = 'markedbills.png', unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Seri numaraları takip altındadır, piyasaya girmeden önce aklanması gereklidir.' },
    
+
+
+    --  Black Market Kartı
+    
+	 ["blackmarket_vip_card"]                  = { name = 'blackmarket_vip_card', label = 'Bl4ck Key', weight = 0, type = 'item', image = 'security_card_01.png', unique = true, useable = false, shouldClose = true, combinable = nil, description = 'Gizli ve önemli bir yerin anahtarı.' },
 }
