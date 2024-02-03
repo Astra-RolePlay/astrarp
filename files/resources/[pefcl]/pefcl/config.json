@@ -188,7 +188,7 @@
     "mockLicenses": false
   },
   "atmBlips": {
-    "enabled": true,
+    "enabled": false,
     "name": "ATM",
     "colour": 39,
     "icon": 108,

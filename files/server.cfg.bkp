@@ -35,7 +35,7 @@ set NPWD_DISCORD_TOKEN "1198423785917927475/1ns4kZ7h95HNbga3cVmswem3FEEYYXJD5eEK
 set NPWD_AUDIO_TOKEN 9NkSFF2ux5xOzUJLPaTg7zpW8n2oszZ7
 ## ENSURE KISMI
 ensure mapmanager
-ensure qb-man
+ensure ulasdmrc
 ensure spawnmanager
 ensure sessionmanager
 ensure basic-gamemode

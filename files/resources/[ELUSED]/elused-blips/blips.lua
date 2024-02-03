@@ -26,7 +26,6 @@ local blips = {
   -- Malikaneler
   { title = "Rockford Hill | Malikane [BTC]",         colour = 29, id = 492, x = -822.77,  y = -29.38,   z = 38.65,  ymap = "ed_rockfordh02" },
   { title = "Banham Canyon | Ev [BTC / IC]",          colour = 29, id = 492, x = -2799.42, y = 1428.42,  z = 100.93, ymap = "CanyonHouse" },
-  { title = "Pacific Bluff | Saray Yavrusu [BTC]",    colour = 1,  id = 492, x = -2992.88, y = 72.37,    z = 11.61,  ymap = "PacificBluffs" },
   { title = "Vinewood Hills | Malikane [BTC]",        colour = 29, id = 492, x = -146.04,  y = 913.11,   z = 235.67, ymap = "mansion2" },
   { title = "Vespucci Beach Site | Ev [BTC / IC]",    colour = 29, id = 492, x = -1458.46, y = -1117.31, z = 3.48,   ymap = "BeachHouse" },
   { title = "Vespucci Beach Site | Ev [BTC / IC]",    colour = 29, id = 492, x = -1439.42, y = -1164.97, z = 3.05,   ymap = "BeachHouse" },
@@ -39,7 +38,10 @@ local blips = {
   { title = "Perfect Drive / Vinewood | Villa [BTC]", colour = 29, id = 492, x = -713.22,  y = 490.15,   z = 109.11, ymap = "blackhouse" },
   { title = "West Eclipse Blv. | Villa [BTC]",        colour = 29, id = 492, x = -1182.56, y = 283.29,   z = 69.5,   ymap = "CartelHouse" },
   { title = "Senora Rd. | Malikane [BTC]",            colour = 29, id = 492, x = 1391.2,   y = 1153.67,  z = 114.44, ymap = "rizeli" },
-
+  { title = "North Califia | Malikane [BTC]",            colour = 29, id = 492, x = 1408.21,   y = 4740.21,  z = 135.94, ymap = "bilinmiyor" },
+  { title = "Mt Haan Rd | Malikane [BTC / IC]",            colour = 29, id = 492, x = 177.87,   y = 1684.21,  z = 228.84, ymap = "bilinmiyor" },
+ 
+ 
   --
     { title = "Şantiye Alanı",                        colour = 47, id = 643, x = -97.12,   y = -1015.13, z = 27.28 },
     { title = "Galeri",                               colour = 74, id = 227, x = -46.55,   y = -1097.26, z = 26.42 },

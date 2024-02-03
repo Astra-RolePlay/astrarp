@@ -3998,3 +3998,18 @@
 {"level":"debug","message":{"identifier":"PAE72962","name":"V A","source":8},"module":"user","timestamp":"2024-02-03T14:29:24.220Z"}
 {"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T14:29:24.221Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T14:29:25.021Z"}
+{"level":"debug","message":"Initializing...","module":"base","timestamp":"2024-02-03T14:39:16.804Z"}
+{"level":"debug","message":"Initialized Boot controller","module":"base","timestamp":"2024-02-03T14:39:16.807Z"}
+{"level":"debug","message":"Initialized User controller","module":"base","timestamp":"2024-02-03T14:39:16.807Z"}
+{"level":"debug","message":"Initialized Cash controller","module":"base","timestamp":"2024-02-03T14:39:16.808Z"}
+{"level":"debug","message":"Initialized Invoice controller","module":"base","timestamp":"2024-02-03T14:39:16.808Z"}
+{"level":"debug","message":"Initialized Account controller","module":"base","timestamp":"2024-02-03T14:39:16.809Z"}
+{"level":"debug","message":"Initialized Transaction controller","module":"base","timestamp":"2024-02-03T14:39:16.809Z"}
+{"level":"debug","message":"Initialized Broadcast controller","module":"base","timestamp":"2024-02-03T14:39:16.809Z"}
+{"level":"debug","message":"Loading language from config: en","module":"i18n","timestamp":"2024-02-03T14:39:16.810Z"}
+{"level":"debug","message":"Checking database connection ..","module":"boot","timestamp":"2024-02-03T14:39:16.863Z"}
+{"level":"debug","message":"Connected to database.","module":"boot","timestamp":"2024-02-03T14:39:16.892Z"}
+{"level":"info","message":"Framework integration is enabled.","module":"boot","timestamp":"2024-02-03T14:39:16.892Z"}
+{"level":"debug","message":"Verifying exports ..","module":"boot","timestamp":"2024-02-03T14:39:16.892Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-03T14:39:16.893Z"}
+{"level":"info","message":"Starting pefcl.","module":"boot","timestamp":"2024-02-03T14:39:16.894Z"}
