@@ -20,7 +20,6 @@ local blips = {
   { title = "BOŞ HOOD",                               colour = 3,  id = 429, x = -178.97,  y = -1546.43, z = 35.14 },
   { title = "BOŞ HOOD",                               colour = 3,  id = 429, x = 288.86,   y = -1740.2,  z = 28.95 },
   { title = "Black Piru Stones Nations",              colour = 1,  id = 429, x = -66.18,   y = -1520.44, z = 34.33 },
-  { title = "Black Market",                           colour = 8,  id = 566, x = -663.86,  y = -937.07,  z = 21.83 },
   { title = "BOŞ HOOD",                               colour = 29, id = 429, x = 1297.215, y = -1724.93, z = 53.966 },
 
 
