@@ -13,7 +13,7 @@ AddEventHandler('elused-blackmarket:shops', function()
     if QBCore.Functions.HasItem('blackmarket_vip_card') then    
 	TriggerServerEvent("inventory:server:OpenInventory", "shop", "Black Market", Config.Items)
     else
-        QBCore.Functions.Notify('Black Market kartın yok.',"error") 
+        QBCore.Functions.Notify('Black Key\'in olmadan kasayı açamazsın.',"error") 
     end
 end)
 
@@ -21,9 +21,9 @@ end)
 
 Citizen.CreateThread(function()
 	--Gunner 1
-	exports['qb-target']:AddBoxZone("blackmarket", vector3(14.07, -1100.38, 29.8), 0.4, 2.8, { name="blackmarket", heading = 340, debugPoly = false, minZ = 25.7, maxZ = 29.7 }, 
+	exports['qb-target']:AddBoxZone("blackmarket", vector3(2194.25, 5594.1, 53.75), 2.0, 2.0, { name="blackmarket", heading = 340, debugPoly = false, minZ = 49.7, maxZ = 56.7 }, 
 		{ options = { {  event = "elused-blackmarket:shops", icon = "fas fa-box-open", label = "Black Market" }, },
-		  distance = 2.0
+		  distance = 3.0
 	})
 
 

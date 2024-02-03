@@ -565,6 +565,33 @@ Config.Products = {
             slot = 3,
         },
     },
+
+["megamall"] = {
+        [1] = {
+            name = "bandage",
+            price = 3000,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 1,
+        },
+        [2] = {
+            name = "repairkit",
+            price = 5000,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 2,
+        },
+        [3] = {
+            name = "lockpick",
+            price = 30000,
+            amount = 50,
+            info = {},
+            type = "item",
+            slot = 3,
+        }
+    },
 }
 Config.Locations = {
     -- 24/7 Locations
@@ -1057,6 +1084,21 @@ Config.Locations = {
         ["products"] = Config.Products["alkol"],
         ["showblip"] = false,
         ["blipsprite"] = 628,
+        ["blipscale"] = 0.4,
+        ["blipcolor"] = 5
+    },
+    
+    ["megamall"] = {
+        ["label"] = "Megamall",
+        ["coords"] = vector4(46.27, -1749.37, 29.64, 51.76),
+        ["ped"] = 'mp_m_shopkeep_01',
+        ["scenario"] = "WORLD_HUMAN_VALET",
+        ["radius"] = 1.5,
+        ["targetIcon"] = "fas fa-shopping-basket",
+        ["targetLabel"] = "MegaMall",
+        ["products"] = Config.Products["megamall"],
+        ["showblip"] = true,
+        ["blipsprite"] = 52,
         ["blipscale"] = 0.4,
         ["blipcolor"] = 5
     }
