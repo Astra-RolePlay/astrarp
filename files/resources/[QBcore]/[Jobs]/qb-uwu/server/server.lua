@@ -215,17 +215,27 @@ AddEventHandler('qb-uwu:Tickets:Sell', function()
 end)
 
 RegisterServerEvent("qb-uwu:server:Charge", function(citizen, price)
-    local biller = QBCore.Functions.GetPlayer(source)
+	local src = source
+    local biller = QBCore.Functions.GetPlayer(src)
     local billed = QBCore.Functions.GetPlayer(tonumber(citizen))
     local amount = tonumber(price)
 	if billed ~= nil then
 		--if biller.PlayerData.citizenid ~= billed.PlayerData.citizenid then
-			if amount and amount > 0 then
-				exports.oxmysql:insert(
-					'INSERT INTO phone_invoices (citizenid, amount, society, sender, sendercitizenid) VALUES (?, ?, ?, ?, ?)',
-					{billed.PlayerData.citizenid, amount, biller.PlayerData.job.name,
-					 biller.PlayerData.charinfo.firstname, biller.PlayerData.citizenid})
-				TriggerClientEvent('qb-phone:RefreshPhone', billed.PlayerData.source)
+        if amount and amount > 0 then
+
+            local toFullname = billed.PlayerData.charinfo.firstname .. " " .. billed.PlayerData.charinfo.lastname
+			local toIdentifier = billed.PlayerData.license
+			local fromFullname =  biller.PlayerData.charinfo.firstname.." "..biller.PlayerData.charinfo.lastname
+			local fromIdentifier = biller.PlayerData.license
+			Wait(100)
+			exports.pefcl:createInvoice(src, {
+                to = toFullname,
+                toIdentifier = toIdentifier,
+                from = fromFullname,
+                fromIdentifier = fromIdentifier,
+				amount = amount,
+				message = "UwU Cafe - Hesap Faturası"
+			})
 				TriggerClientEvent('QBCore:Notify', source, 'Fatura Başarıyla Gönderildi.', 'success')
 				TriggerClientEvent('QBCore:Notify', billed.PlayerData.source, 'Yeni Fatura Alındı.')
 				

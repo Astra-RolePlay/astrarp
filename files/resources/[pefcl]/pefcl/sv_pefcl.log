@@ -4697,3 +4697,33 @@
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:24:07.606Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:24:07.705Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:24:08.969Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T20:26:26.513Z"}
+{"level":"debug","message":{"identifier":"GJD80440","name":"Lucifer Jackson","source":14},"module":"user","timestamp":"2024-02-03T20:26:26.514Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T20:26:26.514Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:26:26.905Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T20:34:21.504Z"}
+{"level":"debug","message":{"identifier":"ERR29080","name":"Swex Toe","source":15},"module":"user","timestamp":"2024-02-03T20:34:21.505Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T20:34:21.506Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:34:22.149Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:35:43.212Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:35:44.372Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T20:44:36.437Z"}
+{"level":"debug","message":{"identifier":"GJD80440","name":"Lucifer Jackson","source":16},"module":"user","timestamp":"2024-02-03T20:44:36.437Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T20:44:36.438Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:44:36.880Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:51:10.762Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:51:12.897Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:55:47.185Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:59:42.545Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:59:43.688Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T20:59:45.475Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T21:04:29.766Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T21:04:39.851Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T21:16:23.760Z"}
+{"level":"debug","message":{"identifier":"GJD80440","name":"Lucifer Jackson","source":21},"module":"user","timestamp":"2024-02-03T21:16:23.761Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T21:16:23.762Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T21:16:24.204Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-03T21:36:39.449Z"}
+{"level":"debug","message":{"identifier":"CID21351","name":"Daryl Crannell","source":23},"module":"user","timestamp":"2024-02-03T21:36:39.449Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-03T21:36:39.451Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-03T21:36:42.778Z"}
