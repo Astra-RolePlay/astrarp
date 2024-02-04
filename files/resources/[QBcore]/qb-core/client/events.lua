@@ -262,3 +262,12 @@ RegisterNetEvent('QBCore:Client:OnSharedUpdateMultiple', function(tableName, val
     end
     TriggerEvent('QBCore:Client:UpdateObject')
 end)
+
+
+RegisterNetEvent('QBCore:Client:OnSharedUpdateMultiple', function(source)
+ local playerPed = GetPlayerPed(source)
+    ClearPedBloodDamage(playerPed)
+    ResetPedVisibleDamage(playerPed)
+    ClearPedLastWeaponDamage(playerPed)
+    ClearPedTasksImmediately(playerPed)
+end)

@@ -43,7 +43,6 @@ AddEventHandler('qb-kamu:inCommunityService', function(actions_remaining)
 	end
 	actionsRemaining = tonumber(actions_remaining)
 	FillActionTable()
-
 	ChangeClothes()
 	SetEntityCoords(PlayerPedId(), Config.ServiceLocation)
 	isSentenced = true
@@ -71,10 +70,12 @@ end)
 
 RegisterNetEvent('qb-kamu:finishCommunityService')
 AddEventHandler('qb-kamu:finishCommunityService', function(source)
+	local src = source
 	communityServiceFinished = true
 	isSentenced = false
-	actionsRemaining = 0
-	ExecuteCommand('yenile')
+    actionsRemaining = 0
+	QBCore.Functions.Notify("Kamu cezan sonlandı artık özgürsün!")
+	TriggerEvent("illenium-appearance:client:reloadSkin",src)
 end)
 
 Citizen.CreateThread(function()

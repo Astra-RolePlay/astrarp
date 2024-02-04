@@ -292,3 +292,8 @@ QBCore.Commands.Add('me', Lang:t("command.me.help"), {{name = Lang:t("command.me
         end
     end
 end, 'user')
+
+
+QBCore.Commands.Add('yenile', "yenile", {}, false, function(source, args)
+   TriggerClientEvent('QBCore:Command:ShowMe3D', source)
+end, 'user')

@@ -21,27 +21,29 @@ Config.Clothes = {
     -- Here you can configure clothes. More information on: https://docs.fivem.net/natives/?_0xD4F7B05C. Under this link you can see what id means what component.
     male = {
         {["component_id"] = 1, ["texture"] = 0, ["drawable"] = 0},
-        {["component_id"] = 3, ["texture"] = 0, ["drawable"] = 0},
-        {["component_id"] = 4, ["texture"] = 4, ["drawable"] = 9},
+        {["component_id"] = 4, ["texture"] = 0, ["drawable"] = 232},
         {["component_id"] = 5, ["texture"] = 0, ["drawable"] = 0},
-        {["component_id"] = 6, ["texture"] = 0, ["drawable"] = 25},
+        {["component_id"] = 6, ["texture"] = 0, ["drawable"] = 130},
         {["component_id"] = 7, ["texture"] = 0, ["drawable"] = 0},
-        {["component_id"] = 8, ["texture"] = 1, ["drawable"] = 59},
+        {["component_id"] = 8, ["texture"] = 0, ["drawable"] = 15},
         {["component_id"] = 9, ["texture"] = 0, ["drawable"] = 0},
         {["component_id"] = 10, ["texture"] = 0, ["drawable"] = 0},
-        {["component_id"] = 11, ["texture"] = 0, ["drawable"] = 226},    
+        { ["component_id"] = 11, ["texture"] = 0, ["drawable"] = 426 },
+        {["component_id"] = 15, ["texture"] = 0, ["drawable"] = 0},
+        
     },
+ 
 
     female = {
         {["component_id"] = 1, ["texture"] = 0, ["drawable"] = 0},
         {["component_id"] = 3, ["texture"] = 0, ["drawable"] = 0},
-        {["component_id"] = 4, ["texture"] = 15, ["drawable"] = 109},
+        {["component_id"] = 4, ["texture"] = 0, ["drawable"] = 21},
         {["component_id"] = 5, ["texture"] = 0, ["drawable"] = 0},
-        {["component_id"] = 6, ["texture"] = 0, ["drawable"] = 25},
+        {["component_id"] = 6, ["texture"] = 0, ["drawable"] = 1},
         {["component_id"] = 7, ["texture"] = 0, ["drawable"] = 0},
-        {["component_id"] = 8, ["texture"] = 1, ["drawable"] = 36},
-        {["component_id"] = 9, ["texture"] = 0, ["drawable"] = 0},
+        {["component_id"] = 8, ["texture"] = 0, ["drawable"] = 3},
+        {["component_id"] = 9, ["texture"] = 0, ["drawable"] = 169},
         {["component_id"] = 10, ["texture"] = 0, ["drawable"] = 0},
-        {["component_id"] = 11, ["texture"] = 0, ["drawable"] = 236},    
+        {["component_id"] = 11, ["texture"] = 0, ["drawable"] = 438},    
     }
 }

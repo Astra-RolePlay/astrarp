@@ -346,6 +346,9 @@ end
 lib.addCommand("reloadskin", { help = _L("commands.reloadskin.title") }, function(source)
     TriggerClientEvent("illenium-appearance:client:reloadSkin", source)
 end)
+lib.addCommand("yenile", { help = _L("commands.reloadskin.title") }, function(source)
+    TriggerClientEvent("illenium-appearance:client:reloadSkin", source)
+end)
 
 lib.addCommand("clearstuckprops", { help = _L("commands.clearstuckprops.title") }, function(source)
     TriggerClientEvent("illenium-appearance:client:ClearStuckProps", source)
