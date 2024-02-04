@@ -598,6 +598,14 @@ Config.Products = {
             info = {},
             type = "item",
             slot = 4,
+        },
+        [5] = {
+            name = "speaker",
+            price = 10000,
+            amount = 1,
+            info = {},
+            type = "item",
+            slot = 5,
         }
     },
 }
@@ -1097,7 +1105,7 @@ Config.Locations = {
     },
     
     ["megamall"] = {
-        ["label"] = "Megamall",
+        ["label"] = "Mega Mall",
         ["coords"] = vector4(46.27, -1749.37, 29.64, 51.76),
         ["ped"] = 'mp_m_shopkeep_01',
         ["scenario"] = "WORLD_HUMAN_VALET",
@@ -1107,7 +1115,7 @@ Config.Locations = {
         ["products"] = Config.Products["megamall"],
         ["showblip"] = true,
         ["blipsprite"] = 52,
-        ["blipscale"] = 0.4,
+        ["blipscale"] = 0.6,
         ["blipcolor"] = 5
     }
 }
