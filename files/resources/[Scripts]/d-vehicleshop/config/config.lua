@@ -134,10 +134,19 @@ Config.Locations = {
 		databasejob = "civ",
 		-- All cars of your database owned_vehicles will be selected where the type column  is `car` or `nil`
 		vehicles = "car",
-		-- categorys = {
-		-- 	"sports",
-		-- 	"super",
-		-- },
+		categorys = {
+			"classic",
+            "compacts",
+            "coupes",
+			"motos",
+			"muscle",
+			"offroad",
+			"sedans",
+			"sports",
+			"super",
+			"suv",
+			"vans"
+		},
 		-- only_vehicles = {
 		-- 	"alpha",
 		-- 	"banshee",
