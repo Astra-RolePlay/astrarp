@@ -513,6 +513,12 @@ RegisterNUICallback('AnswerCall', function(_, cb)
     cb('ok')
 end)
 
+RegisterNUICallback('GiveContactDetails', function(_, cb)
+    print("hop nire giden client")
+    TriggerEvent('qb-phone:client:GiveContactDetails')
+    cb("ok")
+end)
+
 RegisterNUICallback('ClearRecentAlerts', function(_, cb)
     TriggerServerEvent('qb-phone:server:SetPhoneAlerts', "phone", 0)
     Config.PhoneApplications["phone"].Alerts = 0
@@ -887,6 +893,36 @@ RegisterNUICallback('track-vehicle', function(data, cb)
         QBCore.Functions.Notify("This vehicle cannot be located", "error")
     end
     cb("ok")
+end)
+
+
+RegisterNUICallback('valet-vehicle', function(data, cb)
+   local coords = QBCore.Functions.GetCoords(PlayerPedId())
+	local ret, coordsTemp, heading = GetClosestVehicleNodeWithHeading(coords.x, coords.y, coords.z, 1, 3.0, 0)
+	local retval, coordsSide = GetPointOnRoadSide(coordsTemp.x, coordsTemp.y, coordsTemp.z)
+    -- coordsSide vector3 location  / heading float
+    data.vehicle = data.veh
+	print(data.vehicle.model .. 'spawned')
+	print(data.vehicle.state)
+    if data.vehicle.state == "Garajda" then
+        print("spawn işlemi başladı")
+		QBCore.Functions.SpawnVehicle(data.vehicle.model, function(veh)
+			QBCore.Functions.TriggerCallback('qb-garage:server:GetVehicleProperties', function(properties)
+				QBCore.Functions.SetVehicleProperties(veh, properties)
+				SetVehicleNumberPlateText(veh, data.vehicle.plate)
+				exports['ed-fuel']:SetFuel(veh, data.vehicle.fuel)
+				SetEntityAsMissionEntity(veh, true, true)
+				SetEntityHeading(veh, heading)
+				TriggerServerEvent('qb-garage:server:updateVehicleState', 0, data.vehicle.plate, "Out")
+				TriggerServerEvent('qb-vehiclekeys:server:AcquireVehicleKeys', data.vehicle.plate)
+				SetVehicleEngineOn(veh, true, true, false)
+			end, data.vehicle.plate)
+		end, coordsSide, true) 
+	else
+		QBCore.Functions.Notify("Arac zaten disarida!", "error")
+	end
+
+	cb({})
 end)
 
 RegisterNUICallback('DeleteContact', function(data, cb)
@@ -2089,6 +2125,7 @@ RegisterNetEvent('qb-phone:client:addPoliceAlert', function(alertData)
 end)
 
 RegisterNetEvent('qb-phone:client:GiveContactDetails', function()
+    print("hop nire giden event")
     local player, distance = GetClosestPlayer()
     if player ~= -1 and distance < 2.5 then
         local PlayerId = GetPlayerServerId(player)

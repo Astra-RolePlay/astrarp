@@ -5678,3 +5678,103 @@
 {"level":"debug","message":{"identifier":"VPK54164","name":"John Doe","source":10},"module":"user","timestamp":"2024-02-09T21:03:48.887Z"}
 {"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-09T21:03:48.889Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-09T21:03:49.330Z"}
+{"level":"debug","message":"Initializing...","module":"base","timestamp":"2024-02-10T16:45:36.267Z"}
+{"level":"debug","message":"Initialized Boot controller","module":"base","timestamp":"2024-02-10T16:45:36.271Z"}
+{"level":"debug","message":"Initialized User controller","module":"base","timestamp":"2024-02-10T16:45:36.272Z"}
+{"level":"debug","message":"Initialized Cash controller","module":"base","timestamp":"2024-02-10T16:45:36.273Z"}
+{"level":"debug","message":"Initialized Invoice controller","module":"base","timestamp":"2024-02-10T16:45:36.273Z"}
+{"level":"debug","message":"Initialized Account controller","module":"base","timestamp":"2024-02-10T16:45:36.274Z"}
+{"level":"debug","message":"Initialized Transaction controller","module":"base","timestamp":"2024-02-10T16:45:36.274Z"}
+{"level":"debug","message":"Initialized Broadcast controller","module":"base","timestamp":"2024-02-10T16:45:36.275Z"}
+{"level":"debug","message":"Loading language from config: en","module":"i18n","timestamp":"2024-02-10T16:45:36.276Z"}
+{"level":"debug","message":"Checking database connection ..","module":"boot","timestamp":"2024-02-10T16:45:36.302Z"}
+{"level":"debug","message":"Connected to database.","module":"boot","timestamp":"2024-02-10T16:45:36.357Z"}
+{"level":"info","message":"Framework integration is enabled.","module":"boot","timestamp":"2024-02-10T16:45:36.357Z"}
+{"level":"debug","message":"Verifying exports ..","module":"boot","timestamp":"2024-02-10T16:45:36.357Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-10T16:45:36.358Z"}
+{"level":"error","message":"Stopping resource due to framework integration error. Reason:","module":"boot","timestamp":"2024-02-10T16:45:36.358Z"}
+{"level":"error","message":"No such export addCash in resource qb-pefcl","module":"boot","stack":"Error: No such export addCash in resource qb-pefcl\n    at Object.get (citizen:/scripting/v8/main.js:549:15)\n    at @pefcl/src/dist/server.js:97852:35\n    at Array.forEach (<anonymous>)\n    at validateResourceExports (@pefcl/src/dist/server.js:97851:32)\n    at BootService.checkExports (@pefcl/src/dist/server.js:97920:65)\n    at BootService.handleResourceStart (@pefcl/src/dist/server.js:97933:18)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","timestamp":"2024-02-10T16:45:36.359Z"}
+{"level":"error","message":"Check your starting order. The framework integration library needs to be started before PEFCL!","module":"boot","timestamp":"2024-02-10T16:45:36.359Z"}
+{"level":"info","message":"Stopping pefcl.","module":"boot","timestamp":"2024-02-10T16:45:36.360Z"}
+{"level":"debug","message":"Initializing...","module":"base","timestamp":"2024-02-10T16:46:27.753Z"}
+{"level":"debug","message":"Initialized Boot controller","module":"base","timestamp":"2024-02-10T16:46:27.756Z"}
+{"level":"debug","message":"Initialized User controller","module":"base","timestamp":"2024-02-10T16:46:27.756Z"}
+{"level":"debug","message":"Initialized Cash controller","module":"base","timestamp":"2024-02-10T16:46:27.757Z"}
+{"level":"debug","message":"Initialized Invoice controller","module":"base","timestamp":"2024-02-10T16:46:27.757Z"}
+{"level":"debug","message":"Initialized Account controller","module":"base","timestamp":"2024-02-10T16:46:27.757Z"}
+{"level":"debug","message":"Initialized Transaction controller","module":"base","timestamp":"2024-02-10T16:46:27.758Z"}
+{"level":"debug","message":"Initialized Broadcast controller","module":"base","timestamp":"2024-02-10T16:46:27.758Z"}
+{"level":"debug","message":"Loading language from config: en","module":"i18n","timestamp":"2024-02-10T16:46:27.758Z"}
+{"level":"debug","message":"Checking database connection ..","module":"boot","timestamp":"2024-02-10T16:46:27.779Z"}
+{"level":"debug","message":"Connected to database.","module":"boot","timestamp":"2024-02-10T16:46:27.804Z"}
+{"level":"info","message":"Framework integration is enabled.","module":"boot","timestamp":"2024-02-10T16:46:27.805Z"}
+{"level":"debug","message":"Verifying exports ..","module":"boot","timestamp":"2024-02-10T16:46:27.805Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-10T16:46:27.805Z"}
+{"level":"info","message":"Starting pefcl.","module":"boot","timestamp":"2024-02-10T16:46:27.807Z"}
+{"level":"debug","message":"Initializing...","module":"base","timestamp":"2024-02-10T16:47:49.255Z"}
+{"level":"debug","message":"Initialized Boot controller","module":"base","timestamp":"2024-02-10T16:47:49.257Z"}
+{"level":"debug","message":"Initialized User controller","module":"base","timestamp":"2024-02-10T16:47:49.258Z"}
+{"level":"debug","message":"Initialized Cash controller","module":"base","timestamp":"2024-02-10T16:47:49.258Z"}
+{"level":"debug","message":"Initialized Invoice controller","module":"base","timestamp":"2024-02-10T16:47:49.258Z"}
+{"level":"debug","message":"Initialized Account controller","module":"base","timestamp":"2024-02-10T16:47:49.258Z"}
+{"level":"debug","message":"Initialized Transaction controller","module":"base","timestamp":"2024-02-10T16:47:49.259Z"}
+{"level":"debug","message":"Initialized Broadcast controller","module":"base","timestamp":"2024-02-10T16:47:49.259Z"}
+{"level":"debug","message":"Loading language from config: en","module":"i18n","timestamp":"2024-02-10T16:47:49.260Z"}
+{"level":"debug","message":"Checking database connection ..","module":"boot","timestamp":"2024-02-10T16:48:06.054Z"}
+{"level":"debug","message":"Connected to database.","module":"boot","timestamp":"2024-02-10T16:48:06.405Z"}
+{"level":"info","message":"Framework integration is enabled.","module":"boot","timestamp":"2024-02-10T16:48:06.405Z"}
+{"level":"debug","message":"Verifying exports ..","module":"boot","timestamp":"2024-02-10T16:48:06.405Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-10T16:48:06.406Z"}
+{"level":"info","message":"Starting pefcl.","module":"boot","timestamp":"2024-02-10T16:48:06.407Z"}
+{"level":"debug","message":"Initializing...","module":"base","timestamp":"2024-02-10T16:51:04.024Z"}
+{"level":"debug","message":"Initialized Boot controller","module":"base","timestamp":"2024-02-10T16:51:04.027Z"}
+{"level":"debug","message":"Initialized User controller","module":"base","timestamp":"2024-02-10T16:51:04.027Z"}
+{"level":"debug","message":"Initialized Cash controller","module":"base","timestamp":"2024-02-10T16:51:04.027Z"}
+{"level":"debug","message":"Initialized Invoice controller","module":"base","timestamp":"2024-02-10T16:51:04.028Z"}
+{"level":"debug","message":"Initialized Account controller","module":"base","timestamp":"2024-02-10T16:51:04.028Z"}
+{"level":"debug","message":"Initialized Transaction controller","module":"base","timestamp":"2024-02-10T16:51:04.028Z"}
+{"level":"debug","message":"Initialized Broadcast controller","module":"base","timestamp":"2024-02-10T16:51:04.028Z"}
+{"level":"debug","message":"Loading language from config: en","module":"i18n","timestamp":"2024-02-10T16:51:04.029Z"}
+{"level":"debug","message":"Checking database connection ..","module":"boot","timestamp":"2024-02-10T16:51:20.219Z"}
+{"level":"debug","message":"Connected to database.","module":"boot","timestamp":"2024-02-10T16:51:20.547Z"}
+{"level":"info","message":"Framework integration is enabled.","module":"boot","timestamp":"2024-02-10T16:51:20.548Z"}
+{"level":"debug","message":"Verifying exports ..","module":"boot","timestamp":"2024-02-10T16:51:20.548Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-10T16:51:20.548Z"}
+{"level":"info","message":"Starting pefcl.","module":"boot","timestamp":"2024-02-10T16:51:20.549Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-10T16:54:01.659Z"}
+{"level":"debug","message":{"identifier":"VPK54164","name":"John Doe","source":1},"module":"user","timestamp":"2024-02-10T16:54:01.660Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-10T16:54:01.662Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T16:54:02.053Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:54:45.517Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:54:46.834Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:05.613Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:08.046Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T16:55:08.147Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:08.148Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:09.109Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:12.256Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:13.525Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T16:55:13.676Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:13.677Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:14.029Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:16.060Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T16:55:16.161Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:16.162Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:16.869Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:18.086Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:18.947Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:22.401Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:26.307Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T16:55:26.406Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:26.407Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:27.114Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:28.636Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T16:55:28.737Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T16:55:28.738Z"}
+{"level":"debug","message":"Authorizing user VPK54164 for account: 36","module":"auth","timestamp":"2024-02-10T16:55:28.739Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-10T16:56:13.538Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-10T16:56:14.248Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-10T17:30:30.084Z"}
+{"level":"debug","message":{"identifier":"EZE95522","name":"RedViper admin hesep ","source":2},"module":"user","timestamp":"2024-02-10T17:30:30.085Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-10T17:30:30.086Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T17:30:30.429Z"}
