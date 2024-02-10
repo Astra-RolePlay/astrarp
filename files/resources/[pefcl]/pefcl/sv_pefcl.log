@@ -5784,3 +5784,53 @@
 {"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-10T17:45:50.102Z"}
 {"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-10T17:45:51.514Z"}
 {"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-10T17:45:51.518Z"}
+{"level":"debug","message":"Initializing...","module":"base","timestamp":"2024-02-10T18:12:44.031Z"}
+{"level":"debug","message":"Initialized Boot controller","module":"base","timestamp":"2024-02-10T18:12:44.034Z"}
+{"level":"debug","message":"Initialized User controller","module":"base","timestamp":"2024-02-10T18:12:44.034Z"}
+{"level":"debug","message":"Initialized Cash controller","module":"base","timestamp":"2024-02-10T18:12:44.034Z"}
+{"level":"debug","message":"Initialized Invoice controller","module":"base","timestamp":"2024-02-10T18:12:44.035Z"}
+{"level":"debug","message":"Initialized Account controller","module":"base","timestamp":"2024-02-10T18:12:44.035Z"}
+{"level":"debug","message":"Initialized Transaction controller","module":"base","timestamp":"2024-02-10T18:12:44.035Z"}
+{"level":"debug","message":"Initialized Broadcast controller","module":"base","timestamp":"2024-02-10T18:12:44.035Z"}
+{"level":"debug","message":"Loading language from config: en","module":"i18n","timestamp":"2024-02-10T18:12:44.035Z"}
+{"level":"debug","message":"Checking database connection ..","module":"boot","timestamp":"2024-02-10T18:13:00.576Z"}
+{"level":"debug","message":"Connected to database.","module":"boot","timestamp":"2024-02-10T18:13:00.910Z"}
+{"level":"info","message":"Framework integration is enabled.","module":"boot","timestamp":"2024-02-10T18:13:00.911Z"}
+{"level":"debug","message":"Verifying exports ..","module":"boot","timestamp":"2024-02-10T18:13:00.911Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-10T18:13:00.911Z"}
+{"level":"info","message":"Starting pefcl.","module":"boot","timestamp":"2024-02-10T18:13:00.912Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-10T18:16:10.846Z"}
+{"level":"debug","message":{"identifier":"EZE95522","name":"RedViper admin hesep ","source":1},"module":"user","timestamp":"2024-02-10T18:16:10.847Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-10T18:16:10.848Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T18:16:11.237Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-10T18:30:50.675Z"}
+{"level":"debug","message":{"identifier":"VPK54164","name":"John Doe","source":2},"module":"user","timestamp":"2024-02-10T18:30:50.676Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-10T18:30:50.677Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-10T18:30:50.694Z"}
+{"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-10T18:30:50.699Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T18:30:51.073Z"}
+{"level":"debug","message":"Initializing...","module":"base","timestamp":"2024-02-10T18:38:52.264Z"}
+{"level":"debug","message":"Initialized Boot controller","module":"base","timestamp":"2024-02-10T18:38:52.267Z"}
+{"level":"debug","message":"Initialized User controller","module":"base","timestamp":"2024-02-10T18:38:52.267Z"}
+{"level":"debug","message":"Initialized Cash controller","module":"base","timestamp":"2024-02-10T18:38:52.267Z"}
+{"level":"debug","message":"Initialized Invoice controller","module":"base","timestamp":"2024-02-10T18:38:52.268Z"}
+{"level":"debug","message":"Initialized Account controller","module":"base","timestamp":"2024-02-10T18:38:52.268Z"}
+{"level":"debug","message":"Initialized Transaction controller","module":"base","timestamp":"2024-02-10T18:38:52.268Z"}
+{"level":"debug","message":"Initialized Broadcast controller","module":"base","timestamp":"2024-02-10T18:38:52.268Z"}
+{"level":"debug","message":"Loading language from config: en","module":"i18n","timestamp":"2024-02-10T18:38:52.268Z"}
+{"level":"debug","message":"Checking database connection ..","module":"boot","timestamp":"2024-02-10T18:39:08.377Z"}
+{"level":"debug","message":"Connected to database.","module":"boot","timestamp":"2024-02-10T18:39:08.703Z"}
+{"level":"info","message":"Framework integration is enabled.","module":"boot","timestamp":"2024-02-10T18:39:08.704Z"}
+{"level":"debug","message":"Verifying exports ..","module":"boot","timestamp":"2024-02-10T18:39:08.704Z"}
+{"level":"debug","message":"Checking exports from resource: qb-pefcl","module":"frameworkIntegration","timestamp":"2024-02-10T18:39:08.704Z"}
+{"level":"info","message":"Starting pefcl.","module":"boot","timestamp":"2024-02-10T18:39:08.705Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-10T18:42:52.070Z"}
+{"level":"debug","message":{"identifier":"VPK54164","name":"John Doe","source":1},"module":"user","timestamp":"2024-02-10T18:42:52.071Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-10T18:42:52.073Z"}
+{"level":"debug","message":"Adding user to unique account ..","module":"accounts","timestamp":"2024-02-10T18:42:52.091Z"}
+{"level":"debug","message":"User already exists in shared account. (You can safely ignore this)","module":"accounts","timestamp":"2024-02-10T18:42:52.097Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T18:42:52.461Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-10T18:44:37.561Z"}
+{"level":"debug","message":{"identifier":"ERR29080","name":"Swex Toe","source":2},"module":"user","timestamp":"2024-02-10T18:44:37.561Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-10T18:44:37.562Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T18:44:38.361Z"}
