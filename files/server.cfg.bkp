@@ -43,19 +43,20 @@ ensure hardcap
 ensure baseevents
 ensure oxmysql
 ensure chat
+ensure [EF]
 ensure qb-core
 
 ensure [QBcore]
 
-ensure qb-npwd
-ensure npwd_qb_mail
-ensure npwd_advertisements
-ensure npwd_crypto
-ensure npwd_qb_banking
-ensure npwd_qb_garage
-ensure qb-pefcl
-ensure pefcl
-ensure npwd
+#ensure qb-npwd
+#ensure npwd_qb_mail
+#ensure npwd_advertisements
+#ensure npwd_crypto
+#ensure npwd_qb_banking
+#ensure npwd_qb_garage
+#ensure qb-pefcl
+#ensure pefcl
+#ensure npwd
 
 ensure [Assets]
 
@@ -64,6 +65,8 @@ ensure [ELUSED]
 ensure [legalmeslek]
 ensure [hacker]
 ensure illenium-appearance
+ensure generic_texture_renderer_gfx
+ensure ptelevision
 ## ENSURE KISMI
 # ADMIN
 add_ace resource.qb-core command allow
