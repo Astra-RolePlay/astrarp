@@ -36,41 +36,41 @@ local function robKeyLoop()
                     end
                     -- Driven vehicle logic
                     if driver ~= 0 and not IsPedAPlayer(driver) and not HasKeys(plate) and not carIsImmune then
-                        if IsEntityDead(driver) then
-                            if not isTakingKeys then
-                                isTakingKeys = true
+                        -- if IsEntityDead(driver) then
+                        --     if not isTakingKeys then
+                        --         isTakingKeys = true
 
-                                TriggerServerEvent('qb-vehiclekeys:server:setVehLockState',
-                                    NetworkGetNetworkIdFromEntity(entering), 1)
-                                QBCore.Functions.Progressbar("steal_keys", Lang:t("progress.takekeys"), 2500, false,
-                                    false, {
-                                        disableMovement = false,
-                                        disableCarMovement = true,
-                                        disableMouse = false,
-                                        disableCombat = true
-                                    }, {}, {}, {}, function() -- Done
-                                        TriggerServerEvent('qb-vehiclekeys:server:AcquireVehicleKeys', plate)
-                                        isTakingKeys = false
-                                    end, function()
-                                        isTakingKeys = false
-                                    end)
-                            end
-                        elseif Config.LockNPCDrivingCars then
-                            TriggerServerEvent('qb-vehiclekeys:server:setVehLockState',
-                                NetworkGetNetworkIdFromEntity(entering), 2)
-                        else
-                            TriggerServerEvent('qb-vehiclekeys:server:setVehLockState',
-                                NetworkGetNetworkIdFromEntity(entering), 1)
-                            TriggerServerEvent('qb-vehiclekeys:server:AcquireVehicleKeys', plate)
+                        --         TriggerServerEvent('qb-vehiclekeys:server:setVehLockState',
+                        --             NetworkGetNetworkIdFromEntity(entering), 1)
+                        --         QBCore.Functions.Progressbar("steal_keys", Lang:t("progress.takekeys"), 25000, false,
+                        --             false, {
+                        --                 disableMovement = false,
+                        --                 disableCarMovement = true,
+                        --                 disableMouse = false,
+                        --                 disableCombat = true
+                        --             }, {}, {}, {}, function() -- Done
+                        --                 TriggerServerEvent('qb-vehiclekeys:server:AcquireVehicleKeys', plate)
+                        --                 isTakingKeys = false
+                        --             end, function()
+                        --                 isTakingKeys = false
+                        --             end)
+                        --     end
+                        -- elseif Config.LockNPCDrivingCars then
+                        --     TriggerServerEvent('qb-vehiclekeys:server:setVehLockState',
+                        --         NetworkGetNetworkIdFromEntity(entering), 2)
+                        -- else
+                        --     TriggerServerEvent('qb-vehiclekeys:server:setVehLockState',
+                        --         NetworkGetNetworkIdFromEntity(entering), 1)
+                        --     TriggerServerEvent('qb-vehiclekeys:server:AcquireVehicleKeys', plate)
 
-                            --Make passengers flee
-                            local pedsInVehicle = GetPedsInVehicle(entering)
-                            for _, pedInVehicle in pairs(pedsInVehicle) do
-                                if pedInVehicle ~= GetPedInVehicleSeat(entering, -1) then
-                                    MakePedFlee(pedInVehicle)
-                                end
-                            end
-                        end
+                        --     --Make passengers flee
+                        --     local pedsInVehicle = GetPedsInVehicle(entering)
+                        --     for _, pedInVehicle in pairs(pedsInVehicle) do
+                        --         if pedInVehicle ~= GetPedInVehicleSeat(entering, -1) then
+                        --             MakePedFlee(pedInVehicle)
+                        --         end
+                        --     end
+                        -- end
                         -- Parked car logic
                     elseif driver == 0 and entering ~= lastPickedVehicle and not HasKeys(plate) and not isTakingKeys then
                         QBCore.Functions.TriggerCallback('qb-vehiclekeys:server:checkPlayerOwned', function(playerOwned)

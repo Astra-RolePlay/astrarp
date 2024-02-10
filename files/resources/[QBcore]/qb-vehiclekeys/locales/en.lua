@@ -13,7 +13,7 @@ local Translations = {
         vehclose = 'There\'s no close vehicle!',
     },
     progress = {
-        takekeys = 'Taking keys from body...',
+        takekeys = 'Sürücü\'nün anahtarı aranıyor!',
         hskeys = 'Searching for the car keys...',
         acjack = 'Attempting Carjacking...',
     },

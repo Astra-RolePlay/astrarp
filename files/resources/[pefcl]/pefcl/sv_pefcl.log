@@ -5834,3 +5834,7 @@
 {"level":"debug","message":{"identifier":"ERR29080","name":"Swex Toe","source":2},"module":"user","timestamp":"2024-02-10T18:44:37.561Z"}
 {"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-10T18:44:37.562Z"}
 {"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T18:44:38.361Z"}
+{"level":"debug","message":"Loading player for pefcl.","module":"user","timestamp":"2024-02-10T18:56:57.022Z"}
+{"level":"debug","message":{"identifier":"ERR29080","name":"Swex Toe","source":3},"module":"user","timestamp":"2024-02-10T18:56:57.023Z"}
+{"level":"debug","message":"Player loaded. Emitting: pefcl:userLoaded","module":"user","timestamp":"2024-02-10T18:56:57.025Z"}
+{"level":"debug","message":"Retrieving accounts","module":"accounts","timestamp":"2024-02-10T18:56:57.417Z"}
