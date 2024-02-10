@@ -88,7 +88,7 @@ CreateThread(function()
                                             streetLabel = streetLabel .. " " .. street2
                                         end
                                         local cameraId = Config.Safes[currentSafe].camId
-                                        exports['elused-dispatch']:StoreRobbery(cameraId)
+                                        exports['ps-dispatch']:StoreRobbery(cameraId)
                                     end
                                 else
                                     QBCore.Functions.Notify(Lang:t("error.minimum_store_robbery_police", { MinimumStoreRobberyPolice = Config.MinimumStoreRobberyPolice}), "error")
@@ -149,7 +149,7 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
                             streetLabel = streetLabel .. " " .. street2
                         end
                         local cameraId = Config.Registers[currentRegister].camId
-                        exports['elused-dispatch']:StoreRobbery(cameraId)
+                        exports['ps-dispatch']:StoreRobbery(cameraId)
                     end
                 else
                     lockpick(true)

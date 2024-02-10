@@ -234,7 +234,7 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
             if closestHouse ~= nil then
                 if CurrentCops >= Config.MinimumHouseRobberyPolice then
                     if not Config.Houses[closestHouse]["opened"] then
-                        exports['elused-dispatch']:HouseRobbery()
+                        exports['ps-dispatch']:HouseRobbery()
                         TriggerEvent('qb-lockpick:client:openLockpick', lockpickFinish)
                         if math.random(1, 100) <= 85 and not IsWearingGloves() then
                             local pos = GetEntityCoords(PlayerPedId())
@@ -253,7 +253,7 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
                 if result then
                     if CurrentCops >= Config.MinimumHouseRobberyPolice then
                         if not Config.Houses[closestHouse]["opened"] then
-                            exports['elused-dispatch']:HouseRobbery()
+                            exports['ps-dispatch']:HouseRobbery()
                             TriggerEvent('qb-lockpick:client:openLockpick', lockpickFinish)
                             if math.random(1, 100) <= 85 and not IsWearingGloves() then
                                 local pos = GetEntityCoords(PlayerPedId())
