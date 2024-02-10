@@ -318,7 +318,7 @@ RegisterNetEvent('qb-vehiclesales:client:SellVehicle', function()
     local VehiclePlate = QBCore.Functions.GetPlate(GetVehiclePedIsIn(PlayerPedId()))
     QBCore.Functions.TriggerCallback('qb-garage:server:checkVehicleOwner', function(owned, balance)
         if owned then
-            if balance < 1 then
+            if balance ~= nil and tonumber(balance) < 1 then
                 QBCore.Functions.TriggerCallback('qb-occasions:server:getVehicles', function(vehicles)
                     if vehicles == nil or #vehicles < #Config.Zones[Zone].VehicleSpots then
                         openSellContract(true)
