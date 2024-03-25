@@ -58,7 +58,7 @@ Config.BypassVehicleClasses = { 9, 2, 13, 18, 19, 20, 10 }
 Config.BypassWheels = { 4 }
 
 -- Material types that should not cause loss of grip. You can find these numbers using the debug command.
-Config.Roads = { 0, 1, 4, 3, 7, 181, 15, 13, 55, 68, 69, 12, 31, 36, 173, 64, 70, 86, 56 ,60,81,5, 83 }
+Config.Roads = { 0, 1, 4, 3, 7, 181, 15, 13, 55, 68, 69, 12, 31, 36, 173, 64, 70, 86, 56 ,60,81,5, 83,6,59,58 }
 
 -- This will multiply the intensity of the effect that is applied when a vehicle goes off-road. The default is 1 for none.
 -- The effect of this variable can be pretty big, and there are also max values from where it will completely break.
